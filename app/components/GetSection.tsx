@@ -17,8 +17,8 @@ export default function GetSection() {
                   Your{" "}
                   <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                     <span className="cd-words-wrapper">
-                      <span className="item-text is-visible"><i className="out">P</i><i className="out">e</i><i className="out">r</i><i className="out">f</i><i className="out">e</i><i className="out">c</i><i className="out">t</i></span>
-                      <span className="item-text is-hidden"><i className="in">P</i><i className="in">e</i><i className="in">r</i><i className="in">f</i><i className="in">e</i><i className="in">c</i><i className="in">t</i></span>
+                      <span className="item-text is-visible"><i className="in">P</i><i className="in">e</i><i className="in">r</i><i className="in">f</i><i className="in">e</i><i className="in">c</i><i className="in">t</i></span>
+                      <span className="item-text is-hidden"><i className="out">P</i><i className="out">e</i><i className="out">r</i><i className="out">f</i><i className="out">e</i><i className="out">c</i><i className="out">t</i></span>
                       <span className="item-text is-hidden"><i className="out">P</i><i className="out">e</i><i className="out">r</i><i className="out">f</i><i className="out">e</i><i className="out">c</i><i className="out">t</i></span>
                     </span>
                   </span>
@@ -26,8 +26,8 @@ export default function GetSection() {
                   <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3 d-inline-flex">
                     <span className="cd-words-wrapper">
                       <span className="item-text is-visible"><i className="in">A</i><i className="in">w</i><i className="in">a</i><i className="in">y</i></span>
-                      <span className="item-text is-hidden"><i className="in">A</i><i className="in">w</i><i className="in">a</i><i className="out">y</i></span>
-                      <span className="item-text is-hidden"><i className="out">A</i><i className="out">w</i><i className="out">a</i><i className="in">y</i></span>
+                      <span className="item-text is-hidden"><i className="in">A</i><i className="in">w</i><i className="in">a</i><i className="in">y</i></span>
+                      <span className="item-text is-hidden"><i className="out">A</i><i className="out">w</i><i className="out">a</i><i className="out">y</i></span>
                     </span>
                   </span>!
                 </div>
