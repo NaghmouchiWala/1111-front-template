@@ -76,7 +76,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/1.png',
+                        texture: '/images/get/1.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -88,7 +88,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/2.png',
+                        texture: '/images/get/2.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -100,7 +100,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/3.png',
+                        texture: '/images/get/3.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -112,7 +112,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/4.png',
+                        texture: '/images/get/4.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -124,7 +124,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/5.png',
+                        texture: '/images/get/5.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -136,7 +136,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/6.png',
+                        texture: '/images/get/6.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -148,7 +148,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/7.png',
+                        texture: '/images/get/7.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -160,7 +160,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/8.png',
+                        texture: '/images/get/8.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -172,7 +172,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/9.png',
+                        texture: '/images/get/9.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -184,7 +184,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/10.png',
+                        texture: '/images/get/10.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -196,7 +196,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/11.png',
+                        texture: '/images/get/11.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -208,7 +208,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/12.png',
+                        texture: '/images/get/12.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -220,7 +220,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/13.png',
+                        texture: '/images/get/13.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -232,7 +232,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/14.png',
+                        texture: '/images/get/14.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -244,7 +244,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/15.png',
+                        texture: '/images/get/15.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -256,7 +256,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/16.png',
+                        texture: '/images/get/16.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -268,7 +268,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/17.png',
+                        texture: '/images/get/17.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -280,7 +280,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/18.png',
+                        texture: '/images/get/18.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -292,7 +292,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/19.png',
+                        texture: '/images/get/19.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -304,7 +304,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/20.png',
+                        texture: '/images/get/20.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
@@ -316,7 +316,7 @@ function startSimulation() {
                 },
                 render: {
                     sprite: {
-                        texture: 'assets/images/get/21.png',
+                        texture: '/images/get/21.png',
                         xScale: 0.5,
                         yScale: 0.5
                     }
