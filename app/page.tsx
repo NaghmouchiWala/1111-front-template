@@ -1,66 +1,2914 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+
+
+    <div className="tfmouseCursor cursor-outer"></div>
+    <div className="tfmouseCursor cursor-inner"></div>
+
+    <div id="preloader">
+        <div className="row loader">
+            <div className="pulse-loader">
+                <div className="double-bounce3"></div>
+                <div className="double-bounce4"></div>
+            </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
     </div>
+
+    <div id="wrapper">
+        <div id="pagee" className="">
+
+            {/* Main Header */}
+            <header id="header" className="main-header header header-fixed style-absolute">
+                {/* Header Lower */}
+                <div className="header-lower">
+                    <div className="inner-container flex justify-space align-center">
+                        {/* Logo Box */}
+                        <div className="logo-box flex">
+                            <div className="logo">
+                                <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351">
+                                    <img loading="lazy"  src="/images/logo/logo.svg" alt="Vineta’s web development project screenshot" />
+                                </a>
+                            </div>
+                        </div>
+                        {/* /Logo Box */}
+
+                        <div className="nav-outer flex align-center">
+                            {/* Main Menu */}
+                            <nav className="main-menu show navbar-expand-md">
+                                <div className="navbar-collapse" id="navbarSupportedContent">
+                                    <ul className="navigation">
+                                        <li><a className="sticky-nav " href="#demo">Demos</a></li>
+                                        <li><a className="sticky-nav " href="#features">Features <span className="label">HOT</span></a></li>
+                                        <li><a className="sticky-nav " href="#performance">Performance</a></li>
+                                        <li><a className="" target="_blank" href="/cdn-cgi/l/email-protection#2b4c594a5d4244054a426b4c464a424705484446">Get Support</a></li>
+                                        <li><a className="" target="_blank" href="https://help.gravio.ai/">Documention</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            {/* /Main Menu*/}
+                        </div>
+
+                        {/* Header Right*/}
+                        <div className="header-right">
+                            <div className="flat-bt-top sc-btn-top d-lg-flex d-none">
+                                <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" target="_blank" className="tf-btn-1 light_skew_hover">
+                                    <div>Purchase Now</div>
+                                </a>
+                            </div>
+                            <div className="mobile-nav-toggler mobile-button"><span></span></div>
+                        </div>
+                        {/* /Header Right*/}
+
+                    </div>
+                </div>
+                {/* End Header Lower */}
+
+                {/* Mobile Menu  */}
+                <div className="mobile-menu">
+                    <div className="menu-backdrop"></div>
+                    <nav className="menu-box">
+                        <div className="nav-logo">
+                            <a href="#"><img loading="lazy" src="/images/logo/logo.svg" alt="Vineta’s web development project screenshot" /></a>
+                            <div className="close-btn"><span className="icon flaticon-cancel-1"></span></div>
+                        </div>
+                        <div className="bottom-canvas">
+                            <div className="menu-outer"></div>
+                            <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" target="_blank" className="tf-btn-1 light_skew_hover">
+                                <div>Purchase Now</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                {/* End Mobile Menu */}
+
+            </header>
+            {/* End Main Header */}
+
+            {/* slider */}
+            <section className="slider">
+                <img loading="lazy" className="item-1 item-circle-2" src="/images/item/item-circle-blur.png" alt="Vineta’s web development project screenshot" />
+                <img loading="lazy" className="item-2 item-circle-3" src="/images/item/item-circle.png" alt="Vineta’s web development project screenshot" />
+                <img loading="lazy" className="item-3 item-circle-1" src="/images/item/item-circle.png" alt="Vineta’s web development project screenshot" />
+                <div className="slider-inner">
+                    <div className="inner-content">
+                        <div className="sub-title box-tag wow fadeInUp">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5001 11.1518L14.5786 11.6126C14.3018 11.7502 14.0778 11.9742 13.9402 12.251L13.4794 13.1726C13.4138 13.3054 13.225 13.3054 13.1594 13.1726L12.6986 12.251C12.561 11.9742 12.337 11.7502 12.0602 11.6126L11.1387 11.1518C11.0059 11.0862 11.0059 10.8974 11.1387 10.8318L12.0602 10.371C12.337 10.2335 12.561 10.0095 12.6986 9.73266L13.1594 8.81109C13.225 8.67829 13.4138 8.67829 13.4794 8.81109L13.9402 9.73266C14.0778 10.0095 14.3018 10.2335 14.5786 10.371L15.5001 10.8318C15.6329 10.8974 15.6329 11.0862 15.5001 11.1518Z" fill="url(#paint0_linear_3740_16590)"/>
+                                <path d="M10.8092 8.37279L8.65888 9.44796C8.01409 9.77116 7.49091 10.2943 7.16772 10.9391L6.09255 13.0895C5.93895 13.3967 5.50057 13.3967 5.34697 13.0895L4.2718 10.9391C3.94861 10.2943 3.42542 9.77116 2.78064 9.44796L0.630294 8.37279C0.323105 8.2192 0.323105 7.78081 0.630294 7.62721L2.78064 6.55204C3.42542 6.22885 3.94861 5.70566 4.2718 5.06088L5.34697 2.91054C5.50057 2.60334 5.93895 2.60334 6.09255 2.91054L7.16772 5.06088C7.49091 5.70566 8.01409 6.22885 8.65888 6.55204L10.8092 7.62721C11.1164 7.78081 11.1164 8.2192 10.8092 8.37279Z" fill="url(#paint1_linear_3740_16590)"/>
+                                <path d="M11.1151 3.83366L11.5706 3.60595C11.7074 3.53795 11.8181 3.42725 11.8861 3.29046L12.1138 2.83503C12.1462 2.7694 12.2395 2.7694 12.2719 2.83503L12.4996 3.29046C12.5676 3.42725 12.6783 3.53795 12.8151 3.60595L13.2706 3.83366C13.3362 3.86608 13.3362 3.95938 13.2706 3.9918L12.8151 4.21952C12.6783 4.28752 12.5676 4.39821 12.4996 4.535L12.2719 4.99044C12.2395 5.05527 12.1462 5.05527 12.1138 4.99044L11.8861 4.535C11.8181 4.39821 11.7074 4.28752 11.5706 4.21952L11.1151 3.9918C11.0495 3.95938 11.0495 3.86608 11.1151 3.83366Z" fill="url(#paint2_linear_3740_16590)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_3740_16590" x1="15.5997" y1="13.2722" x2="10.1035" y2="10.7515" gradientUnits="userSpaceOnUse">
+                                <stop stopColor="#3BDEB9"/>
+                                <stop offset="0.5" stopColor="#77E590"/>
+                                <stop offset="1" stopColor="#CCFF9B"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_3740_16590" x1="11.0396" y1="13.3199" x2="-1.78273" y2="7.43927" gradientUnits="userSpaceOnUse">
+                                <stop stopColor="#3BDEB9"/>
+                                <stop offset="0.5" stopColor="#77E590"/>
+                                <stop offset="1" stopColor="#CCFF9B"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_3740_16590" x1="13.3198" y1="5.03906" x2="10.6038" y2="3.79314" gradientUnits="userSpaceOnUse">
+                                <stop stopColor="#3BDEB9"/>
+                                <stop offset="0.5" stopColor="#77E590"/>
+                                <stop offset="1" stopColor="#CCFF9B"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <span className="text-gradient style-2">
+                                Vineta Shopify
+                            </span>
+                            <span className="eff"></span>
+                        </div>
+                        <div className="title wow fadeInUp" data-wow-delay="0.1s">
+                            Multipurpose
+                            <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                <span className="cd-words-wrapper">
+                                    <span className="item-text is-visible">shopify</span>
+                            <span className="item-text is-hidden">shopify</span>
+                            <span className="item-text is-hidden">shopify</span>
+                            </span>
+                            </span>
+                            templates
+                        </div>
+                        <p className="text wow fadeInUp" data-wow-delay="0.2s">Discover our Template, crafted for seamless performance, modern design, and unmatched versatility. Perfect for businesses, portfolios, and creative projects—elevate your online presence today!</p>
+                        <div className="bot-btn wow fadeInUp" data-wow-delay="0.3s">
+                            <a className="tf-btn-2 light_skew_hover" target="_blank" href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clipPath="url(#clip0_3740_16600)">
+                                    <path d="M15.5 5.25V4C15.4978 3.92356 15.479 3.84851 15.445 3.78L14.225 1.33C14.1003 1.08018 13.9083 0.870128 13.6707 0.723491C13.4331 0.576854 13.1592 0.499454 12.88 0.500003H3.12C2.84078 0.499454 2.56694 0.576854 2.32932 0.723491C2.0917 0.870128 1.89972 1.08018 1.775 1.33L0.555 3.775C0.520302 3.84503 0.50152 3.92186 0.5 4V5.25C0.500574 5.6198 0.592085 5.98378 0.76647 6.30989C0.940855 6.63599 1.19276 6.91419 1.5 7.12V14.5H1C0.867392 14.5 0.740215 14.5527 0.646447 14.6464C0.552678 14.7402 0.5 14.8674 0.5 15C0.5 15.1326 0.552678 15.2598 0.646447 15.3536C0.740215 15.4473 0.867392 15.5 1 15.5H15C15.1326 15.5 15.2598 15.4473 15.3536 15.3536C15.4473 15.2598 15.5 15.1326 15.5 15C15.5 14.8674 15.4473 14.7402 15.3536 14.6464C15.2598 14.5527 15.1326 14.5 15 14.5H14.5V7.12C14.8072 6.91419 15.0591 6.63599 15.2335 6.30989C15.4079 5.98378 15.4994 5.6198 15.5 5.25ZM14.5 5.25C14.5 5.58152 14.3683 5.89947 14.1339 6.13389C13.8995 6.36831 13.5815 6.5 13.25 6.5C12.9185 6.5 12.6005 6.36831 12.3661 6.13389C12.1317 5.89947 12 5.58152 12 5.25V4.5H14.5V5.25ZM1.5 5.25V4.5H4V5.25C4 5.58152 3.8683 5.89947 3.63388 6.13389C3.39946 6.36831 3.08152 6.5 2.75 6.5C2.41848 6.5 2.10054 6.36831 1.86612 6.13389C1.6317 5.89947 1.5 5.58152 1.5 5.25ZM5 4.5H7.5V5.25C7.5 5.58152 7.3683 5.89947 7.13388 6.13389C6.89946 6.36831 6.58152 6.5 6.25 6.5C5.91848 6.5 5.60054 6.36831 5.36612 6.13389C5.1317 5.89947 5 5.58152 5 5.25V4.5ZM8.5 4.5H11V5.25C11 5.58152 10.8683 5.89947 10.6339 6.13389C10.3995 6.36831 10.0815 6.5 9.75 6.5C9.41848 6.5 9.10054 6.36831 8.86612 6.13389C8.6317 5.89947 8.5 5.58152 8.5 5.25V4.5ZM2.67 1.775C2.71193 1.69179 2.77628 1.62194 2.8558 1.57335C2.93531 1.52476 3.02682 1.49935 3.12 1.5H12.88C12.9732 1.49935 13.0647 1.52476 13.1442 1.57335C13.2237 1.62194 13.2881 1.69179 13.33 1.775L14.19 3.5H1.81L2.67 1.775ZM9.5 14.5H6.5V11.5C6.5 11.3674 6.55268 11.2402 6.64645 11.1464C6.74021 11.0527 6.86739 11 7 11H9C9.13261 11 9.25979 11.0527 9.35355 11.1464C9.44732 11.2402 9.5 11.3674 9.5 11.5V14.5ZM13.5 14.5H10.5V11.5C10.5 11.1022 10.342 10.7206 10.0607 10.4393C9.77936 10.158 9.39782 10 9 10H7C6.60218 10 6.22064 10.158 5.93934 10.4393C5.65804 10.7206 5.5 11.1022 5.5 11.5V14.5H2.5V7.5C2.58276 7.51328 2.66624 7.52163 2.75 7.525C3.08752 7.5221 3.42007 7.44329 3.723 7.29442C4.02593 7.14555 4.29149 6.93043 4.5 6.665C4.71091 6.92599 4.97753 7.13651 5.28033 7.28112C5.58313 7.42573 5.91444 7.50079 6.25 7.50079C6.58556 7.50079 6.91687 7.42573 7.21967 7.28112C7.52247 7.13651 7.78909 6.92599 8 6.665C8.21091 6.92599 8.47753 7.13651 8.78033 7.28112C9.08313 7.42573 9.41444 7.50079 9.75 7.50079C10.0856 7.50079 10.4169 7.42573 10.7197 7.28112C11.0225 7.13651 11.2891 6.92599 11.5 6.665C11.711 6.92585 11.9776 7.13621 12.2804 7.28069C12.5832 7.42516 12.9145 7.5001 13.25 7.5C13.3333 7.50493 13.4167 7.50493 13.5 7.5V14.5Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_3740_16600">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Buy Template</span>
+                            </a>
+                            <a href="https://shopify.pxf.io/eK531X" target="_blank" className="btn_nor wow animated fadeInUp animated" data-wow-delay="0.6s" data-wow-duration="1s" style={{ visibility: "visible", animationDuration: "1s", animationDelay: "0.6s", animationName: "fadeInUp" }}><svg className="cta_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="currentColor">
+                                <path d="M13.9517 21.9393L19.5556 20.555L17.1294 4.24065C17.1226 4.19269 17.0995 4.14849 17.0639 4.11536C17.0284 4.08224 16.9825 4.06218 16.9339 4.0585L15.2778 4.04029L13.9517 2.75919V21.9454V21.9393ZM13.3406 2.56489L12.6806 2.77133C12.5983 2.50529 12.4919 2.24721 12.3628 2.00024C11.8922 1.10772 11.2017 0.634135 10.3767 0.634135H10.3706L10.1994 0.646278L10.12 0.561276C9.94577 0.372393 9.7315 0.224305 9.49266 0.127706C9.25381 0.0311075 8.99636 -0.0115919 8.73889 0.00269124C7.66944 0.0330491 6.6 0.804139 5.73222 2.17024C5.12111 3.13562 4.65667 4.34387 4.52833 5.27889L2.41389 5.92855C1.79056 6.12284 1.77222 6.14712 1.68667 6.72392L0 19.6807L13.5056 22V2.54061C13.4444 2.54061 13.3833 2.55882 13.3406 2.56489ZM10.2239 3.53027L7.94444 4.22851C8.14705 3.41045 8.54062 2.65127 9.09333 2.01238C9.28889 1.80595 9.55167 1.5813 9.86944 1.44773C10.1689 2.06703 10.2361 2.93526 10.2239 3.53027ZM8.75722 0.713065C9.01389 0.713065 9.22778 0.761638 9.405 0.883069C9.11778 1.02879 8.83667 1.24736 8.57389 1.52666C7.84795 2.36592 7.36063 3.38247 7.16222 4.47137L5.29222 5.0421C5.65889 3.32991 7.10722 0.761638 8.76333 0.713065H8.75722ZM6.67333 10.4701C6.74667 11.6115 9.76556 11.8665 9.93667 14.538C10.0711 16.6388 8.81222 18.0778 7.00333 18.1931C4.83389 18.3328 3.63611 17.0577 3.63611 17.0577L4.09444 15.1148C4.09444 15.1148 5.29833 16.0134 6.26389 15.9527C6.3795 15.9497 6.49331 15.9235 6.59843 15.8756C6.70354 15.8276 6.79779 15.7591 6.87547 15.6739C6.95316 15.5888 7.01266 15.4889 7.05039 15.3803C7.08813 15.2717 7.1033 15.1566 7.095 15.042C7.00333 13.5544 4.54056 13.6455 4.38167 11.1926C4.25333 9.13434 5.61611 7.05179 8.61667 6.86357C9.77778 6.79071 10.3644 7.08215 10.3644 7.08215L9.68 9.63221C9.68 9.63221 8.91611 9.28613 8.00556 9.34684C6.67333 9.43184 6.66111 10.2636 6.67333 10.4701ZM10.9389 3.30563C10.9407 2.64408 10.8291 1.98706 10.6089 1.36272C11.4278 1.52058 11.8311 2.43739 11.9961 2.98383L10.9389 3.30563Z" fill="currentColor"></path>
+                              </svg>Open Store Free</a>
+                        </div>
+                    </div>
+                    <div className="swiper-wrap swiper slider-home">
+                        <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-1.jpg" src="/images/slider/slider-1.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-2.jpg" src="/images/slider/slider-2.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-3.jpg" src="/images/slider/slider-3.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-4.jpg" src="/images/slider/slider-4.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-1.jpg" src="/images/slider/slider-1.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-2.jpg" src="/images/slider/slider-2.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-3.jpg" src="/images/slider/slider-3.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                            <div className="swiper-slide">
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/slider/slider-4.jpg" src="/images/slider/slider-4.jpg" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-button-next next-slider-home over">
+                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00021 8.98771L18.5862 8.98771L13.2932 14.2807C13.1977 14.373 13.1215 14.4833 13.0691 14.6053C13.0167 14.7273 12.9891 14.8585 12.988 14.9913C12.9868 15.1241 13.0121 15.2558 13.0624 15.3787C13.1127 15.5016 13.1869 15.6132 13.2808 15.7071C13.3747 15.801 13.4864 15.8753 13.6093 15.9255C13.7322 15.9758 13.8638 16.0011 13.9966 16C14.1294 15.9988 14.2606 15.9712 14.3826 15.9188C14.5046 15.8664 14.615 15.7902 14.7072 15.6947L21.7072 8.69471C21.8947 8.50718 22 8.25288 22 7.98771C22 7.72255 21.8947 7.46824 21.7072 7.28071L14.7072 0.280711C14.5186 0.098552 14.266 -0.00224181 14.0038 3.64942e-05C13.7416 0.0023148 13.4908 0.107484 13.3054 0.292893C13.12 0.478301 13.0148 0.729114 13.0125 0.99131C13.0103 1.25351 13.1111 1.50611 13.2932 1.69471L18.5862 6.98771L1.00021 6.98771C0.734998 6.98771 0.480643 7.09307 0.293107 7.2806C0.105571 7.46814 0.000214347 7.72249 0.000214324 7.98771C0.0002143 8.25293 0.10557 8.50728 0.293107 8.69482C0.480643 8.88235 0.734997 8.98771 1.00021 8.98771Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <div className="swiper-button-prev prev-slider-home over">
+                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.9998 7.01229H3.41379L8.70679 1.71929C8.8023 1.62704 8.87848 1.5167 8.93089 1.39469C8.9833 1.27269 9.01088 1.14147 9.01204 1.00869C9.01319 0.87591 8.98789 0.744231 8.93761 0.621334C8.88733 0.498438 8.81307 0.386786 8.71918 0.292893C8.62529 0.199 8.51364 0.124747 8.39074 0.0744663C8.26784 0.0241854 8.13616 -0.00111606 8.00339 3.77571e-05C7.87061 0.00119157 7.73939 0.0287779 7.61738 0.0811869C7.49538 0.133596 7.38503 0.209778 7.29279 0.305288L0.292786 7.30529C0.105315 7.49282 0 7.74712 0 8.01229C0 8.27745 0.105315 8.53176 0.292786 8.71929L7.29279 15.7193C7.48139 15.9014 7.73399 16.0022 7.99619 16C8.25838 15.9977 8.5092 15.8925 8.6946 15.7071C8.88001 15.5217 8.98518 15.2709 8.98746 15.0087C8.98974 14.7465 8.88894 14.4939 8.70679 14.3053L3.41379 9.01229H20.9998C21.265 9.01229 21.5194 8.90693 21.7069 8.71939C21.8944 8.53186 21.9998 8.2775 21.9998 8.01229C21.9998 7.74707 21.8944 7.49272 21.7069 7.30518C21.5194 7.11765 21.265 7.01229 20.9998 7.01229Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /slider */}
+
+            {/* section-marquee */}
+            <section className="section-marquee">
+                <div className="infiniteslide tf-brand style-1" data-clone="10" data-style={{}} data-speed="80">
+                    <div className="brand-item text-uppercase">
+                        <div className="h1 fw-7 text-gradient style-4 animation-none">Figma included</div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="rotate1">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3831_17)">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M23.94 16.5L32.2515 21.2231L28.4072 27.7768L20.0957 23.0537V32.5H12.4072V23.0537L4.09569 27.7769L0.251465 21.2231L8.56296 16.5L0.251465 11.7768L4.09569 5.22312L12.4072 9.94631V0.5H20.0957V9.94631L28.4072 5.22319L32.2515 11.7769L23.94 16.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3831_17">
+                                <rect width="32" height="32" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item text-uppercase">
+                        <div className="h1 fw-7 text-gradient style-4 animation-none">Easy To Use & Intuitive</div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="rotate1">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3831_17)">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M23.94 16.5L32.2515 21.2231L28.4072 27.7768L20.0957 23.0537V32.5H12.4072V23.0537L4.09569 27.7769L0.251465 21.2231L8.56296 16.5L0.251465 11.7768L4.09569 5.22312L12.4072 9.94631V0.5H20.0957V9.94631L28.4072 5.22319L32.2515 11.7769L23.94 16.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3831_17">
+                                <rect width="32" height="32" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item text-uppercase">
+                        <div className="h1 fw-7 text-gradient style-4 animation-none">Crafting Code Excellence</div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="rotate1">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3831_17)">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M23.94 16.5L32.2515 21.2231L28.4072 27.7768L20.0957 23.0537V32.5H12.4072V23.0537L4.09569 27.7769L0.251465 21.2231L8.56296 16.5L0.251465 11.7768L4.09569 5.22312L12.4072 9.94631V0.5H20.0957V9.94631L28.4072 5.22319L32.2515 11.7769L23.94 16.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3831_17">
+                                <rect width="32" height="32" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item text-uppercase">
+                        <div className="h1 fw-7 text-gradient style-4 animation-none">1-Time Charge Only</div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="rotate1">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3831_17)">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M23.94 16.5L32.2515 21.2231L28.4072 27.7768L20.0957 23.0537V32.5H12.4072V23.0537L4.09569 27.7769L0.251465 21.2231L8.56296 16.5L0.251465 11.7768L4.09569 5.22312L12.4072 9.94631V0.5H20.0957V9.94631L28.4072 5.22319L32.2515 11.7769L23.94 16.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3831_17">
+                                <rect width="32" height="32" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-marquee */}
+
+            {/* section-developed */}
+            <section className="section-developed">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8">
+                            <div className="maximum-wrap">
+                                <div className="heading wow fadeInUp" data-wow-delay="0s">MAXIMUM <br /> SEO OPTIMIZATION</div>
+                                <div className="desc wow fadeInUp" data-wow-delay="0.1s">Ensure your website ranks high on search engines with our SEO optization.</div>
+                                <img loading="lazy" className="img-item ani-y" src="/images/item/item-maximum.png" alt="Vineta’s web development project screenshot" />
+                                <div className="box-performance wow fadeInUp" data-wow-delay="0.2s">
+                                    <div className="text">A</div>
+                                    <div className="line"></div>
+                                    <div>
+                                        <div className="title">PERFORMANCE</div>
+                                        <div className="counter">
+                                            <span className="sub">{'>'}</span>
+                                            <span className="number" data-speed="2000" data-to="90" data-inviewport="yes">90</span>
+                                            <span className="sub">%</span>
+                                        </div>
+                                    </div>
+                                    <div className="line"></div>
+                                    <div>
+                                        <div className="title">STRUCTURE</div>
+                                        <div className="counter">
+                                            <span className="sub">{'>'}</span>
+                                            <span className="number" data-speed="2000" data-to="80" data-inviewport="yes">80</span>
+                                            <span className="sub">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="boost-features-wrap">
+                                <div className="brand-wrap">
+                                    <div className="infiniteslide tf-brand style-2" data-clone="2" data-style={{}} data-speed="40">
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Volume Discount</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Testimonials</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Image Popups</div>
+                                        </div>
+
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Volume Discount</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Testimonials</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Image Popups</div>
+                                        </div>
+
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Volume Discount</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Testimonials</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Image Popups</div>
+                                        </div>
+                                    </div>
+                                    <div className="infiniteslide tf-brand style-2" data-clone="2" data-style={{}} data-speed="40">
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Volume Discount</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Buy Together</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Countdown Timer</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Header</div>
+                                        </div>
+
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Volume Discount</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Buy Together</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Countdown Timer</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Header</div>
+                                        </div>
+
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Volume Discount</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Buy Together</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Countdown Timer</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Header</div>
+                                        </div>
+                                    </div>
+                                    <div className="infiniteslide tf-brand style-2" data-clone="2" data-style={{}} data-speed="40">
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Product 3D/AR</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Testimonials</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Buy Together</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Pickup Available</div>
+                                        </div>
+
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Product 3D/AR</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Testimonials</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Buy Together</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Pickup Available</div>
+                                        </div>
+
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Product 3D/AR</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Testimonials</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Buy Together</div>
+                                        </div>
+                                        <div className="brand-item boost-item">
+                                            <div className="text-gradient">Pickup Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p className="text wow fadeInUp" data-wow-delay="0s">Sale Boost <br /> Features Included</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-developed */}
+
+            {/* section-demo */}
+            <section id="demo" className="section-demo">
+                <div className="container-1 flat-animate-tab">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="heading-section center mb-60">
+                                <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="Vineta’s web development project screenshot" />
+                                <svg width="459" height="242" viewBox="0 0 459 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                      <linearGradient id="paint0_linear_273_368" x1="375" y1="625" x2="-132.784" y2="483.917" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"/>
+                                        <stop offset="0.5" stopColor="#77E590"/>
+                                        <stop offset="1" stopColor="#CCFF9B"/>
+                                      </linearGradient>
+                                      <linearGradient id="paint1_linear_273_368" x1="456.5" y1="83.5" x2="363.102" y2="40.6656" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"/>
+                                        <stop offset="0.5" stopColor="#77E590"/>
+                                        <stop offset="1" stopColor="#CCFF9B"/>
+                                      </linearGradient>
+                                      <linearGradient id="paint2_linear_273_368" x1="195" y1="4" x2="195" y2="228.526" gradientUnits="userSpaceOnUse">
+                                        <stop stopOpacity="0"/>
+                                        <stop offset="1"/>
+                                      </linearGradient>
+                                    </defs>
+                                    <rect x="6" y="4" width="378" height="237" fill="url(#paint2_linear_273_368)"/>
+                                    {/* Outlined 6 */}
+                                    <text x="120" y="200" fontSize="220" fontFamily="Arial Black, Arial, sans-serif" fontWeight="bold"
+                                          stroke="url(#paint0_linear_273_368)" strokeWidth="6" fill="none">6</text>
+                                    {/* Outlined + */}
+                                    <text x="320" y="100" fontSize="110" fontFamily="Arial Black, Arial, sans-serif" fontWeight="bold"
+                                          stroke="url(#paint0_linear_273_368)" strokeWidth="4" fill="none">+</text>
+                                    {/* The original rectangle border for style */}
+                                  </svg>
+                                <div className="heading fw-6 mb-8 wow fadeInUp h1" data-wow-delay="0s">
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Stunning</span>
+                                    <span className="item-text is-hidden">Stunning</span>
+                                    <span className="item-text is-hidden">Stunning</span>
+                                    </span>
+                                    </span>
+                                    &nbsp;Templates
+                                </div>
+                                <p className=" wow fadeInUp" data-wow-delay="0.1s">Save time & effort with our stunning designer-made demos.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="tab-content">
+                        <div className="tab-pane active html-filter" id="html" role="tabpanel">
+                            <ul className="posttype-filter">
+                                <li className="active"><a className="btn-all" data-filter="*" href="#">All</a></li>
+                                <li><a className="" data-filter=".new" href="#">New</a></li>
+                                <li><a className="" data-filter=".fashion" href="#">Clothing & Fashion</a></li>
+                                <li><a className="" data-filter=".electronics" href="#">Electronics </a></li>
+                                <li><a className="" data-filter=".other" href="#">Other </a></li>
+                            </ul>
+                            <div className="container-filter row">
+                                <div className="fashion new item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/fashion-1.jpg" src="/images/home/fashion-1.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/" target="_blank" className="title-box">Fashion Style 1</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fashion item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/pages/home-fashion-02" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/fashion-2.jpg" src="/images/home/fashion-2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/pages/home-fashion-02" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/pages/home-fashion-02" target="_blank" className="title-box">Fashion Style 2</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/pages/home-electronic" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/electronic.jpg" src="/images/home/electronic.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/pages/home-electronic" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/pages/home-electronic" target="_blank" className="title-box">Electronic</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fashion new item col-lg-4 col-6 ">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/pages/home-fashion-women" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/women-fashion.jpg" src="/images/home/women-fashion.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/pages/home-fashion-women" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/pages/home-fashion-women" target="_blank" className="title-box">Women Fashion</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other new item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/pages/home-bicycle" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/bicycle.jpg" src="/images/home/bicycle.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/pages/home-bicycle" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/pages/home-bicycle" target="_blank" className="title-box">Bicycle</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/pages/home-phonecase" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/phone-case.jpg" src="/images/home/phone-case.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/pages/home-phonecase" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/pages/home-phonecase" target="_blank" className="title-box">Phone Case</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="coming-soon item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="coming-soon-wrap">
+                                                <div className="text">
+                                                    More demos are
+                                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                                        <span className="cd-words-wrapper">
+                                                            <span className="item-text is-visible">coming</span>
+                                                    <span className="item-text is-hidden">coming</span>
+                                                    <span className="item-text is-hidden">coming</span>
+                                                    </span>
+                                                    </span>
+                                                    soon...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tab-pane next-filter" id="next" role="tabpanel">
+                            <ul className="posttype-filter1">
+                                <li className="active"><a className="btn-all" data-filter="*" href="#">All</a></li>
+                                <li><a className="" data-filter=".new" href="#">New</a></li>
+                                <li><a className="" data-filter=".fashion" href="#">Clothing & Fashion</a></li>
+                                <li><a className="" data-filter=".furniture" href="#">Furniture</a></li>
+                                <li><a className="" data-filter=".electronics" href="#">Electronics </a></li>
+                                <li><a className="" data-filter=".accessories" href="#">Accessories </a></li>
+                                <li><a className="" data-filter=".fooddrink" href="#">Food & Drink </a></li>
+                                <li><a className="" data-filter=".other" href="#">Other </a></li>
+                            </ul>
+                            <div className="container-filter1 row">
+                                <div className="fashion item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/fashion-1.jpg" src="/images/home/fashion-1.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/" target="_blank" className="title-box">Fashion Style 1</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new furniture item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-furniture2" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/furniture2.jpg" src="/images/home/furniture2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-furniture2" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-furniture2" target="_blank" className="title-box">Furniture 2</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-jewelry2" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/jewelry2.jpg" src="/images/home/jewelry2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-jewelry2" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-jewelry2" target="_blank" className="title-box">Jewelry 2</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-handcraft" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/handcraft.jpg" src="/images/home/handcraft.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-handcraft" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-handcraft" target="_blank" className="title-box">Handcraft</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-pickleball" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/pickleball.jpg" src="/images/home/pickleball.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-pickleball" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-pickleball" target="_blank" className="title-box">Pickle Ball</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-skincare2" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/skincare2.jpg" src="/images/home/skincare2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-skincare2" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-skincare2" target="_blank" className="title-box">Skincare 2</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-plant" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/plant.jpg" src="/images/home/plant.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-plant" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-plant" target="_blank" className="title-box">Plant</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fashion item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-fashion-02" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/fashion-2.jpg" src="/images/home/fashion-2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-fashion-02" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-fashion-02" target="_blank" className="title-box">Fashion Style 2</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-electronic" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/electronic.jpg" src="/images/home/electronic.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-electronic" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-electronic" target="_blank" className="title-box">Electronic</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="furniture item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-furniture" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/furniture.jpg" src="/images/home/furniture.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-furniture" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-furniture" target="_blank" className="title-box">Furniture</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fashion item col-lg-4 col-6 ">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-fashion-women" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/women-fashion.jpg" src="/images/home/women-fashion.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-fashion-women" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-fashion-women" target="_blank" className="title-box">Women Fashion</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-skincare" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/cosmetic.jpg" src="/images/home/cosmetic.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-skincare" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-skincare" target="_blank" className="title-box">Skincare</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-bicycle" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/bicycle.jpg" src="/images/home/bicycle.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-bicycle" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-bicycle" target="_blank" className="title-box">Bicycle</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-phonecase" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/phone-case.jpg" src="/images/home/phone-case.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-phonecase" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-phonecase" target="_blank" className="title-box">Phone Case</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="accessories item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-pet-accessories" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/pet-accessories.jpg" src="/images/home/pet-accessories.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-pet-accessories" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-pet-accessories" target="_blank" className="title-box">Pet Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-sportwear" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/sportwear.jpg" src="/images/home/sportwear.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-sportwear" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-sportwear" target="_blank" className="title-box">Sportwear</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-jewelry" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/jewelry.jpg" src="/images/home/jewelry.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-jewelry" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-jewelry" target="_blank" className="title-box">Jewelry</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-electric-accessories" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/eletric-accessories.jpg" src="/images/home/eletric-accessories.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-electric-accessories" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-electric-accessories" target="_blank" className="title-box">Electric Accessories</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-mega-electronic" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/mega-shop.jpg" src="/images/home/mega-shop.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-mega-electronic" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-mega-electronic" target="_blank" className="title-box">Mega Shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fooddrink item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-vegetable" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/supermarket.jpg" src="/images/home/supermarket.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-vegetable" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-vegetable" target="_blank" className="title-box">Supermarket</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-pod" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/print-on-demand.jpg" src="/images/home/print-on-demand.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-pod" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-pod" target="_blank" className="title-box">Print On Demand</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetanextjs.vercel.app/home-baby" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/baby.jpg" src="/images/home/baby.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetanextjs.vercel.app/home-baby" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetanextjs.vercel.app/home-baby" target="_blank" className="title-box">Baby</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="coming-soon item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="coming-soon-wrap">
+                                                <div className="text">
+                                                    More demos are
+                                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                                        <span className="cd-words-wrapper">
+                                                            <span className="item-text is-visible">coming</span>
+                                                    <span className="item-text is-hidden">coming</span>
+                                                    <span className="item-text is-hidden">coming</span>
+                                                    </span>
+                                                    </span>
+                                                    soon...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tab-pane react-filter" id="react" role="tabpanel">
+                            <ul className="posttype-filter2">
+                                <li className="active"><a className="btn-all" data-filter="*" href="#">All</a></li>
+                                <li><a className="" data-filter=".new" href="#">New</a></li>
+                                <li><a className="" data-filter=".fashion" href="#">Clothing & Fashion</a></li>
+                                <li><a className="" data-filter=".furniture" href="#">Furniture</a></li>
+                                <li><a className="" data-filter=".electronics" href="#">Electronics </a></li>
+                                <li><a className="" data-filter=".accessories" href="#">Accessories </a></li>
+                                <li><a className="" data-filter=".fooddrink" href="#">Food & Drink </a></li>
+                                <li><a className="" data-filter=".other" href="#">Other </a></li>
+                            </ul>
+                            <div className="container-filter2 row">
+                                <div className="fashion item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vineta-demo.myshopify.com/" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/fashion-1.jpg" src="/images/home/fashion-1.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vineta-demo.myshopify.com/" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vineta-demo.myshopify.com/" target="_blank" className="title-box">Fashion Style 1</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new furniture item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-furniture2" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/furniture2.jpg" src="/images/home/furniture2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-furniture2" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-furniture2" target="_blank" className="title-box">Furniture 2</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-jewelry2" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/jewelry2.jpg" src="/images/home/jewelry2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-jewelry2" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-jewelry2" target="_blank" className="title-box">Jewelry 2</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-handcraft" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/handcraft.jpg" src="/images/home/handcraft.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-handcraft" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-handcraft" target="_blank" className="title-box">Handcraft</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-pickleball" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/pickleball.jpg" src="/images/home/pickleball.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-pickleball" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-pickleball" target="_blank" className="title-box">Pickle Ball</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="new other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-skincare2" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/skincare2.jpg" src="/images/home/skincare2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-skincare2" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-skincare2" target="_blank" className="title-box">Skincare 2</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-plant" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/plant.jpg" src="/images/home/plant.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-plant" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-plant" target="_blank" className="title-box">Plant</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fashion item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-fashion-02" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/fashion-2.jpg" src="/images/home/fashion-2.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-fashion-02" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-fashion-02" target="_blank" className="title-box">Fashion Style 2</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-electronic" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/electronic.jpg" src="/images/home/electronic.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-electronic" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-electronic" target="_blank" className="title-box">Electronic</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="furniture item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-furniture" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/furniture.jpg" src="/images/home/furniture.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-furniture" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-furniture" target="_blank" className="title-box">Furniture</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fashion item col-lg-4 col-6 ">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-fashion-women" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/women-fashion.jpg" src="/images/home/women-fashion.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-fashion-women" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-fashion-women" target="_blank" className="title-box">Women Fashion</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-skincare" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/cosmetic.jpg" src="/images/home/cosmetic.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-skincare" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-skincare" target="_blank" className="title-box">Skincare</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-bicycle" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/bicycle.jpg" src="/images/home/bicycle.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-bicycle" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-bicycle" target="_blank" className="title-box">Bicycle</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-phonecase" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/phone-case.jpg" src="/images/home/phone-case.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-phonecase" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-phonecase" target="_blank" className="title-box">Phone Case</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="accessories item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-pet-accessories" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/pet-accessories.jpg" src="/images/home/pet-accessories.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-pet-accessories" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-pet-accessories" target="_blank" className="title-box">Pet Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-sportwear" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/sportwear.jpg" src="/images/home/sportwear.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-sportwear" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-sportwear" target="_blank" className="title-box">Sportwear</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-jewelry" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/jewelry.jpg" src="/images/home/jewelry.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-jewelry" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-jewelry" target="_blank" className="title-box">Jewelry</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="electronics item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-electric-accessories" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/eletric-accessories.jpg" src="/images/home/eletric-accessories.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-electric-accessories" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-electric-accessories" target="_blank" className="title-box">Electric Accessories</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-hot">HOT</div>
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-mega-electronic" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/mega-shop.jpg" src="/images/home/mega-shop.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-mega-electronic" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-mega-electronic" target="_blank" className="title-box">Mega Shop</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="fooddrink item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-vegetable" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/supermarket.jpg" src="/images/home/supermarket.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-vegetable" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-vegetable" target="_blank" className="title-box">Supermarket</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-pod" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/print-on-demand.jpg" src="/images/home/print-on-demand.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-pod" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-pod" target="_blank" className="title-box">Print On Demand</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="other item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="thumb">
+                                                <a className="image" href="https://vinetareact.vercel.app/home-baby" target="_blank">
+                                                    <img loading="lazy"  className="lazyload" data-src="/images/home/baby.jpg" src="/images/home/baby.jpg" alt="Vineta’s web development project screenshot" />
+                                                </a>
+                                                <a className="tf-btn-3 light_skew_hover demo-full-link" href="https://vinetareact.vercel.app/home-baby" target="_blank">Demo</a>
+                                            </div>
+                                            <div className="content">
+                                                <a href="https://vinetareact.vercel.app/home-baby" target="_blank" className="title-box">Baby</a>
+                                                <div className="tags">
+                                                    <div className="tag-item tag-new">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="coming-soon item col-lg-4 col-6">
+                                    <div className="home-box wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="innerbox">
+                                            <div className="dot">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div className="coming-soon-wrap">
+                                                <div className="text">
+                                                    More demos are
+                                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                                        <span className="cd-words-wrapper">
+                                                            <span className="item-text is-visible">coming</span>
+                                                    <span className="item-text is-hidden">coming</span>
+                                                    <span className="item-text is-hidden">coming</span>
+                                                    </span>
+                                                    </span>
+                                                    soon...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-demo */}
+
+            {/* section-mobile */}
+            <section className="section-mobile">
+                <img loading="lazy" className="item-1 item-circle-1" src="/images/item/item-circle.png" alt="Vineta’s web development project screenshot" />
+                <div className="container-2">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="heading-section center">
+                                <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="Vineta’s web development project screenshot" />
+                                <div className="sub-heading wow fadeInUp" data-wow-delay="0s">Mobile-First</div>
+                                <div className="heading wow fadeInUp" data-wow-delay="0.1s">
+                                    <div>
+                                        <img loading="lazy" src="/images/item/arrow.png" alt="Vineta’s web development project screenshot" />
+                                    </div>
+                                    Experience
+                                </div>
+                                <div className="heading1 fw-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Template</span>
+                                    <span className="item-text is-hidden">Template</span>
+                                    <span className="item-text is-hidden">Template</span>
+                                    </span>
+                                    </span>
+                                </div>
+                                <p className=" wow fadeInUp" data-wow-delay="0.3s">Seamlessly switch to mobile or tablet mode to fine-tune spacing, text sizes, <br /> and alignments. Easily hide rows, columns, or widgets on selected devices.</p>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="mobile-view-wrap">
+                                <div className="box-bg"></div>
+                                <div className="mobile-view-item">
+                                    <div className="wrap-video">
+                                        <video preload="none" playsInline autoPlay loop muted controls>
+                                            <source src=".//images/video/mobile-menu.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div className="mobile-view-item">
+                                    <div className="wrap-video">
+                                        <video preload="none" playsInline autoPlay loop muted controls>
+                                            <source src=".//images/video/mobile-search.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div className="mobile-view-item">
+                                    <div className="wrap-video">
+                                        <video preload="none" playsInline autoPlay loop muted controls>
+                                            <source src=".//images/video/shopping-cart.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div className="mobile-view-item">
+                                    <div className="wrap-video">
+                                        <video preload="none" playsInline autoPlay loop muted controls>
+                                            <source src=".//images/video/product-single.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-mobile */}
+
+            {/* section-packed */}
+            <section className="section-packed">
+                <div className="container-2">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="wrap-grid-box grid-4 packed-wrap">
+                                <div className="box-icon-item wow fadeInUp" data-wow-delay="0s">
+                                    <div className="icon">
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M11.6967 14.574C17.0225 9.27905 24.3545 6 32.4399 6C48.6733 6 61.8799 19.2066 61.8799 35.4399C61.8799 42.5413 59.3151 49.4001 54.658 54.7518C54.0958 55.4009 53.1103 55.4787 52.4528 54.9222L46.29 49.7246C45.608 49.1498 45.5428 48.1328 46.1239 47.476C49.0525 44.1514 50.6647 39.8756 50.6647 35.4399C50.6647 33.6693 50.4102 31.9177 49.9111 30.234C49.3223 28.2524 52.3329 27.3208 52.9343 29.3347C53.5217 31.312 53.8196 33.3658 53.8196 35.4399C53.8196 40.1055 52.3 44.6175 49.5095 48.3136L53.2652 51.4805C56.7973 46.8991 58.7256 41.2599 58.7256 35.4399C58.7256 21.4784 47.776 10.0564 34.0164 9.23349V14.1282C38.3658 14.4521 42.5505 16.0972 45.9396 18.861C47.5574 20.1788 45.5575 22.6188 43.9475 21.3046C40.7112 18.6676 36.6225 17.2138 32.4392 17.2138C22.389 17.2138 14.2138 25.389 14.2138 35.4392C14.2138 39.877 15.8274 44.1549 18.7602 47.4816C19.3448 48.1426 19.2712 49.1597 18.5962 49.7281L12.4439 54.9404C11.7885 55.4963 10.8044 55.4262 10.2366 54.7722C5.56898 49.4162 3 42.5518 3 35.4399C3 27.3545 6.27905 20.0225 11.5733 14.6974C11.5829 14.6865 11.5895 14.6743 11.5961 14.6621C11.6035 14.6483 11.6109 14.6346 11.6224 14.6231C11.6339 14.6116 11.6476 14.6042 11.6614 14.5968C11.6736 14.5902 11.6858 14.5836 11.6967 14.574ZM15.0304 15.7993L18.498 19.2662C21.871 16.3544 26.1545 14.4864 30.8628 14.1394V9.23349C24.8045 9.59588 19.3027 12.0079 15.0304 15.7993ZM11.6287 51.4987L15.3788 48.322C12.9002 45.0416 11.4275 41.1183 11.1247 37.0171H6.21947C6.5356 42.2798 8.40924 47.3288 11.6287 51.4987ZM6.23419 33.8628H11.1401C11.4864 29.1538 13.3551 24.8696 16.2676 21.4959L12.8 18.0297C9.00855 22.302 6.59658 27.8038 6.23419 33.8628ZM51.175 24.0405C49.7787 25.8721 37.4939 41.9806 36.0093 43.4674C33.9386 45.5373 30.5755 45.5288 28.514 43.4674C26.4483 41.4016 26.4483 38.0399 28.514 35.9742C30.0028 34.4854 45.8786 23.8828 49.0455 21.7736C50.5028 20.7909 52.2545 22.6232 51.175 24.0405ZM42.8351 29.7413C37.0439 33.6596 31.4334 37.524 30.7437 38.2039C28.7362 40.2114 31.772 43.2444 33.7788 41.2369C34.4672 40.5472 38.5719 35.2816 42.8351 29.7413ZM27.0126 52H37.8675C39.9549 52 39.9549 48.8458 37.8675 48.8458H27.0126C24.9251 48.8458 24.9251 52 27.0126 52ZM19.1657 54.8214H45.7142C47.8009 54.8214 47.8009 57.9757 45.7142 57.9757H19.1657C17.0783 57.9757 17.0783 54.8214 19.1657 54.8214Z" fill="url(#paint0_linear_3791_1636)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_3791_1636" x1="61.8799" y1="57.9757" x2="-5.74894" y2="22.8397" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div className="content text-center">
+                                        <h5 className="mb-16">Super High Performance</h5>
+                                        <p>Experience lightning-fast speed and <br /> seamless functionality every time.</p>
+                                    </div>
+                                </div>
+                                <div className="box-icon-item wow fadeInUp" data-wow-delay="0.1s">
+                                    <div className="icon">
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M37.1947 8.72217H31.528C30.7451 8.72217 30.1113 9.3559 30.1113 10.1388C30.1113 10.9218 30.7451 11.5555 31.528 11.5555H37.1947C37.9776 11.5555 38.6113 10.9218 38.6113 10.1388C38.6113 9.3559 37.9776 8.72217 37.1947 8.72217Z" fill="url(#paint0_linear_3791_1642)"/>
+                                            <path d="M43.3333 4H20.6667C17.5425 4 15 6.54247 15 9.66667V55C15 58.1242 17.5425 60.6667 20.6667 60.6667H43.3333C46.4575 60.6667 49 58.1242 49 55V9.66667C49 6.54247 46.4575 4 43.3333 4ZM46.1667 55C46.1667 56.565 44.8983 57.8333 43.3333 57.8333H20.6667C19.1017 57.8333 17.8333 56.565 17.8333 55V9.66667C17.8333 8.10169 19.1017 6.83333 20.6667 6.83333H43.3333C44.8983 6.83333 46.1667 8.10169 46.1667 9.66667V55Z" fill="url(#paint1_linear_3791_1642)"/>
+                                            <path d="M31.9998 55.9445C33.5646 55.9445 34.8332 54.676 34.8332 53.1112C34.8332 51.5464 33.5646 50.2778 31.9998 50.2778C30.435 50.2778 29.1665 51.5464 29.1665 53.1112C29.1665 54.676 30.435 55.9445 31.9998 55.9445Z" fill="url(#paint2_linear_3791_1642)"/>
+                                            <path d="M26.8053 11.5555C27.5877 11.5555 28.222 10.9212 28.222 10.1388C28.222 9.35643 27.5877 8.72217 26.8053 8.72217C26.0229 8.72217 25.3887 9.35643 25.3887 10.1388C25.3887 10.9212 26.0229 11.5555 26.8053 11.5555Z" fill="url(#paint3_linear_3791_1642)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_3791_1642" x1="38.6113" y1="11.5555" x2="34.3257" y2="5.65908" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_3791_1642" x1="49" y1="60.6667" x2="2.89776" y2="47.9806" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_3791_1642" x1="34.8332" y1="55.9445" x2="28.004" y2="52.8125" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint3_linear_3791_1642" x1="28.222" y1="11.5555" x2="24.8074" y2="9.98951" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div className="content text-center">
+                                        <h5 className="mb-16">Friendly Mobile Users</h5>
+                                        <p>Designed for a flawless experience on <br /> any mobile device.</p>
+                                    </div>
+                                </div>
+                                <div className="box-icon-item wow fadeInUp" data-wow-delay="0.2s">
+                                    <div className="icon">
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M8.92188 4H55.0781C57.792 4 60 6.20795 60 8.92188V54.8594C60 57.5733 57.792 59.7812 55.0781 59.7812H8.92188C6.20795 59.7812 4 57.5733 4 54.8594V8.92188C4 6.20795 6.20795 4 8.92188 4ZM55.0781 7.28125H8.92188C8.01723 7.28125 7.28125 8.01723 7.28125 8.92188V17.125H56.7188V8.92188C56.7188 8.01723 55.9828 7.28125 55.0781 7.28125ZM8.92188 56.5H55.0781C55.9828 56.5 56.7188 55.764 56.7188 54.8594V20.4062H7.28125V54.8594C7.28125 55.764 8.01723 56.5 8.92188 56.5ZM35.4139 26.3224C35.7708 25.4896 36.7354 25.1039 37.5682 25.4608C38.401 25.8176 38.7868 26.7821 38.4298 27.615L28.5861 50.5838C28.2293 51.4163 27.2649 51.8024 26.4318 51.4454C25.5991 51.0885 25.2132 50.1239 25.5702 49.2912L35.4139 26.3224ZM23.4374 30.8658C22.8712 30.1582 21.8386 30.0436 21.1314 30.6096L12.9283 37.1721C12.1081 37.828 12.1075 39.0778 12.9283 39.7343L21.1314 46.2968C21.839 46.8629 22.8716 46.7481 23.4374 46.0407C24.0034 45.3331 23.8888 44.3006 23.1811 43.7347L16.5794 38.4532L23.1811 33.1718C23.8888 32.6058 24.0034 31.5734 23.4374 30.8658ZM42.8687 30.6096L51.0718 37.1721C51.8925 37.8286 51.892 39.0783 51.0718 39.7342L42.8687 46.2967C42.1621 46.8622 41.1295 46.7489 40.5627 46.0406C39.9967 45.333 40.1113 44.3007 40.819 43.7346L47.4206 38.4533L40.819 33.1718C40.1113 32.6058 39.9967 31.5733 40.5627 30.8658C41.1286 30.1582 42.1611 30.0435 42.8687 30.6096ZM12.3125 13.8438C13.2186 13.8438 13.9531 13.1092 13.9531 12.2031C13.9531 11.297 13.2186 10.5625 12.3125 10.5625C11.4064 10.5625 10.6719 11.297 10.6719 12.2031C10.6719 13.1092 11.4064 13.8438 12.3125 13.8438ZM20.5156 12.2031C20.5156 13.1092 19.7811 13.8438 18.875 13.8438C17.9689 13.8438 17.2344 13.1092 17.2344 12.2031C17.2344 11.297 17.9689 10.5625 18.875 10.5625C19.7811 10.5625 20.5156 11.297 20.5156 12.2031Z" fill="url(#paint0_linear_3791_1657)"/>
+                                            <path d="M24.5 11.375C25.5355 11.375 26.375 10.5355 26.375 9.5C26.375 8.46447 25.5355 7.625 24.5 7.625C23.4645 7.625 22.625 8.46447 22.625 9.5C22.625 10.5355 23.4645 11.375 24.5 11.375Z" fill="url(#paint1_linear_3791_1657)"/>
+                                            <path d="M43.25 11.375H54.5C55.5355 11.375 56.375 10.5355 56.375 9.5C56.375 8.4645 55.5355 7.625 54.5 7.625H43.25C42.2145 7.625 41.375 8.4645 41.375 9.5C41.375 10.5355 42.2145 11.375 43.25 11.375Z" fill="url(#paint2_linear_3791_1657)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_3791_1657" x1="60" y1="59.7812" x2="-7.3958" y2="28.7509" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_3791_1657" x1="26.375" y1="11.375" x2="21.8557" y2="9.30237" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_3791_1657" x1="56.375" y1="11.375" x2="51.3629" y2="2.18045" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div className="content text-center">
+                                        <h5 className="mb-16">Optimal Code</h5>
+                                        <p>Clean, efficient code for superior <br /> performance and easy customization.</p>
+                                    </div>
+                                </div>
+                                <div className="box-icon-item wow fadeInUp" data-wow-delay="0.3s">
+                                    <div className="icon">
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clipPath="url(#clip0_3791_1669)">
+                                            <path d="M34.9091 45.0906C35.7124 45.0906 36.3636 44.4394 36.3636 43.6361C36.3636 42.8328 35.7124 42.1816 34.9091 42.1816C34.1058 42.1816 33.4546 42.8328 33.4546 43.6361C33.4546 44.4394 34.1058 45.0906 34.9091 45.0906Z" fill="url(#paint0_linear_3791_1669)"/>
+                                            <path d="M10.182 53.8182C10.9853 53.8182 11.6365 53.167 11.6365 52.3637C11.6365 51.5604 10.9853 50.9092 10.182 50.9092C9.37874 50.9092 8.72754 51.5604 8.72754 52.3637C8.72754 53.167 9.37874 53.8182 10.182 53.8182Z" fill="url(#paint1_linear_3791_1669)"/>
+                                            <path d="M59.6365 5.81836H10.182C7.70923 5.81836 5.81836 7.70923 5.81836 10.182V24.7275C5.81836 25.6002 6.40023 26.182 7.27286 26.182C8.14548 26.182 8.72736 25.6001 8.72736 24.7275V10.1821C8.72736 9.30936 9.30923 8.72761 10.1819 8.72761H59.6364C60.5091 8.72761 61.0909 9.30948 61.0909 10.1821V45.0912C61.0909 45.964 60.509 46.5457 59.6364 46.5457H24.7274C23.8546 46.5457 23.2729 47.1276 23.2729 48.0002C23.2729 48.8729 23.8547 49.4547 24.7274 49.4547H27.6365V53.8184C27.6365 54.6911 27.0546 55.2729 26.182 55.2729H24.7275C23.8547 55.2729 23.273 55.8547 23.273 56.7274C23.273 57.6 23.8549 58.1819 24.7275 58.1819H45.0911C45.9639 58.1819 46.5456 57.6 46.5456 56.7274C46.5456 55.8547 45.9637 55.2729 45.0911 55.2729H43.6366C42.7639 55.2729 42.1821 54.691 42.1821 53.8184V49.4547H59.6366C62.1094 49.4547 64.0002 47.5639 64.0002 45.0911V10.1821C64.0001 7.70936 62.1092 5.81836 59.6365 5.81836ZM30.2546 55.273C30.4001 54.8366 30.5455 54.4002 30.5455 53.8185V49.4549H39.2727V53.8185C39.2727 54.4004 39.4182 54.8366 39.5636 55.273H30.2546Z" fill="url(#paint2_linear_3791_1669)"/>
+                                            <path d="M56.7274 37.8184H24.7274C23.8547 37.8184 23.2729 38.4002 23.2729 39.2729C23.2729 40.1455 23.8548 40.7274 24.7274 40.7274H56.7274C57.6002 40.7274 58.1819 40.1455 58.1819 39.2729C58.1819 38.4002 57.6002 37.8184 56.7274 37.8184Z" fill="url(#paint3_linear_3791_1669)"/>
+                                            <path d="M16 29.0908H4.36363C1.89088 29.0908 0 30.9818 0 33.4544V53.8181C0 56.2908 1.89088 58.1817 4.36363 58.1817H16C18.4727 58.1817 20.3636 56.2908 20.3636 53.8181V33.4544C20.3636 30.9818 18.4727 29.0908 16 29.0908ZM17.4545 53.8181C17.4545 54.6908 16.8726 55.2726 16 55.2726H4.36363C3.49088 55.2726 2.90913 54.6907 2.90913 53.8181V33.4544C2.90913 32.5817 3.491 31.9999 4.36363 31.9999H16C16.8727 31.9999 17.4545 32.5818 17.4545 33.4544V53.8181Z" fill="url(#paint4_linear_3791_1669)"/>
+                                            </g>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_3791_1669" x1="36.3636" y1="45.0906" x2="32.8578" y2="43.4828" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_3791_1669" x1="11.6365" y1="53.8182" x2="8.13079" y2="52.2104" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_3791_1669" x1="64.0002" y1="58.1819" x2="-3.3707" y2="23.851" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint3_linear_3791_1669" x1="58.1819" y1="40.7274" x2="56.5546" y2="31.7711" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint4_linear_3791_1669" x1="20.3636" y1="58.1817" x2="-6.56393" y2="49.537" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"/>
+                                            <stop offset="0.5" stopColor="#77E590"/>
+                                            <stop offset="1" stopColor="#CCFF9B"/>
+                                            </linearGradient>
+                                            <clipPath id="clip0_3791_1669">
+                                            <rect width="64" height="64" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div className="content text-center">
+                                        <h5 className="mb-16">Fully Responsive</h5>
+                                        <p>Perfectly adaptable to all screen sizes <br /> for a smooth user experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-packed */}
+
+            {/* section-features */}
+            <section id="features" className="section-features">
+                <img loading="lazy" className="img-item item-circle-2" src="/images/item/item-circle-blur.png" alt="Vineta’s web development project screenshot" />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="heading-section style-2 align-items-end">
+                                <img loading="lazy" className="img-bg item-circle-2" src="/images/item/item-circle-blur.png" alt="Vineta’s web development project screenshot" />
+                                <div>
+                                    <div className="sub-title box-tag wow fadeInUp" data-wow-delay="0s">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5001 11.1518L14.5786 11.6126C14.3018 11.7502 14.0778 11.9742 13.9402 12.251L13.4794 13.1726C13.4138 13.3054 13.225 13.3054 13.1594 13.1726L12.6986 12.251C12.561 11.9742 12.337 11.7502 12.0602 11.6126L11.1387 11.1518C11.0059 11.0862 11.0059 10.8974 11.1387 10.8318L12.0602 10.371C12.337 10.2335 12.561 10.0095 12.6986 9.73266L13.1594 8.81109C13.225 8.67829 13.4138 8.67829 13.4794 8.81109L13.9402 9.73266C14.0778 10.0095 14.3018 10.2335 14.5786 10.371L15.5001 10.8318C15.6329 10.8974 15.6329 11.0862 15.5001 11.1518Z" fill="url(#paint0_linear_3740_16590)"></path>
+                                            <path d="M10.8092 8.37279L8.65888 9.44796C8.01409 9.77116 7.49091 10.2943 7.16772 10.9391L6.09255 13.0895C5.93895 13.3967 5.50057 13.3967 5.34697 13.0895L4.2718 10.9391C3.94861 10.2943 3.42542 9.77116 2.78064 9.44796L0.630294 8.37279C0.323105 8.2192 0.323105 7.78081 0.630294 7.62721L2.78064 6.55204C3.42542 6.22885 3.94861 5.70566 4.2718 5.06088L5.34697 2.91054C5.50057 2.60334 5.93895 2.60334 6.09255 2.91054L7.16772 5.06088C7.49091 5.70566 8.01409 6.22885 8.65888 6.55204L10.8092 7.62721C11.1164 7.78081 11.1164 8.2192 10.8092 8.37279Z" fill="url(#paint1_linear_3740_16590)"></path>
+                                            <path d="M11.1151 3.83366L11.5706 3.60595C11.7074 3.53795 11.8181 3.42725 11.8861 3.29046L12.1138 2.83503C12.1462 2.7694 12.2395 2.7694 12.2719 2.83503L12.4996 3.29046C12.5676 3.42725 12.6783 3.53795 12.8151 3.60595L13.2706 3.83366C13.3362 3.86608 13.3362 3.95938 13.2706 3.9918L12.8151 4.21952C12.6783 4.28752 12.5676 4.39821 12.4996 4.535L12.2719 4.99044C12.2395 5.05527 12.1462 5.05527 12.1138 4.99044L11.8861 4.535C11.8181 4.39821 11.7074 4.28752 11.5706 4.21952L11.1151 3.9918C11.0495 3.95938 11.0495 3.86608 11.1151 3.83366Z" fill="url(#paint2_linear_3740_16590)"></path>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_3740_16590" x1="15.5997" y1="13.2722" x2="10.1035" y2="10.7515" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"></stop>
+                                            <stop offset="0.5" stopColor="#77E590"></stop>
+                                            <stop offset="1" stopColor="#CCFF9B"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_3740_16590" x1="11.0396" y1="13.3199" x2="-1.78273" y2="7.43927" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"></stop>
+                                            <stop offset="0.5" stopColor="#77E590"></stop>
+                                            <stop offset="1" stopColor="#CCFF9B"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_3740_16590" x1="13.3198" y1="5.03906" x2="10.6038" y2="3.79314" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#3BDEB9"></stop>
+                                            <stop offset="0.5" stopColor="#77E590"></stop>
+                                            <stop offset="1" stopColor="#CCFF9B"></stop>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <span className="text-gradient style-2">
+                                            Why Choose Vineta
+                                        </span>
+                                        <span className="eff"></span>
+                                    </div>
+                                    <div className="heading fw-6 mb-0  wow fadeInUp h1" data-wow-delay="0.1s">
+                                        <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                            <span className="cd-words-wrapper">
+                                                <span className="item-text is-visible">Outstanding</span>
+                                        <span className="item-text is-hidden">Outstanding</span>
+                                        <span className="item-text is-hidden">Outstanding</span>
+                                        </span>
+                                        </span>
+                                        Features
+                                    </div>
+                                </div>
+                                <p className=" wow fadeInUp" data-wow-delay="0s">Vineta packs a punch with features you won't find elsewhere. Get <br /> everything you need to thrive online with just one purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="feature-box wow fadeInUp" data-wow-delay="0s">
+                                <div className="content mb-18">
+                                    <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
+                                    <div className="title">Product Swatches</div>
+                                    <p>Show product variations such as color, size, <br /> etc., using swatches—no need for extra</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-1.png" src="/images/feature/feature-1.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="feature-box pt-37 wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="content mb-61">
+                                    <div className="title">Multiple Product Layouts</div>
+                                    <p> Choose from multiple product layouts to <br /> showcase your products and enhance the <br /> shopping experience.</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-2.png" src="/images/feature/feature-2.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="feature-box wow fadeInUp" data-wow-delay="0.2s">
+                                <div className="content mb-3">
+                                    <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
+                                    <div className="title">Dynamic Mega Menu</div>
+                                    <p>Navigate with ease using our flexible and <br /> interactive mega menu.</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-3.png" src="/images/feature/feature-3.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="feature-box style-row type-1 align-items-center wow fadeInUp" data-wow-delay="0s">
+                                <div className="content mb-26">
+                                    <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
+                                    <div className="title">Sticky Product Cart</div>
+                                    <p>Make shopping seamless with our Sticky Add to <br /> Cart! Always within reach as you browse, <br /> ensuring effortless checkout anytime.</p>
+                                </div>
+                                <div className="image">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-4.png" src="/images/feature/feature-4.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="feature-box wow fadeInUp" data-wow-delay="0s">
+                                <div className="content mb-54">
+                                    <div className="title">Countdown Timer</div>
+                                    <p>Boost urgency and drive action with a sleek <br /> countdown timer.</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-5.png" src="/images/feature/feature-5.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="feature-box wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="content mb-31">
+                                    <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
+                                    <div className="title">Frequently Bought Together</div>
+                                    <p>Boost sales with our 'Frequently Bought <br /> Together' feature—encouraging customers <br /> to bundle complementary products.</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-6.png" src="/images/feature/feature-6.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="feature-box wow fadeInUp" data-wow-delay="0s">
+                                <div className="content mb-15">
+                                    <div className="title">Advance Product Filter</div>
+                                    <p>Find exactly what you need with our <br /> advanced product filter.</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-8.png" src="/images/feature/feature-8.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-8">
+                            <div className="feature-box style-row align-items-center pt-0 wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="image mw-382">
+                                    <img loading="lazy" className="lazyload " data-src="/images/feature/feature-9.png" src="/images/feature/feature-9.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                                <div className="content mb-26">
+                                    <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
+                                    <div className="title">Product Video Section</div>
+                                    <p>Boost your store's appeal with stylish <br /> shoppable videos that enhance engagement <br /> and drive sales.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="feature-box wow fadeInUp" data-wow-delay="0s">
+                                <div className="content mb-31">
+                                    <div className="title">Quick View Section</div>
+                                    <p>Boost your store's appeal with stylish <br /> shoppable videos that enhance <br /> engagement and drive sales.</p>
+                                </div>
+                                <div className="image center">
+                                    <img loading="lazy" className="lazyload" data-src="/images/feature/feature-10.png" src="/images/feature/feature-10.png" alt="Vineta’s web development project screenshot" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-features */}
+
+            {/* section-innerpage */}
+            <section className="section-innerpage">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="heading-section center">
+                                <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="Vineta’s web development project screenshot" />
+                                <div className="sub-title box-tag wow fadeInUp" data-wow-delay="0s">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.5001 11.1518L14.5786 11.6126C14.3018 11.7502 14.0778 11.9742 13.9402 12.251L13.4794 13.1726C13.4138 13.3054 13.225 13.3054 13.1594 13.1726L12.6986 12.251C12.561 11.9742 12.337 11.7502 12.0602 11.6126L11.1387 11.1518C11.0059 11.0862 11.0059 10.8974 11.1387 10.8318L12.0602 10.371C12.337 10.2335 12.561 10.0095 12.6986 9.73266L13.1594 8.81109C13.225 8.67829 13.4138 8.67829 13.4794 8.81109L13.9402 9.73266C14.0778 10.0095 14.3018 10.2335 14.5786 10.371L15.5001 10.8318C15.6329 10.8974 15.6329 11.0862 15.5001 11.1518Z" fill="url(#paint0_linear_3740_16590)"></path>
+                                        <path d="M10.8092 8.37279L8.65888 9.44796C8.01409 9.77116 7.49091 10.2943 7.16772 10.9391L6.09255 13.0895C5.93895 13.3967 5.50057 13.3967 5.34697 13.0895L4.2718 10.9391C3.94861 10.2943 3.42542 9.77116 2.78064 9.44796L0.630294 8.37279C0.323105 8.2192 0.323105 7.78081 0.630294 7.62721L2.78064 6.55204C3.42542 6.22885 3.94861 5.70566 4.2718 5.06088L5.34697 2.91054C5.50057 2.60334 5.93895 2.60334 6.09255 2.91054L7.16772 5.06088C7.49091 5.70566 8.01409 6.22885 8.65888 6.55204L10.8092 7.62721C11.1164 7.78081 11.1164 8.2192 10.8092 8.37279Z" fill="url(#paint1_linear_3740_16590)"></path>
+                                        <path d="M11.1151 3.83366L11.5706 3.60595C11.7074 3.53795 11.8181 3.42725 11.8861 3.29046L12.1138 2.83503C12.1462 2.7694 12.2395 2.7694 12.2719 2.83503L12.4996 3.29046C12.5676 3.42725 12.6783 3.53795 12.8151 3.60595L13.2706 3.83366C13.3362 3.86608 13.3362 3.95938 13.2706 3.9918L12.8151 4.21952C12.6783 4.28752 12.5676 4.39821 12.4996 4.535L12.2719 4.99044C12.2395 5.05527 12.1462 5.05527 12.1138 4.99044L11.8861 4.535C11.8181 4.39821 11.7074 4.28752 11.5706 4.21952L11.1151 3.9918C11.0495 3.95938 11.0495 3.86608 11.1151 3.83366Z" fill="url(#paint2_linear_3740_16590)"></path>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_3740_16590" x1="15.5997" y1="13.2722" x2="10.1035" y2="10.7515" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"></stop>
+                                        <stop offset="0.5" stopColor="#77E590"></stop>
+                                        <stop offset="1" stopColor="#CCFF9B"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_3740_16590" x1="11.0396" y1="13.3199" x2="-1.78273" y2="7.43927" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"></stop>
+                                        <stop offset="0.5" stopColor="#77E590"></stop>
+                                        <stop offset="1" stopColor="#CCFF9B"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_3740_16590" x1="13.3198" y1="5.03906" x2="10.6038" y2="3.79314" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"></stop>
+                                        <stop offset="0.5" stopColor="#77E590"></stop>
+                                        <stop offset="1" stopColor="#CCFF9B"></stop>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span className="text-gradient style-2">
+                                        Inner Pages
+                                    </span>
+                                    <span className="eff"></span>
+                                </div>
+                                <div className="heading fw-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Flawless</span>
+                                    <span className="item-text is-hidden">Flawless</span>
+                                    <span className="item-text is-hidden">Flawless</span>
+                                    </span>
+                                    </span>
+                                    Designs For
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Every</span>
+                                    <span className="item-text is-hidden">Every</span>
+                                    <span className="item-text is-hidden">Every</span>
+                                    </span>
+                                    </span>
+                                    Detail
+                                </div>
+                                <p className=" wow fadeInUp" data-wow-delay="0.2s">Our layout and structure are designed for effortless navigation, ensuring customers quickly find <br /> the information they need.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="brand-wrap">
+                    <div className="infiniteslide tf-brand style-3" data-clone="2" data-style={{}} data-speed="40">
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/About_us.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Blog_list_v1.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Blog_list_v2.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Blog_list_v4.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Blog_post_single.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                    </div>
+                    <div className="infiniteslide tf-brand style-3" data-clone="2" data-style={{}} data-speed="40">
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Collection_list.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Contact.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Compare.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Filter Drawer.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Filter Left Sidebar.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                        <div className="brand-item">
+                            <img loading="lazy" src="/images/innerpage/Collection_list.jpg" alt="Vineta’s web development project screenshot" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-innerpage */}
+
+            {/* section-get */}
+            <section id="performance" className="section-get">
+                <img loading="lazy" className="item-1 item-circle-1" src="/images/item/item-circle.png" alt="Vineta’s web development project screenshot" />
+                <img loading="lazy" className="item-2 item-circle-1" src="/images/item/item-circle.png" alt="Vineta’s web development project screenshot" />
+                <img loading="lazy" className="item-3 item-circle-1" src="/images/item/item-circle.png" alt="Vineta’s web development project screenshot" />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-5">
+                            <div className="content">
+                                <div className="heading1 wow fadeInUp" data-wow-delay="0s">
+                                    Get Vineta
+                                    <span></span>
+                                </div>
+                                <div className="heading-section">
+                                    <div className="heading wow fadeInUp" data-wow-delay="0.1s">
+                                        Your
+                                        <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                            <span className="cd-words-wrapper">
+                                                <span className="item-text is-visible">Perfect</span>
+                                        <span className="item-text is-hidden">Perfect</span>
+                                        <span className="item-text is-hidden">Perfect</span>
+                                        </span>
+                                        </span>
+                                        Website, One Template
+                                        <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3 d-inline-flex">
+                                            <span className="cd-words-wrapper">
+                                                <span className="item-text is-visible">Away</span>
+                                        <span className="item-text is-hidden">Away</span>
+                                        <span className="item-text is-hidden">Away</span>
+                                        </span>
+                                        </span>!
+                                    </div>
+                                    <p className=" wow fadeInUp" data-wow-delay="0.2s">Unique and engaging features make your ecommerce store <br /> irresistible.</p>
+                                </div>
+                                <div className=" wow fadeInUp" data-wow-delay="0.3s">
+                                    <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" className="tf-btn-4 light_skew_hover type-white wow fadeInUp" target="_blank" data-wow-delay="0.2s">Buy Vineta Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-7">
+                            <div id="matter-box" className="matter-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-get */}
+
+            {/* section-exclusive */}
+            {/* <section className="section-exclusive">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="heading-section center">
+                                <div className="heading fw-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Premium</span>
+                                            <span className="item-text is-hidden">Premium</span>
+                                            <span className="item-text is-hidden">Premium</span>
+                                        </span>                                          
+                                    </span>
+                                    and
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Exclusive</span>
+                                            <span className="item-text is-hidden">Exclusive</span>
+                                            <span className="item-text is-hidden">Exclusive</span>
+                                        </span>                                          
+                                    </span>
+                                    Features for Free
+                                </div>
+                                <p className=" wow fadeInUp" data-wow-delay="0.2s">Enhance your website’s flexibility and performance with robust, high-quality features—completely free and <br /> designed to empower your site’s functionality and user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="exclusive-wrap">
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/html-5.png" alt="" />
+                            </div>
+                            <div className="text">HTML5</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/css-3.png" alt="" />
+                            </div>
+                            <div className="text">CSS3</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/bootstrap-5.png" alt="" />
+                            </div>
+                            <div className="text">Bootstrap 5</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/sass.png" alt="" />
+                            </div>
+                            <div className="text">SASS</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/swiper.png" alt="" />
+                            </div>
+                            <div className="text">Swipe Slider</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/w3c.png" alt="" />
+                            </div>
+                            <div className="text">W3C Validation</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/wow.png" alt="" />
+                            </div>
+                            <div className="text">Wow JS</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/photoswipe.png" alt="" />
+                            </div>
+                            <div className="text">PhotoSwipes</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/lightbox.png" alt="" />
+                            </div>
+                            <div className="text">Lightbox</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/img-compare.png" alt="" />
+                            </div>
+                            <div className="text">Image Compare Viewer</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/google-font.png" alt="" />
+                            </div>
+                            <div className="text">Google Fonts</div>
+                        </div>
+                        <div className="exclusive-item">
+                            <div className="image">
+                                <img src="/images/exclusive/SEO.png" alt="" />
+                            </div>
+                            <div className="text">SEO Optimized</div>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+            {/* /section-exclusive */}
+
+            {/* section-unlock */}
+            {/* <section className="section-unlock">
+                <img loading="lazy"  className="item-1 item-circle-2" src="/images/item/item-circle-blur.png" alt="Vineta’s web development project screenshot" />
+                <div className="section-unlock-wrap">
+                    <img src="/images/item/grid-1.png" alt="" />
+                    <div className="content">
+                        <div className="heading-section">
+                            <div className="heading wow fadeInUp" data-wow-delay="0.1s">
+                                <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                    <span className="cd-words-wrapper">
+                                        <span className="item-text is-visible">Unlock</span>
+                                        <span className="item-text is-hidden">Unlock</span>
+                                        <span className="item-text is-hidden">Unlock</span>
+                                    </span>                                          
+                                </span>
+                                the Full Vineta
+                                <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                    <span className="cd-words-wrapper">
+                                        <span className="item-text is-visible">Bundle</span>
+                                        <span className="item-text is-hidden">Bundle</span>
+                                        <span className="item-text is-hidden">Bundle</span>
+                                    </span>                                          
+                                </span>
+                            </div>
+                            <p className=" wow fadeInUp" data-wow-delay="0.2s">Purchase Vineta HTML and receive the Vineta Figma version at no extra cost. Enjoy seamless design, customization in one complete package.</p>
+                        </div>
+                        <a href="https://themeforest.net/item/vince-multipurpose-ecommerce-html5-template/57202368?s_rank=2" className="tf-btn-4 light_skew_hover type-white wow fadeInUp" target="_blank" data-wow-delay="0.2s">Get Vineta Templates Now</a>
+                    </div>
+                    <div className="image">
+                        <span className="item-1"></span>
+                        <span className="item-2"></span>
+                        <span className="item-3"></span>
+                        <span className="item-4"></span>
+                        <img loading="lazy" src="/images/item/unlock-1.png" className="lazyload" alt="" />
+                    </div>
+                </div>
+            </section> */}
+            {/* /section-unlock */}
+
+            {/* section-faqs */}
+            <section className="section-faqs">
+                <img loading="lazy" className="img-item item-circle-2" src="/images/item/item-circle-blur.png" alt="Vineta’s web development project screenshot" />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="heading-section center">
+                                <div className="sub-title box-tag wow fadeInUp" data-wow-delay="0s">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.5001 11.1518L14.5786 11.6126C14.3018 11.7502 14.0778 11.9742 13.9402 12.251L13.4794 13.1726C13.4138 13.3054 13.225 13.3054 13.1594 13.1726L12.6986 12.251C12.561 11.9742 12.337 11.7502 12.0602 11.6126L11.1387 11.1518C11.0059 11.0862 11.0059 10.8974 11.1387 10.8318L12.0602 10.371C12.337 10.2335 12.561 10.0095 12.6986 9.73266L13.1594 8.81109C13.225 8.67829 13.4138 8.67829 13.4794 8.81109L13.9402 9.73266C14.0778 10.0095 14.3018 10.2335 14.5786 10.371L15.5001 10.8318C15.6329 10.8974 15.6329 11.0862 15.5001 11.1518Z" fill="url(#paint0_linear_3740_16590)"></path>
+                                        <path d="M10.8092 8.37279L8.65888 9.44796C8.01409 9.77116 7.49091 10.2943 7.16772 10.9391L6.09255 13.0895C5.93895 13.3967 5.50057 13.3967 5.34697 13.0895L4.2718 10.9391C3.94861 10.2943 3.42542 9.77116 2.78064 9.44796L0.630294 8.37279C0.323105 8.2192 0.323105 7.78081 0.630294 7.62721L2.78064 6.55204C3.42542 6.22885 3.94861 5.70566 4.2718 5.06088L5.34697 2.91054C5.50057 2.60334 5.93895 2.60334 6.09255 2.91054L7.16772 5.06088C7.49091 5.70566 8.01409 6.22885 8.65888 6.55204L10.8092 7.62721C11.1164 7.78081 11.1164 8.2192 10.8092 8.37279Z" fill="url(#paint1_linear_3740_16590)"></path>
+                                        <path d="M11.1151 3.83366L11.5706 3.60595C11.7074 3.53795 11.8181 3.42725 11.8861 3.29046L12.1138 2.83503C12.1462 2.7694 12.2395 2.7694 12.2719 2.83503L12.4996 3.29046C12.5676 3.42725 12.6783 3.53795 12.8151 3.60595L13.2706 3.83366C13.3362 3.86608 13.3362 3.95938 13.2706 3.9918L12.8151 4.21952C12.6783 4.28752 12.5676 4.39821 12.4996 4.535L12.2719 4.99044C12.2395 5.05527 12.1462 5.05527 12.1138 4.99044L11.8861 4.535C11.8181 4.39821 11.7074 4.28752 11.5706 4.21952L11.1151 3.9918C11.0495 3.95938 11.0495 3.86608 11.1151 3.83366Z" fill="url(#paint2_linear_3740_16590)"></path>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_3740_16590" x1="15.5997" y1="13.2722" x2="10.1035" y2="10.7515" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"></stop>
+                                        <stop offset="0.5" stopColor="#77E590"></stop>
+                                        <stop offset="1" stopColor="#CCFF9B"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_3740_16590" x1="11.0396" y1="13.3199" x2="-1.78273" y2="7.43927" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"></stop>
+                                        <stop offset="0.5" stopColor="#77E590"></stop>
+                                        <stop offset="1" stopColor="#CCFF9B"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_3740_16590" x1="13.3198" y1="5.03906" x2="10.6038" y2="3.79314" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#3BDEB9"></stop>
+                                        <stop offset="0.5" stopColor="#77E590"></stop>
+                                        <stop offset="1" stopColor="#CCFF9B"></stop>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span className="text-gradient style-2">
+                                        FAQs
+                                    </span>
+                                    <span className="eff"></span>
+                                </div>
+                                <div className="heading fw-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
+                                        <span className="cd-words-wrapper">
+                                            <span className="item-text is-visible">Got&nbsp;questions?</span>
+                                    <span className="item-text is-hidden">Got&nbsp;questions?</span>
+                                    <span className="item-text is-hidden">Got&nbsp;questions?</span>
+                                    </span>
+                                    </span>
+                                    We’ve got answers!
+                                </div>
+                                <p className=" wow fadeInUp" data-wow-delay="0.2s">Explore our FAQs to find quick solutions and detailed insights about our products, <br /> services, and policies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul className="accordion-wrap" id="accordion-faq-1">
+                        <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
+                            <a href="#accordion-1" className="accordion-title current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-1">
+                                <div className="text">1. What is Vineta, and how does it work?</div>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_3730_45)">
+                                        <path d="M24 12C24 5.38331 18.6167 -2.35312e-07 12 -5.24537e-07C5.38331 -8.13761e-07 -2.35312e-07 5.38331 -5.24537e-07 12C-8.13761e-07 18.6167 5.38331 24 12 24C18.6167 24 24 18.6167 24 12ZM1.5 12C1.5 6.21019 6.21019 1.5 12 1.5C17.7898 1.5 22.5 6.21019 22.5 12C22.5 17.7898 17.7898 22.5 12 22.5C6.21019 22.5 1.5 17.7898 1.5 12ZM12.5302 17.0303C12.2372 17.3233 11.7626 17.3233 11.4697 17.0303L7.71975 13.2802C7.57331 13.1338 7.5 12.9418 7.5 12.75C7.5 12.5582 7.57331 12.3662 7.71975 12.2197C8.01281 11.9267 8.48737 11.9267 8.78025 12.2197L11.25 14.6895L11.25 7.5C11.25 7.08581 11.5854 6.75 12 6.75C12.4146 6.75 12.75 7.08581 12.75 7.5L12.75 14.6895L15.2197 12.2197C15.5128 11.9267 15.9874 11.9267 16.2802 12.2197C16.5731 12.5128 16.5733 12.9874 16.2802 13.2803L12.5302 17.0303Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_3730_45">
+                                        <rect width="24" height="24" fill="white" transform="translate(24) rotate(90)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div id="accordion-1" className="collapse show" data-bs-parent="#accordion-faq-1">
+                                    <div className="accordion-faqs-content">
+                                        <p>Vineta is a highly flexible and easy-to-use HTML template designed for multiple products and purposes. <br /> It offers a versatile and powerful design with meticulously crafted demos, catering to various industries
+                                            and business <br /> needs.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
+                            <a href="#accordion-2" className="accordion-title current collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-2">
+                                <div className="text">2. How can I get customer support?</div>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_3730_45)">
+                                        <path d="M24 12C24 5.38331 18.6167 -2.35312e-07 12 -5.24537e-07C5.38331 -8.13761e-07 -2.35312e-07 5.38331 -5.24537e-07 12C-8.13761e-07 18.6167 5.38331 24 12 24C18.6167 24 24 18.6167 24 12ZM1.5 12C1.5 6.21019 6.21019 1.5 12 1.5C17.7898 1.5 22.5 6.21019 22.5 12C22.5 17.7898 17.7898 22.5 12 22.5C6.21019 22.5 1.5 17.7898 1.5 12ZM12.5302 17.0303C12.2372 17.3233 11.7626 17.3233 11.4697 17.0303L7.71975 13.2802C7.57331 13.1338 7.5 12.9418 7.5 12.75C7.5 12.5582 7.57331 12.3662 7.71975 12.2197C8.01281 11.9267 8.48737 11.9267 8.78025 12.2197L11.25 14.6895L11.25 7.5C11.25 7.08581 11.5854 6.75 12 6.75C12.4146 6.75 12.75 7.08581 12.75 7.5L12.75 14.6895L15.2197 12.2197C15.5128 11.9267 15.9874 11.9267 16.2802 12.2197C16.5731 12.5128 16.5733 12.9874 16.2802 13.2803L12.5302 17.0303Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div id="accordion-2" className="collapse" data-bs-parent="#accordion-faq-1">
+                                    <div className="accordion-faqs-content">
+                                        <p>If you need support after purchasing the product, you can contact us by sending an email through the "Contact Author" section on the item purchase page.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
+                            <a href="#accordion-3" className="accordion-title current collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-3">
+                                <div className="text">3. Will I receive regular updates, and for how long?</div>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_3730_45)">
+                                        <path d="M24 12C24 5.38331 18.6167 -2.35312e-07 12 -5.24537e-07C5.38331 -8.13761e-07 -2.35312e-07 5.38331 -5.24537e-07 12C-8.13761e-07 18.6167 5.38331 24 12 24C18.6167 24 24 18.6167 24 12ZM1.5 12C1.5 6.21019 6.21019 1.5 12 1.5C17.7898 1.5 22.5 6.21019 22.5 12C22.5 17.7898 17.7898 22.5 12 22.5C6.21019 22.5 1.5 17.7898 1.5 12ZM12.5302 17.0303C12.2372 17.3233 11.7626 17.3233 11.4697 17.0303L7.71975 13.2802C7.57331 13.1338 7.5 12.9418 7.5 12.75C7.5 12.5582 7.57331 12.3662 7.71975 12.2197C8.01281 11.9267 8.48737 11.9267 8.78025 12.2197L11.25 14.6895L11.25 7.5C11.25 7.08581 11.5854 6.75 12 6.75C12.4146 6.75 12.75 7.08581 12.75 7.5L12.75 14.6895L15.2197 12.2197C15.5128 11.9267 15.9874 11.9267 16.2802 12.2197C16.5731 12.5128 16.5733 12.9874 16.2802 13.2803L12.5302 17.0303Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div id="accordion-3" className="collapse" data-bs-parent="#accordion-faq-1">
+                                    <div className="accordion-faqs-content">
+                                        <p>Yes! We continuously update Vineta with new features and improvements. Once purchased, you can access unlimited updates at no extra cost. Our dedicated team ensures regular enhancements.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
+                            <a href="#accordion-4" className="accordion-title current collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-4">
+                                <div className="text">4. Is there a fee for each upgrade?</div>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_3730_45)">
+                                        <path d="M24 12C24 5.38331 18.6167 -2.35312e-07 12 -5.24537e-07C5.38331 -8.13761e-07 -2.35312e-07 5.38331 -5.24537e-07 12C-8.13761e-07 18.6167 5.38331 24 12 24C18.6167 24 24 18.6167 24 12ZM1.5 12C1.5 6.21019 6.21019 1.5 12 1.5C17.7898 1.5 22.5 6.21019 22.5 12C22.5 17.7898 17.7898 22.5 12 22.5C6.21019 22.5 1.5 17.7898 1.5 12ZM12.5302 17.0303C12.2372 17.3233 11.7626 17.3233 11.4697 17.0303L7.71975 13.2802C7.57331 13.1338 7.5 12.9418 7.5 12.75C7.5 12.5582 7.57331 12.3662 7.71975 12.2197C8.01281 11.9267 8.48737 11.9267 8.78025 12.2197L11.25 14.6895L11.25 7.5C11.25 7.08581 11.5854 6.75 12 6.75C12.4146 6.75 12.75 7.08581 12.75 7.5L12.75 14.6895L15.2197 12.2197C15.5128 11.9267 15.9874 11.9267 16.2802 12.2197C16.5731 12.5128 16.5733 12.9874 16.2802 13.2803L12.5302 17.0303Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div id="accordion-4" className="collapse" data-bs-parent="#accordion-faq-1">
+                                    <div className="accordion-faqs-content">
+                                        <p>No, there are no additional fees. When you purchase a license, you will automatically receive all future updates for free.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            {/* /section-faqs */}
+
+            {/* section-marquee */}
+            <section className="section-marquee-1 style-2">
+                <div className="infiniteslide tf-brand style-1" data-clone="10" data-style={{}} data-speed="80">
+                    <div className="brand-item">
+                        <div className="text-1">
+                            Grab <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Vineta</span> Now
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1 text-gradient style-5 animation-none">
+                            Boost <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Your Sale</span>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1">
+                            Grab <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Vineta</span> Now
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1 text-gradient style-5 animation-none">
+                            Boost <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Your Sale</span>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1">
+                            Grab <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Vineta</span> Now
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1 text-gradient style-5 animation-none">
+                            Boost <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Your Sale</span>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1">
+                            Grab <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Vineta</span> Now
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="text-1 text-gradient style-5 animation-none">
+                            Boost <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Your Sale</span>
+                        </div>
+                    </div>
+                    <div className="brand-item">
+                        <div className="zoom">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_3658_15780)">
+                                <path d="M0.842132 18.5264C0.378947 18.5264 0 18.9053 0 19.3684C0 19.8316 0.378947 20.2106 0.842132 20.2106C1.30532 20.2106 1.68426 19.8316 1.68426 19.3684C1.68418 18.9053 1.30524 18.5264 0.842132 18.5264Z" fill="white"/>
+                                <path d="M0.842132 11.7891C0.378947 11.7891 0 12.168 0 12.6312C0 13.0944 0.378947 13.4733 0.842132 13.4733C1.30532 13.4733 1.68426 13.0944 1.68426 12.6312C1.68418 12.168 1.30524 11.7891 0.842132 11.7891Z" fill="white"/>
+                                <path d="M12.6317 30.3154C12.1685 30.3154 11.7896 30.6944 11.7896 31.1576C11.7896 31.6207 12.1685 31.9997 12.6317 31.9997C13.0949 31.9997 13.4738 31.6207 13.4738 31.1576C13.4738 30.6944 13.0949 30.3154 12.6317 30.3154Z" fill="white"/>
+                                <path d="M5.89463 4.21094C4.96834 4.21094 4.21045 4.96883 4.21045 5.89512C4.21045 6.82141 4.96827 7.57939 5.89463 7.57939C6.821 7.57939 7.57882 6.82149 7.57882 5.8952C7.57882 4.96891 6.82092 4.21094 5.89463 4.21094Z" fill="white"/>
+                                <path d="M5.89463 10.9473C4.96834 10.9473 4.21045 11.7052 4.21045 12.6315C4.21045 13.5577 4.96834 14.3156 5.89463 14.3156C6.82092 14.3156 7.57882 13.5577 7.57882 12.6315C7.57882 11.7052 6.82092 10.9473 5.89463 10.9473Z" fill="white"/>
+                                <path d="M5.89463 17.6846C4.96834 17.6846 4.21045 18.4425 4.21045 19.3688C4.21045 20.295 4.96834 21.0529 5.89463 21.0529C6.82092 21.0529 7.57882 20.2951 7.57882 19.3688C7.57882 18.4425 6.82092 17.6846 5.89463 17.6846Z" fill="white"/>
+                                <path d="M31.1581 13.4733C31.6212 13.4733 32.0002 13.0944 32.0002 12.6312C32.0002 12.168 31.6212 11.7891 31.1581 11.7891C30.6949 11.7891 30.3159 12.168 30.3159 12.6312C30.3159 13.0944 30.6949 13.4733 31.1581 13.4733Z" fill="white"/>
+                                <path d="M19.3685 1.68418C19.8317 1.68418 20.2106 1.30524 20.2106 0.842053C20.2106 0.378948 19.8317 0 19.3685 0C18.9053 0 18.5264 0.378947 18.5264 0.842132C18.5264 1.30524 18.9054 1.68418 19.3685 1.68418Z" fill="white"/>
+                                <path d="M12.6315 7.57931C13.5577 7.57931 14.3156 6.82141 14.3156 5.89512C14.3156 4.96883 13.5577 4.21094 12.6315 4.21094C11.7052 4.21094 10.9473 4.96883 10.9473 5.89512C10.9473 6.82141 11.7052 7.57931 12.6315 7.57931Z" fill="white"/>
+                                <path d="M12.6317 1.68418C13.0949 1.68418 13.4738 1.30524 13.4738 0.842053C13.4738 0.378948 13.0949 0 12.6317 0C12.1685 0 11.7896 0.378947 11.7896 0.842132C11.7896 1.30524 12.1685 1.68418 12.6317 1.68418Z" fill="white"/>
+                                <path d="M19.3683 7.57931C20.2946 7.57931 21.0525 6.82141 21.0525 5.89512C21.0525 4.96883 20.2946 4.21094 19.3683 4.21094C18.442 4.21094 17.6841 4.96883 17.6841 5.89512C17.6841 6.82141 18.442 7.57931 19.3683 7.57931Z" fill="white"/>
+                                <path d="M5.89463 24.4209C4.96834 24.4209 4.21045 25.1788 4.21045 26.1051C4.21045 27.0314 4.96834 27.7893 5.89463 27.7893C6.82092 27.7893 7.57882 27.0315 7.57882 26.1052C7.57882 25.1788 6.82092 24.4209 5.89463 24.4209Z" fill="white"/>
+                                <path d="M19.3686 10.1055C17.9707 10.1055 16.8423 11.2339 16.8423 12.6318C16.8423 14.0297 17.9707 15.1581 19.3686 15.1581C20.7665 15.1581 21.8949 14.0297 21.8949 12.6318C21.8949 11.2339 20.7665 10.1055 19.3686 10.1055Z" fill="white"/>
+                                <path d="M26.1051 17.6846C25.1788 17.6846 24.4209 18.4425 24.4209 19.3688C24.4209 20.295 25.1788 21.0529 26.1051 21.0529C27.0314 21.0529 27.7893 20.295 27.7893 19.3688C27.7893 18.4425 27.0314 17.6846 26.1051 17.6846Z" fill="white"/>
+                                <path d="M26.1051 24.4209C25.1788 24.4209 24.4209 25.1788 24.4209 26.1051C24.4209 27.0314 25.1788 27.7893 26.1051 27.7893C27.0314 27.7893 27.7893 27.0315 27.7893 26.1052C27.7893 25.1788 27.0314 24.4209 26.1051 24.4209Z" fill="white"/>
+                                <path d="M26.1051 10.9473C25.1788 10.9473 24.4209 11.7052 24.4209 12.6315C24.4209 13.5577 25.1788 14.3156 26.1051 14.3156C27.0314 14.3156 27.7893 13.5577 27.7893 12.6315C27.7893 11.7052 27.0314 10.9473 26.1051 10.9473Z" fill="white"/>
+                                <path d="M31.1581 18.5264C30.6949 18.5264 30.3159 18.9053 30.3159 19.3685C30.3159 19.8316 30.6949 20.2106 31.1581 20.2106C31.6212 20.2106 32.0002 19.8316 32.0002 19.3684C32.0001 18.9053 31.6212 18.5264 31.1581 18.5264Z" fill="white"/>
+                                <path d="M26.1051 4.21094C25.1788 4.21094 24.4209 4.96883 24.4209 5.89512C24.4209 6.82141 25.1787 7.57939 26.1051 7.57939C27.0314 7.57939 27.7893 6.82149 27.7893 5.8952C27.7893 4.96891 27.0314 4.21094 26.1051 4.21094Z" fill="white"/>
+                                <path d="M12.6318 16.8418C11.2339 16.8418 10.1055 17.9702 10.1055 19.3681C10.1055 20.766 11.2339 21.8944 12.6318 21.8944C14.0297 21.8944 15.1581 20.766 15.1581 19.3681C15.1581 17.9702 14.0297 16.8418 12.6318 16.8418Z" fill="white"/>
+                                <path d="M12.6315 24.4209C11.7052 24.4209 10.9473 25.1788 10.9473 26.1051C10.9473 27.0314 11.7052 27.7893 12.6315 27.7893C13.5577 27.7893 14.3156 27.0314 14.3156 26.1051C14.3156 25.1788 13.5577 24.4209 12.6315 24.4209Z" fill="white"/>
+                                <path d="M12.6318 10.1055C11.2339 10.1055 10.1055 11.2339 10.1055 12.6318C10.1055 14.0297 11.2339 15.1581 12.6318 15.1581C14.0297 15.1581 15.1581 14.0297 15.1581 12.6318C15.1581 11.2339 14.0297 10.1055 12.6318 10.1055Z" fill="white"/>
+                                <path d="M19.3683 24.4209C18.442 24.4209 17.6841 25.1788 17.6841 26.1051C17.6841 27.0315 18.442 27.7893 19.3683 27.7893C20.2946 27.7893 21.0525 27.0315 21.0525 26.1052C21.0525 25.1788 20.2946 24.4209 19.3683 24.4209Z" fill="white"/>
+                                <path d="M19.3685 30.3154C18.9053 30.3154 18.5264 30.6944 18.5264 31.1576C18.5264 31.6207 18.9053 31.9997 19.3685 31.9997C19.8317 31.9997 20.2106 31.6207 20.2106 31.1576C20.2106 30.6944 19.8317 30.3154 19.3685 30.3154Z" fill="white"/>
+                                <path d="M19.3686 16.8418C17.9707 16.8418 16.8423 17.9702 16.8423 19.3681C16.8423 20.766 17.9707 21.8944 19.3686 21.8944C20.7665 21.8944 21.8949 20.766 21.8949 19.3681C21.8949 17.9702 20.7665 16.8418 19.3686 16.8418Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3658_15780">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* /section-marquee */}
+
+            {/* footer */}
+            <footer>
+                <div className="container">
+                    <div className="line-row"></div>
+                    <div className="text">One time payment - Free lifetime update</div>
+                    <div className="text-1">Purchase Vineta today and start to creating your beautiful <br /> business website.</div>
+                    <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" className="tf-btn-4 light_skew_hover type-white wow fadeInUp btn-buy" target="_blank" data-wow-delay="0.2s">
+                        Purchase Now
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0002 2.58008C7.61638 2.58008 3.70534 5.73104 2.7883 10.0218C2.33014 12.1657 2.63878 14.4454 3.66094 16.3854C4.6447 18.2523 6.2575 19.7612 8.1871 20.6163C10.1942 21.506 12.4985 21.661 14.6081 21.0543C16.6433 20.4692 18.4478 19.185 19.6764 17.461C22.2451 13.857 21.9017 8.7944 18.8796 5.56496C17.1084 3.67232 14.5927 2.58008 12.0002 2.58008ZM16.5192 12.5034L13.9512 15.1333C13.301 15.7993 12.2733 14.7903 12.9209 14.1274L14.2166 12.8005H8.07598C7.6399 12.8005 7.27606 12.4364 7.27606 12.0006C7.27606 11.5647 7.64014 11.2006 8.07598 11.2006H14.1859L12.8645 9.87944C12.2078 9.2228 13.2259 8.20448 13.8825 8.86112L16.5132 11.4915C16.7921 11.7702 16.7947 12.2214 16.5192 12.5034Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <div className="line-row1"></div>
+                    <div className="copyright">Copyright © <a className="text-white" href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" target="_blank">Vineta</a> All Right Reverved. Powered by <a className="text-white" href="https://help.gravio.ai/" target="_blank">Gravio</a>.</div>
+                </div>
+            </footer>
+            {/* /footer */}
+
+        </div>
+        {/* /#page */}
+
+    </div>
+    {/* /#wrapper */}
+    <div id="sticky-banner" className="kxti">
+        <div className="banner-wrap">
+            <button className="close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg>
+          </button>
+            <div className="text-wrap eff">
+                <p>Enjoy Shopify 3-day free trial. Then get your first month for $1. <a href="https://www.shopify.com/free-trial" target="_blank"><span className="under-line">Try Now</span><svg width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>                    </p>
+            </div>
+        </div>
+    </div>
+
+    <a id="scroll-top" className="button-go">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_18482_1195)">
+            <path d="M3 11.25L12 2.25L21 11.25H16.5V19.5C16.5 19.6989 16.421 19.8897 16.2803 20.0303C16.1397 20.171 15.9489 20.25 15.75 20.25H8.25C8.05109 20.25 7.86032 20.171 7.71967 20.0303C7.57902 19.8897 7.5 19.6989 7.5 19.5V11.25H3Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_18482_1195">
+            <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg>
+    </a>
+
+    {/* Demo Popup */}
+    <div className="pass_pop" id="demoPopup">
+        <div className="overlay"></div>
+        <div className="wrap">
+            <button className="close" id="closePopup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path>
+                </svg>
+            </button>
+            <div className="content text-start">
+                <p className="heading">Please enter store password <span className="linear">"1"</span><br />to view live demo</p>
+                <a href="#" id="popupDemoLink" target="_blank" className="view_more hdt-btn-hover-icon">View now <svg className="hdt-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                    <path d="M1.14084 8.48218L0.279297 7.62064L6.18699 1.71295H0.894682V0.482178H8.2793V7.86679H7.04853V2.57449L1.14084 8.48218Z" fill="white"></path>
+                </svg></a>
+                <p className="sub">WE APOLOGIZE FOR THIS INCONVENIENCE!</p>
+            </div>
+        </div>
+    </div>
+
+    {/* Javascript */}
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/countto.js"></script>
+    <script src="/js/lazysize.min.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/infinityslide.js"></script>
+    <script src="/js/matter.min.js"></script>
+    <script src="/js/matter.js"></script>
+    <script src="/js/textanimation.js"></script>
+    <script src="/js/main.js"></script>
+
+
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0c75da8b3df243609ed5ea815ce9f783","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossOrigin="anonymous"></script>
+
+    </>
   );
 }
