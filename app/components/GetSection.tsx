@@ -39,7 +39,9 @@ export default function GetSection() {
             </div>
           </div>
           <div className="col-lg-7">
-            <div id="matter-box" className="matter-box"></div>
+            <div id="matter-box" className="matter-box">
+              <canvas width="1328" height="938" data-pixel-ratio="2" style={{ width: "664px", height: "469px", background: "0% 0% / contain transparent" }}></canvas>
+            </div>
           </div>
         </div>
       </div>
