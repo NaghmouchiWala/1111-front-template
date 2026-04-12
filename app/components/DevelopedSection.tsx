@@ -62,35 +62,34 @@ export default function DevelopedSection() {
               style={{ backgroundImage: "url('/images/item/bg-maximum.jpg')" }}
             >
               <div className="heading wow fadeInUp" data-wow-delay="0s">
-                MAXIMUM <br /> SEO OPTIMIZATION
+                50 000+ <br /> PRODUITS SUIVIS
               </div>
               <div className="desc wow fadeInUp" data-wow-delay="0.1s">
-                Ensure your website ranks high on search engines with our SEO optimization.
+                Comparez les prix en temps réel sur les grandes enseignes tunisiennes et économisez à chaque achat.
               </div>
               <img
                 loading="lazy"
                 className="img-item ani-y"
                 src="/images/item/item-maximum.png"
-                alt="Vineta's web development project screenshot"
+                alt="1111.tn comparaison de prix en Tunisie"
               />
               <div className="box-performance wow fadeInUp" data-wow-delay="0.2s">
-                <div className="text">A</div>
+                <div className="text">+</div>
                 <div className="line"></div>
                 <div>
-                  <div className="title">PERFORMANCE</div>
+                  <div className="title">ÉCONOMIES</div>
                   <div className="counter">
                     <span className="sub">{">"}</span>
-                    <span className="number" data-speed="2000" data-to="90" data-inviewport="yes">90</span>
+                    <span className="number" data-speed="2000" data-to="30" data-inviewport="yes">30</span>
                     <span className="sub">%</span>
                   </div>
                 </div>
                 <div className="line"></div>
                 <div>
-                  <div className="title">STRUCTURE</div>
+                  <div className="title">MAGASINS</div>
                   <div className="counter">
-                    <span className="sub">{">"}</span>
-                    <span className="number" data-speed="2000" data-to="80" data-inviewport="yes">80</span>
-                    <span className="sub">%</span>
+                    <span className="number" data-speed="2000" data-to="10" data-inviewport="yes">10</span>
+                    <span className="sub">+</span>
                   </div>
                 </div>
               </div>
@@ -106,7 +105,7 @@ export default function DevelopedSection() {
                 ))}
               </div>
               <p className="text wow fadeInUp" data-wow-delay="0s">
-                Sale Boost <br /> Features Included
+                Fonctionnalités <br /> Incluses
               </p>
             </div>
           </div>

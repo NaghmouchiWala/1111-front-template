@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import TrendingSection from "./components/TrendingSection";
 import MarqueeSection from "./components/MarqueeSection";
 import DevelopedSection from "./components/DevelopedSection";
 import DemoSection from "./components/DemoSection";
@@ -45,6 +46,9 @@ export default function Home() {
             {/* section-developed */}
             <DevelopedSection />
 
+            {/* section-trending */}
+            <TrendingSection />
+
             {/* section-demo */}
             <DemoSection />
             <CouffinSection />
@@ -65,6 +69,7 @@ export default function Home() {
             {/* section-innerpage */}
             <InnerPageSection />
             {/* /section-innerpage */}
+
 
             {/* section-get */}
             <GetSection />
