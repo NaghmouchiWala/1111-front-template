@@ -30,10 +30,10 @@ const ArrowRightIcon = () => (
 );
 
 const stores = [
-  { name: "Mytek",      price: "1 249 DT", best: true  },
-  { name: "Spacenet",   price: "1 319 DT", best: false },
-  { name: "Tunisianet", price: "1 289 DT", best: false },
-  { name: "TechnoPro",  price: "1 350 DT", best: false },
+  { name: "Mytek",      price: "1 249 DT", best: true,  bar: "68%",  diff: null     },
+  { name: "Tunisianet", price: "1 289 DT", best: false, bar: "78%",  diff: "+40 DT" },
+  { name: "Spacenet",   price: "1 319 DT", best: false, bar: "88%",  diff: "+70 DT" },
+  { name: "TechnoPro",  price: "1 350 DT", best: false, bar: "100%", diff: "+101 DT"},
 ];
 
 const stats = [
@@ -50,87 +50,187 @@ export default function HeroSection() {
           font-size: clamp(2rem, 4vw, 3rem) !important;
           line-height: 1.15 !important;
         }
-        .hero-price-card {
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.10);
-          border-radius: 16px;
-          padding: 28px 32px;
-          backdrop-filter: blur(12px);
-          width: 100%;
-          max-width: 440px;
+        /* ── Card float ── */
+        @keyframes card-float {
+          0%, 100% { transform: translateY(0px); box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 0 rgba(59,222,185,0); }
+          50%       { transform: translateY(-10px); box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 40px 4px rgba(59,222,185,0.08); }
         }
+        .hero-price-card {
+          background: rgba(12,18,28,0.82);
+          border: 1px solid rgba(255,255,255,0.10);
+          border-radius: 20px;
+          padding: 28px 30px;
+          backdrop-filter: blur(20px);
+          width: 100%;
+          max-width: 400px;
+          animation: card-float 5s ease-in-out infinite;
+          position: relative;
+          overflow: hidden;
+        }
+        /* Subtle top glow line */
+        .hero-price-card::before {
+          content: '';
+          position: absolute;
+          top: 0; left: 10%; right: 10%;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, rgba(59,222,185,0.6), transparent);
+        }
+
         .hero-price-card .card-title {
-          font-size: 13px;
-          color: rgba(255,255,255,0.55);
-          letter-spacing: 0.08em;
+          font-size: 11px;
+          color: rgba(255,255,255,0.40);
+          letter-spacing: 0.12em;
           text-transform: uppercase;
-          margin-bottom: 6px;
+          margin-bottom: 4px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .card-title-dot {
+          width: 6px; height: 6px;
+          border-radius: 50%;
+          background: #3BDEB9;
+          box-shadow: 0 0 6px #3BDEB9;
+          animation: dot-pulse 2s ease-in-out infinite;
+        }
+        @keyframes dot-pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50%       { opacity: 0.5; transform: scale(0.7); }
         }
         .hero-price-card .product-name {
-          font-size: 17px;
+          font-size: 15px;
           font-weight: 600;
           color: #fff;
           margin-bottom: 20px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid rgba(255,255,255,0.06);
         }
+
+        /* ── Store rows ── */
         .hero-store-row {
           display: flex;
           align-items: center;
-          justify-content: space-between;
-          padding: 10px 14px;
-          border-radius: 10px;
+          padding: 11px 14px;
+          border-radius: 12px;
           margin-bottom: 8px;
-          transition: background 0.2s;
+          position: relative;
+          overflow: hidden;
+          opacity: 0;
+          animation: row-in 0.5s ease forwards;
         }
+        .hero-store-row:nth-child(1) { animation-delay: 0.1s; }
+        .hero-store-row:nth-child(2) { animation-delay: 0.25s; }
+        .hero-store-row:nth-child(3) { animation-delay: 0.4s; }
+        .hero-store-row:nth-child(4) { animation-delay: 0.55s; }
+        @keyframes row-in {
+          from { opacity: 0; transform: translateX(16px); }
+          to   { opacity: 1; transform: translateX(0); }
+        }
+
         .hero-store-row.best {
-          background: rgba(59, 222, 185, 0.15);
-          border: 1px solid rgba(59, 222, 185, 0.35);
+          background: linear-gradient(90deg, rgba(59,222,185,0.12), rgba(204,255,155,0.06));
+          border: 1px solid rgba(59,222,185,0.30);
+          box-shadow: inset 0 0 20px rgba(59,222,185,0.04);
         }
         .hero-store-row:not(.best) {
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.07);
+          background: rgba(255,255,255,0.03);
+          border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* Progress bar background */
+        .hero-store-row .row-bar {
+          position: absolute;
+          left: 0; top: 0; bottom: 0;
+          border-radius: 12px;
+          animation: bar-grow 1.2s ease-out forwards;
+          animation-delay: inherit;
+        }
+        @keyframes bar-grow {
+          from { width: 0; }
+        }
+
+        .hero-store-row .row-content {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          gap: 8px;
         }
         .hero-store-name {
-          font-size: 14px;
-          color: rgba(255,255,255,0.80);
+          font-size: 13px;
+          color: rgba(255,255,255,0.70);
           font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 7px;
         }
         .hero-store-row.best .hero-store-name { color: #fff; font-weight: 600; }
         .hero-store-price {
           font-size: 15px;
-          font-weight: 700;
-          color: #fff;
+          font-weight: 800;
+          color: rgba(255,255,255,0.85);
+          letter-spacing: -0.5px;
         }
-        .hero-store-row.best .hero-store-price { color: #3BDEB9; }
-        .best-badge {
-          font-size: 10px;
-          font-weight: 700;
-          background: linear-gradient(90deg, #3BDEB9, #CCFF9B);
-          color: #000;
-          padding: 2px 8px;
-          border-radius: 20px;
-          margin-left: 8px;
-        }
-        .hero-savings-bar {
-          margin-top: 18px;
-          padding: 12px 14px;
-          background: rgba(204,255,155,0.08);
-          border-radius: 10px;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-        .hero-savings-bar .savings-text {
-          font-size: 13px;
-          color: rgba(255,255,255,0.7);
-        }
-        .hero-savings-bar .savings-amount {
-          font-size: 15px;
-          font-weight: 700;
+        .hero-store-row.best .hero-store-price {
           background: linear-gradient(90deg, #3BDEB9, #CCFF9B);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          margin-left: auto;
+        }
+        .best-badge {
+          font-size: 9px;
+          font-weight: 700;
+          background: linear-gradient(90deg, #3BDEB9, #CCFF9B);
+          color: #000;
+          padding: 2px 7px;
+          border-radius: 20px;
+        }
+        .diff-badge {
+          font-size: 10px;
+          font-weight: 600;
+          color: rgba(255,100,100,0.8);
+          background: rgba(255,80,80,0.08);
+          border: 1px solid rgba(255,80,80,0.2);
+          padding: 1px 6px;
+          border-radius: 20px;
+        }
+
+        /* ── Savings bar ── */
+        @keyframes savings-in {
+          from { opacity: 0; transform: translateY(10px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero-savings-bar {
+          margin-top: 16px;
+          padding: 14px 16px;
+          background: linear-gradient(90deg, rgba(59,222,185,0.08), rgba(204,255,155,0.05));
+          border: 1px solid rgba(59,222,185,0.22);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          animation: savings-in 0.6s ease 0.8s both;
+        }
+        .hero-savings-bar .savings-text {
+          font-size: 12px;
+          color: rgba(255,255,255,0.55);
+          flex: 1;
+        }
+        .hero-savings-bar .savings-amount {
+          font-size: 20px;
+          font-weight: 900;
+          background: linear-gradient(90deg, #3BDEB9, #CCFF9B);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          letter-spacing: -1px;
+          animation: savings-pop 1s ease 1s both;
+        }
+        @keyframes savings-pop {
+          0%   { transform: scale(0.8); opacity: 0; }
+          70%  { transform: scale(1.1); }
+          100% { transform: scale(1); opacity: 1; }
         }
         .hero-stat-pill {
           display: inline-flex;
@@ -212,7 +312,7 @@ export default function HeroSection() {
       <div className="slider-inner" style={{ alignItems: "center", gap: "48px" }}>
 
         {/* ── Left Content ── */}
-        <div className="inner-content" style={{ flex: "1 1 0", minWidth: 0 }}>
+        <div className="inner-content" style={{ flex: "1 1 0", minWidth: 0, paddingLeft: "90px" }}>
 
           <div className="sub-title box-tag wow fadeInUp">
             <SparkleIcon />
@@ -267,24 +367,37 @@ export default function HeroSection() {
 
         {/* ── Right Panel: Price comparison card ── */}
         <div className="hero-right-panel wow fadeInUp" data-wow-delay="0.2s"
-          style={{ flex: "0 0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          style={{ flex: "0 0 auto", display: "flex", alignItems: "center", justifyContent: "center", transform: "translateX(-90px)" }}>
           <div className="hero-price-card">
-            <div className="card-title">Comparaison en direct</div>
+            <div className="card-title">
+              <span className="card-title-dot" />
+              Comparaison en direct
+            </div>
             <div className="product-name">Samsung Galaxy S24 — 256 Go</div>
 
             {stores.map((s) => (
               <div key={s.name} className={`hero-store-row${s.best ? " best" : ""}`}>
-                <span className="hero-store-name">
-                  {s.name}
-                  {s.best && <span className="best-badge">MEILLEUR PRIX</span>}
-                </span>
-                <span className="hero-store-price">{s.price}</span>
+                {/* animated background bar */}
+                <div className="row-bar" style={{
+                  width: s.bar,
+                  background: s.best
+                    ? "linear-gradient(90deg, rgba(59,222,185,0.10), rgba(204,255,155,0.04))"
+                    : "rgba(255,255,255,0.02)",
+                }} />
+                <div className="row-content">
+                  <span className="hero-store-name">
+                    {s.name}
+                    {s.best && <span className="best-badge">MEILLEUR PRIX</span>}
+                    {!s.best && s.diff && <span className="diff-badge">{s.diff}</span>}
+                  </span>
+                  <span className="hero-store-price">{s.price}</span>
+                </div>
               </div>
             ))}
 
             <div className="hero-savings-bar">
-              <span style={{ color: "#CCFF9B", fontSize: 18 }}>💡</span>
-              <span className="savings-text">Économie potentielle</span>
+              <span style={{ fontSize: 20 }}>💰</span>
+              <span className="savings-text">Économie potentielle sur ce produit</span>
               <span className="savings-amount">−101 DT</span>
             </div>
           </div>

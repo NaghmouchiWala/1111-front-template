@@ -5,20 +5,35 @@ export default function Header() {
       <div className="header-lower">
         <div className="inner-container flex justify-space align-center">
           {/* Logo Box */}
-          <div className="logo-box flex">
+          <div className="logo-box flex" style={{ marginLeft: "90px" }}>
             <div className="logo">
-              <a href="#" style={{ textDecoration: "none" }}>
+              <a href="#" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px" }}>
                 <span style={{
-                  fontFamily: "'Georgia', 'Times New Roman', serif",
-                  fontSize: "2.1rem",
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontSize: "4rem",
                   fontWeight: 700,
+                  fontStyle: "italic",
                   letterSpacing: "-2px",
-                  background: "linear-gradient(90deg, #3BDEB9 0%, #77E590 50%, #CCFF9B 100%)",
+                  background: "linear-gradient(100deg, #3BDEB9 0%, #77E590 55%, #CCFF9B 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  display: "inline-block",
-                }}>1111<span style={{ fontWeight: 300, letterSpacing: "-1px", fontSize: "1.8rem" }}>.tn</span></span>
+                  lineHeight: 1,
+                }}>1111</span>
+                <span style={{
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontSize: "0.65rem",
+                  fontWeight: 700,
+                  fontStyle: "italic",
+                  letterSpacing: "0.06em",
+                  color: "#0c121c",
+                  background: "linear-gradient(100deg, #3BDEB9, #CCFF9B)",
+                  borderRadius: "5px",
+                  padding: "2px 6px",
+                  lineHeight: 1.4,
+                  marginBottom: "2px",
+                  textTransform: "uppercase",
+                }}>.tn</span>
               </a>
             </div>
           </div>
@@ -59,18 +74,31 @@ export default function Header() {
         <div className="menu-backdrop"></div>
         <nav className="menu-box">
           <div className="nav-logo">
-            <a href="#" style={{ textDecoration: "none" }}>
+            <a href="#" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px" }}>
               <span style={{
-                fontFamily: "'Georgia', 'Times New Roman', serif",
-                fontSize: "1.65rem",
-                fontWeight: 700,
-                letterSpacing: "-2px",
-                background: "linear-gradient(90deg, #3BDEB9 0%, #77E590 50%, #CCFF9B 100%)",
+                fontFamily: "'Inter', 'Montserrat', system-ui, sans-serif",
+                fontSize: "2rem",
+                fontWeight: 900,
+                letterSpacing: "-4px",
+                background: "linear-gradient(100deg, #3BDEB9 0%, #77E590 55%, #CCFF9B 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                display: "inline-block",
-              }}>1111<span style={{ fontWeight: 300, letterSpacing: "-1px", fontSize: "1.4rem" }}>.tn</span></span>
+                lineHeight: 1,
+              }}>1111</span>
+              <span style={{
+                fontFamily: "'Inter', system-ui, sans-serif",
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+                color: "#0c121c",
+                background: "linear-gradient(100deg, #3BDEB9, #CCFF9B)",
+                borderRadius: "5px",
+                padding: "2px 6px",
+                lineHeight: 1.4,
+                marginBottom: "2px",
+                textTransform: "uppercase",
+              }}>.tn</span>
             </a>
             <div className="close-btn"><span className="icon flaticon-cancel-1"></span></div>
           </div>
