@@ -25,21 +25,21 @@ export default function FeaturesSection() {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span className="text-gradient style-2">Why Choose Vineta</span>
+                  <span className="text-gradient style-2">Pourquoi 1111.tn</span>
                   <span className="eff"></span>
                 </div>
                 <div className="heading fw-6 mb-0 wow fadeInUp h1" data-wow-delay="0.1s">
                   <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                     <span className="cd-words-wrapper">
-                      <span className="item-text is-visible"><i className="in">O</i><i className="in">u</i><i className="in">t</i><i className="in">s</i><i className="in">t</i><i className="in">a</i><i className="in">n</i><i className="in">d</i><i className="in">i</i><i className="in">n</i><i className="in">g</i></span>
-                      <span className="item-text is-hidden"><i className="out">O</i><i className="out">u</i><i className="out">t</i><i className="out">s</i><i className="out">t</i><i className="out">a</i><i className="out">n</i><i className="out">d</i><i className="out">i</i><i className="out">n</i><i className="out">g</i></span>
-                      <span className="item-text is-hidden"><i className="in">O</i><i className="in">u</i><i className="in">t</i><i className="in">s</i><i className="in">t</i><i className="in">a</i><i className="in">n</i><i className="in">d</i><i className="in">i</i><i className="in">n</i><i className="in">g</i></span>
+                      <span className="item-text is-visible"><i className="in">I</i><i className="in">n</i><i className="in">t</i><i className="in">e</i><i className="in">l</i><i className="in">l</i><i className="in">i</i><i className="in">g</i><i className="in">e</i><i className="in">n</i><i className="in">t</i><i className="in">e</i><i className="in">s</i></span>
+                      <span className="item-text is-hidden"><i className="out">I</i><i className="out">n</i><i className="out">t</i><i className="out">e</i><i className="out">l</i><i className="out">l</i><i className="out">i</i><i className="out">g</i><i className="out">e</i><i className="out">n</i><i className="out">t</i><i className="out">e</i><i className="out">s</i></span>
+                      <span className="item-text is-hidden"><i className="in">I</i><i className="in">n</i><i className="in">t</i><i className="in">e</i><i className="in">l</i><i className="in">l</i><i className="in">i</i><i className="in">g</i><i className="in">e</i><i className="in">n</i><i className="in">t</i><i className="in">e</i><i className="in">s</i></span>
                     </span>
                   </span>
-                  {" "}Features
+                  {" "}Fonctionnalités
                 </div>
               </div>
-              <p className="wow fadeInUp" data-wow-delay="0s">Vineta packs a punch with features you won&apos;t find elsewhere. Get <br /> everything you need to thrive online with just one purchase.</p>
+              <p className="wow fadeInUp" data-wow-delay="0s">1111.tn regroupe tout ce qu&apos;il faut pour comparer les prix, détecter les arnaques <br /> et prendre les meilleures décisions d&apos;achat en Tunisie.</p>
             </div>
           </div>
         </div>
@@ -49,9 +49,9 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box wow fadeInUp" data-wow-delay="0s">
               <div className="content mb-18">
-                <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
-                <div className="title">Product Swatches</div>
-                <p>Show product variations such as color, size, <br /> etc., using swatches—no need for extra</p>
+                <div className="sub text-gradient style-3 animation-none">FONCTIONNALITÉ CLÉE</div>
+                <div className="title">Comparaison de Prix</div>
+                <p>Comparez instantanément les prix de plus de <br /> 50 000 produits à travers 10+ magasins en ligne.</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-1.png" src="/images/feature/feature-1.png" alt="Vineta's web development project screenshot" />
@@ -63,8 +63,8 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box pt-37 wow fadeInUp" data-wow-delay="0.1s">
               <div className="content mb-61">
-                <div className="title">Multiple Product Layouts</div>
-                <p>Choose from multiple product layouts to <br /> showcase your products and enhance the <br /> shopping experience.</p>
+                <div className="title">Détection Faux Prix</div>
+                <p>Notre IA détecte les gonflements de prix artificiels <br /> avant les soldes — protégez-vous des <br /> arnaques tarifaires.</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-2.png" src="/images/feature/feature-2.png" alt="Vineta's web development project screenshot" />
@@ -76,9 +76,9 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box wow fadeInUp" data-wow-delay="0.2s">
               <div className="content mb-3">
-                <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
-                <div className="title">Dynamic Mega Menu</div>
-                <p>Navigate with ease using our flexible and <br /> interactive mega menu.</p>
+                <div className="sub text-gradient style-3 animation-none">FONCTIONNALITÉ CLÉE</div>
+                <div className="title">Alertes Prix Prédictives</div>
+                <p>Soyez alerté avant une hausse de prix imminente <br /> grâce à notre système de prédiction IA.</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-3.png" src="/images/feature/feature-3.png" alt="Vineta's web development project screenshot" />
@@ -90,9 +90,9 @@ export default function FeaturesSection() {
           <div className="col-md-12">
             <div className="feature-box style-row type-1 align-items-center wow fadeInUp" data-wow-delay="0s">
               <div className="content mb-26">
-                <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
-                <div className="title">Sticky Product Cart</div>
-                <p>Make shopping seamless with our Sticky Add to <br /> Cart! Always within reach as you browse, <br /> ensuring effortless checkout anytime.</p>
+                <div className="sub text-gradient style-3 animation-none">FONCTIONNALITÉ CLÉE</div>
+                <div className="title">Veille Concurrentielle</div>
+                <p>Analysez les stratégies tarifaires de vos concurrents <br /> et restez toujours un pas en avance <br /> sur le marché tunisien.</p>
               </div>
               <div className="image">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-4.png" src="/images/feature/feature-4.png" alt="Vineta's web development project screenshot" />
@@ -104,8 +104,8 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box wow fadeInUp" data-wow-delay="0s">
               <div className="content mb-54">
-                <div className="title">Countdown Timer</div>
-                <p>Boost urgency and drive action with a sleek <br /> countdown timer.</p>
+                <div className="title">Supermarché & Électroménager</div>
+                <p>Comparez les prix des grandes surfaces et <br /> électroménager : Mytek, Spacenet, Tunisianet...</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-5.png" src="/images/feature/feature-5.png" alt="Vineta's web development project screenshot" />
@@ -117,9 +117,9 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box wow fadeInUp" data-wow-delay="0.1s">
               <div className="content mb-31">
-                <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
-                <div className="title">Frequently Bought Together</div>
-                <p>Boost sales with our &apos;Frequently Bought <br /> Together&apos; feature—encouraging customers <br /> to bundle complementary products.</p>
+                <div className="sub text-gradient style-3 animation-none">FONCTIONNALITÉ CLÉE</div>
+                <div className="title">Parapharmacie</div>
+                <p>Comparez Vichy, Avène, Bioderma et plus encore <br /> dans les catégories Solaire, Hygiène, <br /> Maman &amp; Bébé.</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-6.png" src="/images/feature/feature-6.png" alt="Vineta's web development project screenshot" />
@@ -131,8 +131,8 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box wow fadeInUp" data-wow-delay="0s">
               <div className="content mb-15">
-                <div className="title">Advance Product Filter</div>
-                <p>Find exactly what you need with our <br /> advanced product filter.</p>
+                <div className="title">Couffin Tounsi</div>
+                <p>Suivez les prix des produits du marché traditionnel <br /> dans Monoprix, Carrefour et Géant.</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-8.png" src="/images/feature/feature-8.png" alt="Vineta's web development project screenshot" />
@@ -147,9 +147,9 @@ export default function FeaturesSection() {
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-9.png" src="/images/feature/feature-9.png" alt="Vineta's web development project screenshot" />
               </div>
               <div className="content mb-26">
-                <div className="sub text-gradient style-3 animation-none">FEATURE HIGHLIGHT</div>
-                <div className="title">Product Video Section</div>
-                <p>Boost your store&apos;s appeal with stylish <br /> shoppable videos that enhance engagement <br /> and drive sales.</p>
+                <div className="sub text-gradient style-3 animation-none">FONCTIONNALITÉ CLÉE</div>
+                <div className="title">Produits du Moment</div>
+                <p>Découvrez les produits tendance de la semaine <br /> avec avis, notes et comparaison de prix <br /> en temps réel.</p>
               </div>
             </div>
           </div>
@@ -158,8 +158,8 @@ export default function FeaturesSection() {
           <div className="col-md-4">
             <div className="feature-box wow fadeInUp" data-wow-delay="0s">
               <div className="content mb-31">
-                <div className="title">Quick View Section</div>
-                <p>Boost your store&apos;s appeal with stylish <br /> shoppable videos that enhance <br /> engagement and drive sales.</p>
+                <div className="title">Dashboard Analytique</div>
+                <p>Accédez à un tableau de bord complet pour <br /> suivre les évolutions de prix et <br /> l&apos;historique des offres.</p>
               </div>
               <div className="image center">
                 <img loading="lazy" className="lazyload" data-src="/images/feature/feature-10.png" src="/images/feature/feature-10.png" alt="Vineta's web development project screenshot" />

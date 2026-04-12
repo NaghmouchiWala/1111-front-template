@@ -1,16 +1,16 @@
 const boostRows = [
   {
-    items: ["Volume Discount", "Testimonials", "Image Popups"],
+    items: ["Comparaison de Prix", "Veille Concurrentielle", "Alertes Prix"],
     reverse: false,
     duration: "30s",
   },
   {
-    items: ["Volume Discount", "Buy Together", "Countdown Timer", "Header"],
+    items: ["Détection Faux Prix", "Benchmarking", "50K+ Produits", "10+ Magasins"],
     reverse: true,
     duration: "38s",
   },
   {
-    items: ["Product 3D/AR", "Testimonials", "Buy Together", "Pickup Available"],
+    items: ["Prédiction IA", "Supermarché", "Parapharmacie", "Électroménager"],
     reverse: false,
     duration: "40s",
   },

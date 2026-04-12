@@ -35,9 +35,9 @@ const DotSvg = () => (
 );
 
 const items = [
-  <div key="t1" className="brand-item"><div className="text-1">Grab <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Vineta</span> Now</div></div>,
+  <div key="t1" className="brand-item"><div className="text-1">Comparez sur <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">1111.tn</span></div></div>,
   <div key="d1" className="brand-item"><div className="zoom"><DotSvg /></div></div>,
-  <div key="t2" className="brand-item"><div className="text-1 text-gradient style-5 animation-none">Boost <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">Your Sale</span></div></div>,
+  <div key="t2" className="brand-item"><div className="text-1 text-gradient style-5 animation-none">Économisez <span className="fw-7 fst-normal font-Plus-Jakarta-Sans">jusqu&apos;à 40%</span></div></div>,
   <div key="d2" className="brand-item"><div className="zoom"><DotSvg /></div></div>,
 ];
 

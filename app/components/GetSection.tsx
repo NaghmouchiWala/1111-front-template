@@ -9,32 +9,32 @@ export default function GetSection() {
           <div className="col-lg-5">
             <div className="content">
               <div className="heading1 wow fadeInUp" data-wow-delay="0s">
-                Get Vineta
+                1111.tn
                 <span></span>
               </div>
               <div className="heading-section">
                 <div className="heading wow fadeInUp" data-wow-delay="0.1s">
-                  Your{" "}
+                  Économisez jusqu&apos;à{" "}
                   <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                     <span className="cd-words-wrapper">
-                      <span className="item-text is-visible"><i className="in">P</i><i className="in">e</i><i className="in">r</i><i className="in">f</i><i className="in">e</i><i className="in">c</i><i className="in">t</i></span>
-                      <span className="item-text is-hidden"><i className="out">P</i><i className="out">e</i><i className="out">r</i><i className="out">f</i><i className="out">e</i><i className="out">c</i><i className="out">t</i></span>
-                      <span className="item-text is-hidden"><i className="out">P</i><i className="out">e</i><i className="out">r</i><i className="out">f</i><i className="out">e</i><i className="out">c</i><i className="out">t</i></span>
+                      <span className="item-text is-visible"><i className="in">4</i><i className="in">0</i><i className="in">%</i></span>
+                      <span className="item-text is-hidden"><i className="out">4</i><i className="out">0</i><i className="out">%</i></span>
+                      <span className="item-text is-hidden"><i className="out">4</i><i className="out">0</i><i className="out">%</i></span>
                     </span>
                   </span>
-                  {" "}Website, One Template{" "}
+                  {" "}sur vos achats{" "}
                   <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3 d-inline-flex">
                     <span className="cd-words-wrapper">
-                      <span className="item-text is-visible"><i className="in">A</i><i className="in">w</i><i className="in">a</i><i className="in">y</i></span>
-                      <span className="item-text is-hidden"><i className="in">A</i><i className="in">w</i><i className="in">a</i><i className="in">y</i></span>
-                      <span className="item-text is-hidden"><i className="out">A</i><i className="out">w</i><i className="out">a</i><i className="out">y</i></span>
+                      <span className="item-text is-visible"><i className="in">e</i><i className="in">n</i><i className="in"> </i><i className="in">T</i><i className="in">u</i><i className="in">n</i><i className="in">i</i><i className="in">s</i><i className="in">i</i><i className="in">e</i></span>
+                      <span className="item-text is-hidden"><i className="in">e</i><i className="in">n</i><i className="in"> </i><i className="in">T</i><i className="in">u</i><i className="in">n</i><i className="in">i</i><i className="in">s</i><i className="in">i</i><i className="in">e</i></span>
+                      <span className="item-text is-hidden"><i className="out">e</i><i className="out">n</i><i className="out"> </i><i className="out">T</i><i className="out">u</i><i className="out">n</i><i className="out">i</i><i className="out">s</i><i className="out">i</i><i className="out">e</i></span>
                     </span>
                   </span>!
                 </div>
-                <p className="wow fadeInUp" data-wow-delay="0.2s">Unique and engaging features make your ecommerce store <br /> irresistible.</p>
+                <p className="wow fadeInUp" data-wow-delay="0.2s">Plus de 50 000 produits comparés dans 10+ magasins. <br /> Gratuitement, pour toi.</p>
               </div>
               <div className="wow fadeInUp" data-wow-delay="0.3s">
-                <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" className="tf-btn-4 light_skew_hover type-white wow fadeInUp" target="_blank" data-wow-delay="0.2s">Buy Vineta Now</a>
+                <a href="#" className="tf-btn-4 light_skew_hover type-white wow fadeInUp" data-wow-delay="0.2s">Commencer Gratuitement</a>
               </div>
             </div>
           </div>

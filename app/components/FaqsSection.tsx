@@ -40,7 +40,7 @@ export default function FaqsSection() {
             <div className="heading-section center">
               <div className="sub-title box-tag wow fadeInUp" data-wow-delay="0s">
                 {sparkleIcon}
-                <span className="text-gradient style-2">FAQs</span>
+                <span className="text-gradient style-2">Questions fréquentes</span>
                 <span className="eff"></span>
               </div>
               <div className="heading fw-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -51,53 +51,53 @@ export default function FaqsSection() {
                     <span className="item-text is-hidden"><i className="out">G</i><i className="out">o</i><i className="out">t</i><i className="out">&nbsp;</i><i className="out">q</i><i className="out">u</i><i className="out">e</i><i className="out">s</i><i className="out">t</i><i className="out">i</i><i className="out">o</i><i className="out">n</i><i className="out">s</i><i className="out">?</i></span>
                   </span>
                 </span>
-                {" "}We&apos;ve got answers!
+                {" "}Nous avons les réponses !
               </div>
-              <p className="wow fadeInUp" data-wow-delay="0.2s">Explore our FAQs to find quick solutions and detailed insights about our products, <br /> services, and policies.</p>
+              <p className="wow fadeInUp" data-wow-delay="0.2s">Retrouvez toutes les réponses à vos questions sur 1111.tn, <br /> la plateforme de comparaison de prix en Tunisie.</p>
             </div>
           </div>
         </div>
         <ul className="accordion-wrap" id="accordion-faq-1">
           <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
             <a href="#accordion-1" className="accordion-title current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-1">
-              <div className="text">1. What is Vineta, and how does it work?</div>
+              <div className="text">1. C&apos;est quoi 1111.tn et comment ça marche ?</div>
               <span>{arrowDownSvg}</span>
               <div id="accordion-1" className="collapse show" data-bs-parent="#accordion-faq-1">
                 <div className="accordion-faqs-content">
-                  <p>Vineta is a highly flexible and easy-to-use HTML template designed for multiple products and purposes. <br /> It offers a versatile and powerful design with meticulously crafted demos, catering to various industries and business <br /> needs.</p>
+                  <p>1111.tn est le premier comparateur de prix intelligent en Tunisie. Nous collectons et analysons les prix <br /> affichés publiquement sur les sites e-commerce tunisiens pour vous aider à trouver <br /> les meilleures offres en toute transparence.</p>
                 </div>
               </div>
             </a>
           </li>
           <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
             <a href="#accordion-2" className="accordion-title current collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-2">
-              <div className="text">2. How can I get customer support?</div>
+              <div className="text">2. Est-ce que 1111.tn est gratuit ?</div>
               <span>{arrowDownSvg}</span>
               <div id="accordion-2" className="collapse" data-bs-parent="#accordion-faq-1">
                 <div className="accordion-faqs-content">
-                  <p>If you need support after purchasing the product, you can contact us by sending an email through the &quot;Contact Author&quot; section on the item purchase page.</p>
+                  <p>Oui ! La comparaison de prix sur 1111.tn est entièrement gratuite. Vous pouvez comparer des milliers de produits sans créer de compte. Des fonctionnalités avancées (alertes personnalisées, dashboard) sont disponibles avec un abonnement.</p>
                 </div>
               </div>
             </a>
           </li>
           <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
             <a href="#accordion-3" className="accordion-title current collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-3">
-              <div className="text">3. Will I receive regular updates, and for how long?</div>
+              <div className="text">3. Comment fonctionne la détection des faux prix ?</div>
               <span>{arrowDownSvg}</span>
               <div id="accordion-3" className="collapse" data-bs-parent="#accordion-faq-1">
                 <div className="accordion-faqs-content">
-                  <p>Yes! We continuously update Vineta with new features and improvements. Once purchased, you can access unlimited updates at no extra cost. Our dedicated team ensures regular enhancements.</p>
+                  <p>Notre IA analyse l&apos;historique des prix de chaque produit et détecte les gonflements artificiels avant les périodes de soldes. Chaque semaine, nous identifions les produits suspects et vous alertons pour que vous ne vous fassiez pas avoir.</p>
                 </div>
               </div>
             </a>
           </li>
           <li className="accordion-item wow fadeInUp" data-wow-delay="0s">
             <a href="#accordion-4" className="accordion-title current collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordion-4">
-              <div className="text">4. Is there a fee for each upgrade?</div>
+              <div className="text">4. Quels magasins sont disponibles sur 1111.tn ?</div>
               <span>{arrowDownSvg}</span>
               <div id="accordion-4" className="collapse" data-bs-parent="#accordion-faq-1">
                 <div className="accordion-faqs-content">
-                  <p>No, there are no additional fees. When you purchase a license, you will automatically receive all future updates for free.</p>
+                  <p>Nous indexons plus de 10 magasins en ligne tunisiens : Mytek, Spacenet, Tunisianet, TechnoPro, Batam, Darty, Carrefour, Géant, Monoprix, ParaShop, Pharma-Shop et ParaFendri. De nouveaux partenaires sont ajoutés régulièrement.</p>
                 </div>
               </div>
             </a>

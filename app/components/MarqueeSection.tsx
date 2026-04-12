@@ -12,10 +12,10 @@ const StarIcon = () => (
 );
 
 const marqueeItems = [
-  "Figma included",
-  "Easy To Use & Intuitive",
-  "Crafting Code Excellence",
-  "1-Time Charge Only",
+  "MONITORING",
+  "BENCHMARKING",
+  "VEILLE CONCURRENTIELLE",
+  "PRÉDICTION",
 ];
 
 // Duplicate items to fill the track — original + 3 copies for seamless loop

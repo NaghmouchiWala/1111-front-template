@@ -10,6 +10,7 @@ import InnerPageSection from "./components/InnerPageSection";
 import GetSection from "./components/GetSection";
 import FaqsSection from "./components/FaqsSection";
 import CtaMarqueeSection from "./components/CtaMarqueeSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -221,21 +222,7 @@ export default function Home() {
             {/* /section-marquee */}
 
             {/* footer */}
-            <footer>
-                <div className="container">
-                    <div className="line-row"></div>
-                    <div className="text">One time payment - Free lifetime update</div>
-                    <div className="text-1">Purchase Vineta today and start to creating your beautiful <br /> business website.</div>
-                    <a href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" className="tf-btn-4 light_skew_hover type-white wow fadeInUp btn-buy" target="_blank" data-wow-delay="0.2s">
-                        Purchase Now
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.0002 2.58008C7.61638 2.58008 3.70534 5.73104 2.7883 10.0218C2.33014 12.1657 2.63878 14.4454 3.66094 16.3854C4.6447 18.2523 6.2575 19.7612 8.1871 20.6163C10.1942 21.506 12.4985 21.661 14.6081 21.0543C16.6433 20.4692 18.4478 19.185 19.6764 17.461C22.2451 13.857 21.9017 8.7944 18.8796 5.56496C17.1084 3.67232 14.5927 2.58008 12.0002 2.58008ZM16.5192 12.5034L13.9512 15.1333C13.301 15.7993 12.2733 14.7903 12.9209 14.1274L14.2166 12.8005H8.07598C7.6399 12.8005 7.27606 12.4364 7.27606 12.0006C7.27606 11.5647 7.64014 11.2006 8.07598 11.2006H14.1859L12.8645 9.87944C12.2078 9.2228 13.2259 8.20448 13.8825 8.86112L16.5132 11.4915C16.7921 11.7702 16.7947 12.2214 16.5192 12.5034Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <div className="line-row1"></div>
-                    <div className="copyright">Copyright © <a className="text-white" href="https://themeforest.net/item/vineta-clean-responsive-shopify-theme/58776351" target="_blank">Vineta</a> All Right Reverved. Powered by <a className="text-white" href="https://help.gravio.ai/" target="_blank">Gravio</a>.</div>
-                </div>
-            </footer>
+            <Footer />
             {/* /footer */}
 
         </div>
@@ -243,16 +230,6 @@ export default function Home() {
 
     </div>
     {/* /#wrapper */}
-    <div id="sticky-banner" className="kxti">
-        <div className="banner-wrap">
-            <button className="close">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg>
-          </button>
-            <div className="text-wrap eff">
-                <p>Enjoy Shopify 3-day free trial. Then get your first month for $1. <a href="https://www.shopify.com/free-trial" target="_blank"><span className="under-line">Try Now</span><svg width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>                    </p>
-            </div>
-        </div>
-    </div>
 
     <a id="scroll-top" className="button-go">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
