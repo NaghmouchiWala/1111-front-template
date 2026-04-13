@@ -19,8 +19,8 @@ export default function PackedSection() {
                   </svg>
                 </div>
                 <div className="content text-center">
-                  <h5 className="mb-16">Super High Performance</h5>
-                  <p>Experience lightning-fast speed and <br /> seamless functionality every time.</p>
+                  <h5 className="mb-16">Comparaison en temps réel</h5>
+                  <p>Suivez l&apos;évolution des prix en direct <br /> sur tous les magasins tunisiens.</p>
                 </div>
               </div>
 
@@ -49,8 +49,8 @@ export default function PackedSection() {
                   </svg>
                 </div>
                 <div className="content text-center">
-                  <h5 className="mb-16">Friendly Mobile Users</h5>
-                  <p>Designed for a flawless experience on <br /> any mobile device.</p>
+                  <h5 className="mb-16">Accessible sur mobile</h5>
+                  <p>Comparez les prix depuis votre <br /> téléphone, partout et à tout moment.</p>
                 </div>
               </div>
 
@@ -75,8 +75,8 @@ export default function PackedSection() {
                   </svg>
                 </div>
                 <div className="content text-center">
-                  <h5 className="mb-16">Optimal Code</h5>
-                  <p>Clean, efficient code for superior <br /> performance and easy customization.</p>
+                  <h5 className="mb-16">Détection des faux prix</h5>
+                  <p>Notre IA identifie les gonflements <br /> artificiels avant les soldes.</p>
                 </div>
               </div>
 
@@ -114,8 +114,8 @@ export default function PackedSection() {
                   </svg>
                 </div>
                 <div className="content text-center">
-                  <h5 className="mb-16">Fully Responsive</h5>
-                  <p>Perfectly adaptable to all screen sizes <br /> for a smooth user experience.</p>
+                  <h5 className="mb-16">Alertes personnalisées</h5>
+                  <p>Recevez une notification dès qu&apos;un <br /> prix baisse sur votre produit favori.</p>
                 </div>
               </div>
 
