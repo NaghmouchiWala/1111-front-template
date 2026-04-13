@@ -4,7 +4,9 @@
 jQuery.easing.jswing = jQuery.easing.swing, jQuery.extend(jQuery.easing, {
     def: "easeOutQuad",
     swing: function(n, e, t, u, a) {
-        return jQuery.easing[jQuery.easing.def](n, e, t, u, a)
+        var fn = jQuery.easing[jQuery.easing.def];
+        if (typeof fn === 'function') return fn(n, e, t, u, a);
+        return t + u * (e / a);
     },
     easeInQuad: function(n, e, t, u, a) {
         return u * (e /= a) * e + t

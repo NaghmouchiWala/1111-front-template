@@ -513,17 +513,19 @@
 })(jQuery);
 
 // Sticky Banner Custom Element
-class stickyBanner extends HTMLElement {
-    constructor() {
-        super();
-        this.btn = this.querySelector('button.close');
+if (!customElements.get('sticky-banner')) {
+    class stickyBanner extends HTMLElement {
+        constructor() {
+            super();
+            this.btn = this.querySelector('button.close');
 
-        this.btn.addEventListener('click', () => {
-            this.querySelector('.banner-wrap').setAttribute('hide', '')
-            setTimeout(() => {
-                this.setAttribute('hide', '');
-            }, 500);
-        })
+            this.btn.addEventListener('click', () => {
+                this.querySelector('.banner-wrap').setAttribute('hide', '')
+                setTimeout(() => {
+                    this.setAttribute('hide', '');
+                }, 500);
+            })
+        }
     }
+    customElements.define('sticky-banner', stickyBanner);
 }
-customElements.define('sticky-banner', stickyBanner)
