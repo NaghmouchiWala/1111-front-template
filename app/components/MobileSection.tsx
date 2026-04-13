@@ -1,29 +1,29 @@
 export default function MobileSection() {
   return (
     <section className="section-mobile">
-      <img loading="lazy" className="item-1 item-circle-1" src="/images/item/item-circle.png" alt="Vineta's web development project screenshot" />
+      <img loading="lazy" className="item-1 item-circle-1" src="/images/item/item-circle.png" alt="1111.tn mobile comparison preview" />
       <div className="container-2">
         <div className="row">
           <div className="col-12">
             <div className="heading-section center">
-              <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="Vineta's web development project screenshot" />
-              <div className="sub-heading wow fadeInUp" data-wow-delay="0s">Mobile-First</div>
+              <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="1111.tn mobile comparison preview" />
+              <div className="sub-heading wow fadeInUp" data-wow-delay="0s">Comparaison Mobile</div>
               <div className="heading wow fadeInUp" data-wow-delay="0.1s">
                 <div>
                   <img loading="lazy" src="/images/item/arrow.png" alt="Vineta's web development project screenshot" />
                 </div>
-                Experience
+                Expérience
               </div>
               <div className="heading1 fw-6 wow fadeInUp" data-wow-delay="0.2s">
                 <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                   <span className="cd-words-wrapper">
-                    <span className="item-text is-visible">Template</span>
-                    <span className="item-text is-hidden">Template</span>
-                    <span className="item-text is-hidden">Template</span>
+                    <span className="item-text is-visible">1111.tn</span>
+                    <span className="item-text is-hidden">1111.tn</span>
+                    <span className="item-text is-hidden">1111.tn</span>
                   </span>
                 </span>
               </div>
-              <p className="wow fadeInUp" data-wow-delay="0.3s">Seamlessly switch to mobile or tablet mode to fine-tune spacing, text sizes, <br /> and alignments. Easily hide rows, columns, or widgets on selected devices.</p>
+              <p className="wow fadeInUp" data-wow-delay="0.3s">Comparez les prix des magasins tunisiens sur mobile en temps réel, <br /> avec une navigation rapide et une lecture claire des meilleures offres.</p>
             </div>
           </div>
           <div className="col-12">
