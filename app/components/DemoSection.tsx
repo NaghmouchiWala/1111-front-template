@@ -8,6 +8,9 @@ interface StoreCard {
   tags?: Tag[];
   delay?: string;
   comingSoon?: boolean;
+  prix?: string;
+  diff?: string;
+  cheapest?: boolean;
 }
 
 const BASE = "https://1111-galylio-startup.vercel.app";
@@ -21,6 +24,8 @@ const stores: StoreCard[] = [
     name: "Mytek",
     tags: ["HOT"],
     delay: "0s",
+    prix: "842.16",
+    diff: "+5.2%",
   },
   {
     categories: "ecommerce",
@@ -28,6 +33,8 @@ const stores: StoreCard[] = [
     logo: `${BASE}/_next/image?url=%2Fimages%2Fspacenet-removebg-preview.png&w=256&q=75`,
     name: "Spacenet",
     delay: "0.1s",
+    prix: "800.45",
+    cheapest: true,
   },
   {
     categories: "ecommerce",
@@ -35,6 +42,8 @@ const stores: StoreCard[] = [
     logo: `${BASE}/_next/image?url=%2Fimages%2Ft%C3%A9l%C3%A9chargement%20(6).png&w=256&q=75`,
     name: "Tunisianet",
     delay: "0.2s",
+    prix: "815.72",
+    diff: "+1.9%",
   },
   {
     categories: "ecommerce new",
@@ -43,6 +52,8 @@ const stores: StoreCard[] = [
     name: "TechnoPro",
     tags: ["NEW"],
     delay: "0s",
+    prix: "855.93",
+    diff: "+6.9%",
   },
   {
     categories: "ecommerce",
@@ -50,6 +61,8 @@ const stores: StoreCard[] = [
     logo: `${BASE}/_next/image?url=%2Fimages%2Flogo-batam.jpg&w=256&q=75`,
     name: "Batam",
     delay: "0.1s",
+    prix: "828.38",
+    diff: "+3.5%",
   },
   {
     categories: "ecommerce new",
@@ -58,6 +71,8 @@ const stores: StoreCard[] = [
     name: "Darty",
     tags: ["NEW"],
     delay: "0.2s",
+    prix: "867.54",
+    diff: "+8.4%",
   },
   // Parapharmacie
   {
@@ -109,6 +124,34 @@ const stores: StoreCard[] = [
   { categories: "coming-soon", href: "#", logo: "", name: "", comingSoon: true, delay: "0s" },
 ];
 
+function PrixBadge({ prix, diff, cheapest }: { prix: string; diff?: string; cheapest?: boolean }) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "10px", gap: "4px" }}>
+      <div style={{ display: "flex", alignItems: "baseline", gap: "4px", fontWeight: 700, fontSize: "18px", color: "#111", lineHeight: 1 }}>
+        {prix}
+        <span style={{ fontSize: "12px", fontWeight: 600, color: "#555" }}>DT</span>
+      </div>
+      {cheapest ? (
+        <span style={{
+          fontSize: "10px", fontWeight: 700,
+          background: "linear-gradient(90deg,#3BDEB9,#CCFF9B)",
+          color: "#111", borderRadius: "20px", padding: "2px 8px",
+          letterSpacing: "0.5px", textTransform: "uppercase",
+        }}>
+          Moins cher
+        </span>
+      ) : (
+        <span style={{
+          fontSize: "10px", fontWeight: 600, color: "#e74c3c",
+          background: "#fff0f0", borderRadius: "20px", padding: "2px 8px",
+        }}>
+          {diff}
+        </span>
+      )}
+    </div>
+  );
+}
+
 function StoreBox({ card }: { card: StoreCard }) {
   if (card.comingSoon) {
     return (
@@ -121,9 +164,9 @@ function StoreBox({ card }: { card: StoreCard }) {
                 Plus de magasins{" "}
                 <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                   <span className="cd-words-wrapper">
-                    <span className="item-text is-visible">bientôt</span>
-                    <span className="item-text is-hidden">bientôt</span>
-                    <span className="item-text is-hidden">bientôt</span>
+                    <span className="item-text is-visible"><i className="in">b</i><i className="in">i</i><i className="in">e</i><i className="in">n</i><i className="in">t</i><i className="out">ô</i><i className="out">t</i></span>
+                    <span className="item-text is-hidden"><i className="out">b</i><i className="out">i</i><i className="out">e</i><i className="out">n</i><i className="out">t</i><i className="out">ô</i><i className="out">t</i></span>
+                    <span className="item-text is-hidden"><i className="out">b</i><i className="out">i</i><i className="out">e</i><i className="out">n</i><i className="out">t</i><i className="in">ô</i><i className="in">t</i></span>
                   </span>
                 </span>
                 {" "}disponibles...
@@ -142,13 +185,12 @@ function StoreBox({ card }: { card: StoreCard }) {
           <div className="dot"><span></span><span></span><span></span></div>
           <div className="thumb">
             <a className="image" href={card.href} target="_blank"
-              style={{ display: "flex", alignItems: "center", justifyContent: "center", background: "#fff", minHeight: "180px", padding: "24px" }}>
-              <img
-                loading="lazy"
-                src={card.logo}
-                alt={card.name}
-                style={{ maxHeight: "80px", maxWidth: "100%", objectFit: "contain" }}
-              />
+              style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", background: "#fff", minHeight: "180px", padding: "24px" }}>
+              <img loading="lazy" src={card.logo} alt={card.name}
+                style={{ maxHeight: "80px", maxWidth: "100%", objectFit: "contain" }} />
+              {card.prix && (
+                <PrixBadge prix={card.prix} diff={card.diff} cheapest={card.cheapest} />
+              )}
             </a>
             <a className="tf-btn-3 light_skew_hover demo-full-link" href={card.href} target="_blank">Voir les prix</a>
           </div>
@@ -172,7 +214,6 @@ export default function DemoSection() {
   const allStores = stores;
   const ecommerce = stores.filter(s => s.categories.includes("ecommerce") || s.comingSoon);
   const para = stores.filter(s => s.categories.includes("para") || s.comingSoon);
-  const superStores = stores.filter(s => s.categories.includes("super") || s.comingSoon);
 
   return (
     <section id="demo" className="section-demo">

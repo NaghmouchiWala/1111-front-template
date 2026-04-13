@@ -4,7 +4,6 @@ import TrendingSection from "./components/TrendingSection";
 import MarqueeSection from "./components/MarqueeSection";
 import DevelopedSection from "./components/DevelopedSection";
 import DemoSection from "./components/DemoSection";
-import CouffinSection from "./components/CouffinSection";
 import MobileSection from "./components/MobileSection";
 import PackedSection from "./components/PackedSection";
 import FeaturesSection from "./components/FeaturesSection";
@@ -51,7 +50,6 @@ export default function Home() {
 
             {/* section-demo */}
             <DemoSection />
-            <CouffinSection />
             {/* /section-demo */}
 
             {/* section-mobile */}
