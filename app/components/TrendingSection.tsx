@@ -47,10 +47,10 @@ const CATS: Cat[] = [
   {
     label:"PC de Bureau", bannerImg:"https://images.unsplash.com/photo-1593640408182-31c228b52b2f?q=80&w=800&auto=format&fit=crop", bannerTitle:"PC de Bureau",
     products:[
-      { id:"d1", brand:"DELL", name:"PC de Bureau Dell OptiPlex 3000 Core i5-12500T 8Go 256Go SSD", price:"1399.000 DT", originalPrice:"1499.000 DT", image:"https://www.mytek.tn/media/catalog/product/d/e/dell-optiplex-3000-sff-i5-8g-256ssd.jpg", inStock:true, stores:[{name:"Mytek",dot:"#ef4444",price:"1399.000 DT",best:true},{name:"Spacenet",dot:"#2563eb",price:"1450.000 DT",best:false}] },
-      { id:"d2", brand:"HP", name:"PC de Bureau HP ProDesk 400 G9 Core i5-12500 8Go 512Go SSD", price:"1649.000 DT", image:"https://www.mytek.tn/media/catalog/product/h/p/hp-prodesk-400-g9.jpg", inStock:true, stores:[{name:"Tunisianet",dot:"#f97316",price:"1649.000 DT",best:true},{name:"Jumbo",dot:"#9ca3af",price:"1699.000 DT",best:false}] },
-      { id:"d3", brand:"LENOVO", name:"PC de Bureau Lenovo ThinkCentre M70q Gen3 Core i5 8Go 256Go SSD", price:"1299.000 DT", originalPrice:"1399.000 DT", image:"https://www.mytek.tn/media/catalog/product/l/e/lenovo-thinkcentre-m70q.jpg", inStock:false, stores:[{name:"Spacenet",dot:"#2563eb",price:"1299.000 DT",best:true},{name:"Mytek",dot:"#ef4444",price:"1350.000 DT",best:false}] },
-      { id:"d4", brand:"ASUS", name:"PC de Bureau ASUS ExpertCenter D500SC Core i5-10400 8Go 512Go SSD", price:"1199.000 DT", image:"https://www.mytek.tn/media/catalog/product/a/s/asus-expertcenter-d500sc.jpg", inStock:true, stores:[{name:"Mytek",dot:"#ef4444",price:"1199.000 DT",best:true},{name:"Technopro",dot:"#3b82f6",price:"1249.000 DT",best:false}] },
+      { id:"d1", brand:"DELL", name:"PC de Bureau Dell OptiPlex 3000 Core i5-12500T 8Go 256Go SSD", price:"1399.000 DT", originalPrice:"1499.000 DT", image:"/images/Laptops & Informatique.jpg", inStock:true, stores:[{name:"Mytek",dot:"#ef4444",price:"1399.000 DT",best:true},{name:"Spacenet",dot:"#2563eb",price:"1450.000 DT",best:false}] },
+      { id:"d2", brand:"HP", name:"PC de Bureau HP ProDesk 400 G9 Core i5-12500 8Go 512Go SSD", price:"1649.000 DT", image:"/images/Laptops & Informatique.jpg", inStock:true, stores:[{name:"Tunisianet",dot:"#f97316",price:"1649.000 DT",best:true},{name:"Jumbo",dot:"#9ca3af",price:"1699.000 DT",best:false}] },
+      { id:"d3", brand:"LENOVO", name:"PC de Bureau Lenovo ThinkCentre M70q Gen3 Core i5 8Go 256Go SSD", price:"1299.000 DT", originalPrice:"1399.000 DT", image:"/images/Laptops & Informatique.jpg", inStock:false, stores:[{name:"Spacenet",dot:"#2563eb",price:"1299.000 DT",best:true},{name:"Mytek",dot:"#ef4444",price:"1350.000 DT",best:false}] },
+      { id:"d4", brand:"ASUS", name:"PC de Bureau ASUS ExpertCenter D500SC Core i5-10400 8Go 512Go SSD", price:"1199.000 DT", image:"/images/Laptops & Informatique.jpg", inStock:true, stores:[{name:"Mytek",dot:"#ef4444",price:"1199.000 DT",best:true},{name:"Technopro",dot:"#3b82f6",price:"1249.000 DT",best:false}] },
     ],
   },
   {
@@ -92,7 +92,12 @@ const CATS: Cat[] = [
 ];
 
 /* ── Product card ────────────────────────────────────────────────────── */
-function ProductCard({ p }: { p: Product }) {
+function ProductCard({ p, fallbackSrc }: { p: Product; fallbackSrc: string }) {
+  const storeRows = [...p.stores.slice(0, 3)];
+  while (storeRows.length < 3) {
+    storeRows.push({ name: "", dot: "transparent", price: "", best: false });
+  }
+
   return (
     <div style={{
       display:"flex", flexDirection:"column",
@@ -101,16 +106,29 @@ function ProductCard({ p }: { p: Product }) {
       backdropFilter:"blur(16px)",
       boxShadow:"0 8px 32px rgba(0,0,0,0.4)",
       position:"relative", overflow:"hidden",
-      maxWidth:320,
+      maxWidth:320, height:420,
     }}>
       {/* top glow line */}
       <div style={{ position:"absolute", top:0, left:"10%", right:"10%", height:1, background:"linear-gradient(90deg,transparent,rgba(59,222,185,0.5),transparent)" }} />
 
       {/* Image area */}
-      <a href={`/products/${p.id}`} style={{ display:"block", position:"relative", height:120, borderRadius:12, overflow:"hidden", background:"rgba(255,255,255,0.05)", marginBottom:14, flexShrink:0 }}>
+      <a href={`/products/${p.id}`} style={{ display:"block", position:"relative", height:145, borderRadius:12, overflow:"hidden", background:"rgba(255,255,255,0.05)", marginBottom:14, flexShrink:0 }}>
         <img src={p.image} alt={p.name} loading="lazy"
-          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"contain", padding:8 }}
-          onError={e => { (e.target as HTMLImageElement).style.opacity="0"; }}
+          referrerPolicy="no-referrer"
+          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"contain", padding:2 }}
+          onError={e => {
+            const img = e.target as HTMLImageElement;
+            if (img.src !== fallbackSrc) {
+              img.src = fallbackSrc;
+              return;
+            }
+            const genericFallback = "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=600&q=80";
+            if (img.src !== genericFallback) {
+              img.src = genericFallback;
+              return;
+            }
+            img.style.opacity = "0";
+          }}
         />
         {/* Deal badge */}
         <span style={{
@@ -143,20 +161,20 @@ function ProductCard({ p }: { p: Product }) {
         </div>
 
         {/* Store rows */}
-        <div style={{ display:"flex", flexDirection:"column", gap:4, marginTop:2 }}>
-          {p.stores.map((s, i) => (
+        <div style={{ display:"flex", flexDirection:"column", gap:4, marginTop:2, minHeight:108 }}>
+          {storeRows.map((s, i) => (
             <div key={i} style={{
               display:"flex", alignItems:"center", justifyContent:"space-between",
               borderRadius:10, padding:"7px 12px",
-              background: i===0 ? C.rowBest : C.rowOther,
-              border: i===0 ? `1px solid ${C.rowBestBorder}` : "1px solid rgba(255,255,255,0.05)",
+              background: s.name ? (i===0 ? C.rowBest : C.rowOther) : "transparent",
+              border: s.name ? (i===0 ? `1px solid ${C.rowBestBorder}` : "1px solid rgba(255,255,255,0.05)") : "1px solid transparent",
             }}>
               <div style={{ display:"flex", alignItems:"center", gap:8 }}>
                 <span style={{ width:7, height:7, borderRadius:"50%", background:s.dot, flexShrink:0 }} />
-                <span style={{ fontSize:12, fontWeight:500, color: i===0 ? C.text : C.subText }}>{s.name}</span>
+                <span style={{ fontSize:12, fontWeight:500, color: i===0 ? C.text : C.subText }}>{s.name || "\u00A0"}</span>
               </div>
               <span style={{ fontSize:13, fontWeight:800, color: i===0 ? C.priceBest : C.priceOther, letterSpacing:"-0.3px" }}>
-                {s.price}
+                {s.price || "\u00A0"}
               </span>
             </div>
           ))}
@@ -172,16 +190,24 @@ export default function TrendingSection() {
   const [page,      setPage]      = useState(0);
   const [animKey,   setAnimKey]   = useState(0);
   const [direction, setDirection] = useState<"left"|"right">("right");
-  const [isMobile,  setIsMobile]  = useState(false);
+  const [cardsPerPage, setCardsPerPage] = useState(2);
   const timerRef = useRef<ReturnType<typeof setInterval>|null>(null);
 
   const cat      = CATS[catIdx];
-  const perPage  = isMobile ? 1 : 2;
+  const perPage  = cardsPerPage;
   const total    = Math.ceil(cat.products.length / perPage);
   const visible  = cat.products.slice(page * perPage, page * perPage + perPage);
 
   useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth <= 767);
+    const onResize = () => {
+      if (window.innerWidth <= 767) {
+        setCardsPerPage(1);
+      } else if (window.innerWidth <= 1199) {
+        setCardsPerPage(2);
+      } else {
+        setCardsPerPage(3);
+      }
+    };
     onResize();
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
@@ -204,7 +230,7 @@ export default function TrendingSection() {
     setPage(0);
     startTimer();
     return () => { if(timerRef.current) clearInterval(timerRef.current); };
-  }, [catIdx, isMobile]);
+  }, [catIdx, cardsPerPage]);
 
   const go = (dir: "left"|"right") => {
     if(timerRef.current) clearInterval(timerRef.current);
@@ -225,7 +251,7 @@ export default function TrendingSection() {
 
   return (
     <div style={{ width:"100%", background:C.section, padding:"60px 0" }}>
-    <div style={{ maxWidth:900, margin:"0 auto", padding:"0 20px" }}>
+    <div style={{ maxWidth:1320, margin:"0 auto", padding:"0 24px" }}>
       <style>{`
         @keyframes slideInRight {
           from { opacity:0; transform:translateX(60px); }
@@ -281,10 +307,10 @@ export default function TrendingSection() {
         </p>
       </div>
 
-      <div className="trend-wrap" style={{ display:"flex", gap:28, alignItems:"stretch" }}>
+      <div className="trend-wrap" style={{ display:"flex", gap:24, alignItems:"stretch" }}>
 
         {/* ── Left banner (desktop) ── */}
-        <div className="trend-banner" style={{ width:300, flexShrink:0, display:"none" }}>
+        <div className="trend-banner" style={{ width:280, flexShrink:0, display:"none" }}>
           <div style={{ height:"100%", minHeight:420, position:"relative", borderRadius:32, overflow:"hidden", background:"#f0f0f0" }}>
             <img src={cat.bannerImg} alt={cat.bannerTitle} loading="lazy"
               style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", opacity:0.88, transition:"all 0.6s" }}
@@ -345,10 +371,10 @@ export default function TrendingSection() {
 
             {/* Animated cards */}
             <div key={`${catIdx}-${animKey}`} className="trend-slide"
-              style={{ animationName:animName, display:"flex", gap:18, padding:"4px 6px" }}>
+              style={{ animationName:animName, display:"flex", gap:16, padding:"4px 6px" }}>
               {visible.map(p => (
-                <div key={p.id} className="trend-card" style={{ flex:"1 1 300px", minWidth:0, maxWidth:340 }}>
-                  <ProductCard p={p} />
+                <div key={p.id} className="trend-card" style={{ flex:"1 1 0", minWidth:0, maxWidth:"none", display:"flex" }}>
+                  <ProductCard p={p} fallbackSrc={cat.bannerImg} />
                 </div>
               ))}
               {/* Placeholder if odd number */}

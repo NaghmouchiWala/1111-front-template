@@ -80,24 +80,25 @@ const stores: StoreCard[] = [
 
 function PrixBadge({ prix, diff, cheapest }: { prix: string; diff?: string; cheapest?: boolean }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "10px", gap: "4px" }}>
-      <div style={{ display: "flex", alignItems: "baseline", gap: "4px", fontWeight: 700, fontSize: "18px", color: "#111", lineHeight: 1 }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px", gap: "6px" }}>
+      <div style={{ display: "flex", alignItems: "baseline", gap: "4px", fontWeight: 800, fontSize: "20px", color: "#111", lineHeight: 1 }}>
         {prix}
-        <span style={{ fontSize: "12px", fontWeight: 600, color: "#555" }}>DT</span>
+        <span style={{ fontSize: "11px", fontWeight: 700, color: "#555", letterSpacing: "0.04em" }}>DT</span>
       </div>
       {cheapest ? (
         <span style={{
-          fontSize: "10px", fontWeight: 700,
+          fontSize: "10px", fontWeight: 800,
           background: "linear-gradient(90deg,#3BDEB9,#CCFF9B)",
           color: "#111", borderRadius: "20px", padding: "2px 8px",
           letterSpacing: "0.5px", textTransform: "uppercase",
+          boxShadow: "0 4px 14px rgba(59,222,185,0.35)",
         }}>
           Moins cher
         </span>
       ) : (
         <span style={{
-          fontSize: "10px", fontWeight: 600, color: "#e74c3c",
-          background: "#fff0f0", borderRadius: "20px", padding: "2px 8px",
+          fontSize: "10px", fontWeight: 700, color: "#d64242",
+          background: "#fff0f0", borderRadius: "20px", padding: "2px 8px", border: "1px solid rgba(214,66,66,0.2)",
         }}>
           {diff}
         </span>
@@ -135,21 +136,24 @@ function StoreBox({ card }: { card: StoreCard }) {
   return (
     <div className={`${card.categories} item col-lg-4 col-6`}>
       <div className="home-box wow fadeInUp" data-wow-delay={card.delay}>
-        <div className="innerbox">
+        <div className="innerbox" style={{ borderRadius: "18px", border: "1px solid rgba(59,222,185,0.18)", background: "rgba(8,18,13,0.94)", boxShadow: "0 12px 34px rgba(0,0,0,0.35)", overflow: "hidden" }}>
           <div className="dot"><span></span><span></span><span></span></div>
           <div className="thumb">
             <a className="image" href={card.href} target="_blank"
-              style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", background: "#fff", minHeight: "180px", padding: "24px" }}>
+              style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", background: "linear-gradient(180deg,#ffffff 0%,#f6fbf8 100%)", minHeight: "190px", padding: "22px 18px", borderRadius: "12px" }}>
               <img loading="lazy" src={card.logo} alt={card.name}
-                style={{ maxHeight: "80px", maxWidth: "100%", objectFit: "contain" }} />
+                style={{ maxHeight: "86px", maxWidth: "100%", objectFit: "contain", filter: "drop-shadow(0 3px 8px rgba(0,0,0,0.12))" }} />
               {card.prix && (
                 <PrixBadge prix={card.prix} diff={card.diff} cheapest={card.cheapest} />
               )}
             </a>
-            <a className="tf-btn-3 light_skew_hover demo-full-link" href={card.href} target="_blank">Voir les prix</a>
+            <a className="tf-btn-3 light_skew_hover demo-full-link" href={card.href} target="_blank"
+              style={{ borderRadius: "999px", fontWeight: 700, letterSpacing: "0.01em" }}>
+              Voir les prix
+            </a>
           </div>
-          <div className="content">
-            <a href={card.href} target="_blank" className="title-box">{card.name}</a>
+          <div className="content" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px" }}>
+            <a href={card.href} target="_blank" className="title-box" style={{ color: "#fff", fontWeight: 700 }}>{card.name}</a>
             {card.tags && card.tags.length > 0 && (
               <div className="tags">
                 {card.tags.map((tag) => (
@@ -172,6 +176,26 @@ export default function DemoSection() {
   return (
     <section id="demo" className="section-demo">
       <style>{`
+        .section-demo .home-box {
+          transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .section-demo .home-box:hover {
+          transform: translateY(-4px);
+        }
+        .section-demo .home-box .content {
+          padding-top: 14px;
+        }
+        .section-demo .home-box .title-box {
+          font-size: 16px;
+          line-height: 1.3;
+        }
+        .section-demo .home-box .tags .tag-item {
+          border-radius: 999px;
+          font-weight: 700;
+          letter-spacing: .04em;
+          font-size: 10px;
+          padding: 4px 9px;
+        }
         @media (max-width: 767px) {
           .section-demo .posttype-filter {
             justify-content: flex-start !important;
