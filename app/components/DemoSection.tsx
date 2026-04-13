@@ -74,52 +74,6 @@ const stores: StoreCard[] = [
     prix: "867.54",
     diff: "+8.4%",
   },
-  // Parapharmacie
-  {
-    categories: "para new",
-    href: "https://www.parashop.com.tn",
-    logo: `${BASE}/_next/image?url=%2Fimages%2Fparashop-removebg-preview.png&w=256&q=75`,
-    name: "ParaShop",
-    tags: ["HOT"],
-    delay: "0s",
-  },
-  {
-    categories: "para",
-    href: "https://pharma-shop.tn",
-    logo: `${BASE}/_next/image?url=%2Fimages%2Fpharmashop-removebg-preview.png&w=256&q=75`,
-    name: "Pharma-Shop",
-    delay: "0.1s",
-  },
-  {
-    categories: "para",
-    href: "https://www.parafendri.tn",
-    logo: `${BASE}/_next/image?url=%2Fimages%2Fparafendri-removebg-preview.png&w=256&q=75`,
-    name: "ParaFendri",
-    delay: "0.2s",
-  },
-  // Supermarché
-  {
-    categories: "super new",
-    href: "https://www.monoprix.com.tn",
-    logo: `https://www.google.com/s2/favicons?domain=monoprix.com.tn&sz=128`,
-    name: "Monoprix",
-    tags: ["HOT"],
-    delay: "0s",
-  },
-  {
-    categories: "super",
-    href: "https://www.carrefour.com.tn",
-    logo: `https://www.google.com/s2/favicons?domain=carrefour.com.tn&sz=128`,
-    name: "Carrefour",
-    delay: "0.1s",
-  },
-  {
-    categories: "super",
-    href: "https://www.geant.com.tn",
-    logo: `https://www.google.com/s2/favicons?domain=geant.com.tn&sz=128`,
-    name: "Géant",
-    delay: "0.2s",
-  },
   // Coming soon
   { categories: "coming-soon", href: "#", logo: "", name: "", comingSoon: true, delay: "0s" },
 ];
