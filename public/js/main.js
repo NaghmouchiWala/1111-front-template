@@ -395,7 +395,9 @@
         if ($(document.body).hasClass("counter-scroll")) {
             var a = 0;
             $(window).scroll(function() {
-                var oTop = $(".counter").offset().top - window.innerHeight;
+                var $counter = $(".counter");
+                if (!$counter.length || !$counter.offset()) return;
+                var oTop = $counter.offset().top - window.innerHeight;
                 if (a == 0 && $(window).scrollTop() > oTop) {
                     if ($().countTo) {
                         $(".counter")

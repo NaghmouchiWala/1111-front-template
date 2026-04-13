@@ -266,28 +266,58 @@ export default function ProductListingSection() {
         select { appearance:none; }
         ::-webkit-scrollbar { width:4px; } ::-webkit-scrollbar-track { background:transparent; } ::-webkit-scrollbar-thumb { background:rgba(59,222,185,0.3); border-radius:99px; }
         @media(min-width:1024px){ .plx-sidebar-wrap{ display:flex !important; } .plx-mobile-bar{ display:none !important; } }
+        @media(max-width:767px){
+          .plx-topbar{
+            height:auto !important;
+            min-height:64px;
+            padding:10px 14px !important;
+            display:grid !important;
+            grid-template-columns:1fr auto;
+            grid-template-areas:
+              "logo back"
+              "crumb crumb";
+            row-gap:8px;
+            column-gap:10px;
+            align-items:center !important;
+          }
+          .plx-logo{ grid-area:logo; min-width:0; }
+          .plx-crumb{
+            grid-area:crumb;
+            font-size:12px !important;
+            white-space:nowrap;
+            overflow-x:auto;
+            padding-bottom:2px;
+          }
+          .plx-back{
+            grid-area:back;
+            padding:7px 12px !important;
+            font-size:12px !important;
+            gap:5px !important;
+          }
+          .plx-back-text{ display:none; }
+        }
       `}</style>
 
       {/* ── Top nav bar ── */}
       <div style={{ position:"sticky", top:0, zIndex:50, background:"rgba(5,15,10,0.95)", backdropFilter:"blur(20px)", borderBottom:`1px solid ${D.cardBorder}` }}>
-        <div style={{ maxWidth:1280, margin:"0 auto", padding:"0 20px", height:64, display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+        <div className="plx-topbar" style={{ maxWidth:1280, margin:"0 auto", padding:"0 20px", height:64, display:"flex", alignItems:"center", justifyContent:"space-between" }}>
           {/* Logo */}
-          <a href="/" style={{ textDecoration:"none", display:"flex", alignItems:"center", gap:4 }}>
+          <a className="plx-logo" href="/" style={{ textDecoration:"none", display:"flex", alignItems:"center", gap:4 }}>
             <span style={{ fontFamily:"'Playfair Display',Georgia,serif", fontSize:"2rem", fontWeight:700, fontStyle:"italic", letterSpacing:"-1.5px", background:D.grad, WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundClip:"text", lineHeight:1 }}>1111</span>
             <span style={{ fontFamily:"'Playfair Display',Georgia,serif", fontSize:"0.6rem", fontWeight:700, fontStyle:"italic", color:"#0c121c", background:D.gradBtn, borderRadius:5, padding:"2px 5px", lineHeight:1.4, textTransform:"uppercase" }}>.tn</span>
           </a>
 
           {/* Breadcrumb */}
-          <nav style={{ fontSize:13, color:D.muted, display:"flex", gap:6, alignItems:"center" }}>
+          <nav className="plx-crumb" style={{ fontSize:13, color:D.muted, display:"flex", gap:6, alignItems:"center" }}>
             <a href="/" style={{ color:D.teal, textDecoration:"none", fontWeight:600 }}>Accueil</a>
             <span>/</span>
             <span style={{ color:D.subText }}>Catalogue</span>
           </nav>
 
           {/* Back home */}
-          <a href="/" style={{ display:"inline-flex", alignItems:"center", gap:7, borderRadius:999, padding:"8px 18px", fontSize:13, fontWeight:700, color:"#0a140f", background:D.gradBtn, textDecoration:"none", boxShadow:"0 4px 14px rgba(59,222,185,0.25)", flexShrink:0 }}>
+          <a className="plx-back" href="/" style={{ display:"inline-flex", alignItems:"center", gap:7, borderRadius:999, padding:"8px 18px", fontSize:13, fontWeight:700, color:"#0a140f", background:D.gradBtn, textDecoration:"none", boxShadow:"0 4px 14px rgba(59,222,185,0.25)", flexShrink:0 }}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            Retour à l&apos;accueil
+            <span className="plx-back-text">Retour à l&apos;accueil</span>
           </a>
         </div>
       </div>

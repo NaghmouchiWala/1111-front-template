@@ -36,7 +36,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/textanimation.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
       </head>
-      <body className="body counter-scroll">
+      <body className="body counter-scroll" suppressHydrationWarning>
         {children}
         <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
         <Script src="/js/bootstrap.min.js" strategy="beforeInteractive" />

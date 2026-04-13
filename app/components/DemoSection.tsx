@@ -171,6 +171,35 @@ export default function DemoSection() {
 
   return (
     <section id="demo" className="section-demo">
+      <style>{`
+        @media (max-width: 767px) {
+          .section-demo .posttype-filter {
+            justify-content: flex-start !important;
+            padding-bottom: 4px;
+          }
+          .section-demo .home-box .innerbox {
+            padding: 12px;
+          }
+          .section-demo .home-box .thumb .image {
+            min-height: 140px;
+            aspect-ratio: auto;
+          }
+          .section-demo .home-box .thumb .image img {
+            object-fit: contain;
+          }
+          .section-demo .home-box .thumb .demo-full-link {
+            position: static;
+            opacity: 1;
+            transform: none;
+            width: 100%;
+            margin-top: 10px;
+            justify-content: center;
+          }
+          .section-demo .home-box .title-box {
+            line-height: 22px;
+          }
+        }
+      `}</style>
       <div className="container-1 flat-animate-tab">
         <div className="row">
           <div className="col-12">

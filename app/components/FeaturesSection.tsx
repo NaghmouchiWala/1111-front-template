@@ -54,7 +54,7 @@ export default function FeaturesSection() {
                 <p>Comparez instantanément les prix de plus de <br /> 50 000 produits à travers 10+ magasins en ligne.</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-1.png" src="/images/feature/feature-1.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Comparaison de prix entre boutiques" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
                 <p>Notre IA détecte les gonflements de prix artificiels <br /> avant les soldes — protégez-vous des <br /> arnaques tarifaires.</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-2.png" src="/images/feature/feature-2.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80" alt="Détection de faux prix" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function FeaturesSection() {
                 <p>Soyez alerté avant une hausse de prix imminente <br /> grâce à notre système de prédiction IA.</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-3.png" src="/images/feature/feature-3.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Alertes prix prédictives" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function FeaturesSection() {
                 <p>Analysez les stratégies tarifaires de vos concurrents <br /> et restez toujours un pas en avance <br /> sur le marché tunisien.</p>
               </div>
               <div className="image">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-4.png" src="/images/feature/feature-4.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80" alt="Veille concurrentielle" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function FeaturesSection() {
                 <p>Comparez les prix des grandes surfaces et <br /> électroménager : Mytek, Spacenet, Tunisianet...</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-5.png" src="/images/feature/feature-5.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Supermarché et électroménager" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function FeaturesSection() {
                 <p>Comparez Vichy, Avène, Bioderma et plus encore <br /> dans les catégories Solaire, Hygiène, <br /> Maman &amp; Bébé.</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-6.png" src="/images/feature/feature-6.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt="Parapharmacie" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function FeaturesSection() {
                 <p>Suivez les prix des produits du marché traditionnel <br /> dans Monoprix, Carrefour et Géant.</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-8.png" src="/images/feature/feature-8.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80" alt="Couffin Tounsi" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function FeaturesSection() {
           <div className="col-md-8">
             <div className="feature-box style-row align-items-center pt-0 wow fadeInUp" data-wow-delay="0.1s">
               <div className="image mw-382">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-9.png" src="/images/feature/feature-9.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80" alt="Produits du moment" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
               <div className="content mb-26">
                 <div className="sub text-gradient style-3 animation-none">FONCTIONNALITÉ CLÉE</div>
@@ -162,7 +162,7 @@ export default function FeaturesSection() {
                 <p>Accédez à un tableau de bord complet pour <br /> suivre les évolutions de prix et <br /> l&apos;historique des offres.</p>
               </div>
               <div className="image center">
-                <img loading="lazy" className="lazyload" data-src="/images/feature/feature-10.png" src="/images/feature/feature-10.png" alt="Vineta's web development project screenshot" />
+                <img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Dashboard analytique" style={{borderRadius:"12px",objectFit:"cover",width:"100%"}} />
               </div>
             </div>
           </div>

@@ -7,6 +7,7 @@ import DemoSection from "./components/DemoSection";
 import MobileSection from "./components/MobileSection";
 import PackedSection from "./components/PackedSection";
 import FeaturesSection from "./components/FeaturesSection";
+import PredictionSection from "./components/PredictionSection";
 import InnerPageSection from "./components/InnerPageSection";
 import GetSection from "./components/GetSection";
 import FaqsSection from "./components/FaqsSection";
@@ -63,6 +64,10 @@ export default function Home() {
             {/* section-features */}
             <FeaturesSection />
             {/* /section-features */}
+
+            {/* section-prediction */}
+            <PredictionSection />
+            {/* /section-prediction */}
 
             {/* section-innerpage */}
             <InnerPageSection />
@@ -267,26 +272,6 @@ export default function Home() {
             </div>
         </div>
     </div>
-
-    {/* Javascript */}
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/plugin.js"></script>
-    <script src="/js/swiper.js"></script>
-    <script src="/js/countto.js"></script>
-    <script src="/js/lazysize.min.js"></script>
-    <script src="/js/jquery.isotope.min.js"></script>
-    <script src="/js/infinityslide.js"></script>
-    <script src="/js/matter.min.js"></script>
-    <script src="/js/matter.js"></script>
-    <script src="/js/textanimation.js"></script>
-    <script src="/js/main.js"></script>
-
-
-
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0c75da8b3df243609ed5ea815ce9f783","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossOrigin="anonymous"></script>
 
     </>
   );

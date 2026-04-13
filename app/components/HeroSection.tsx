@@ -303,6 +303,39 @@ export default function HeroSection() {
           .hero-right-panel { display: none !important; }
           .hero-search-bar { max-width: 100%; }
         }
+        @media (max-width: 767px) {
+          .slider .slider-inner {
+            padding: 110px 15px 64px !important;
+            gap: 24px !important;
+          }
+          .slider .inner-content {
+            padding-top: 0 !important;
+            padding-left: 0 !important;
+          }
+          .box-tag {
+            font-size: 12px !important;
+            padding: 10px 18px !important;
+          }
+          .hero-search-bar {
+            padding: 6px !important;
+            border-radius: 18px !important;
+            flex-direction: column;
+            gap: 8px !important;
+            align-items: stretch !important;
+          }
+          .hero-search-bar input {
+            min-height: 42px;
+            padding: 0 10px !important;
+          }
+          .hero-search-bar button {
+            justify-content: center;
+            width: 100%;
+          }
+          .hero-trust-row {
+            flex-wrap: wrap;
+            row-gap: 6px;
+          }
+        }
       `}</style>
 
       <img loading="lazy" className="item-1 item-circle-2" src="/images/item/item-circle-blur.png" alt="" />
@@ -312,7 +345,7 @@ export default function HeroSection() {
       <div className="slider-inner" style={{ alignItems: "center", gap: "48px" }}>
 
         {/* ── Left Content ── */}
-        <div className="inner-content" style={{ flex: "1 1 0", minWidth: 0, paddingLeft: "90px" }}>
+        <div className="inner-content" style={{ flex: "1 1 0", minWidth: 0 }}>
 
           <div className="sub-title box-tag wow fadeInUp">
             <SparkleIcon />

@@ -1,22 +1,41 @@
-const row1Images = [
-  "About_us.jpg",
-  "Blog_list_v1.jpg",
-  "Blog_list_v2.jpg",
-  "Blog_list_v4.jpg",
-  "Blog_post_single.jpg",
+"use client";
+
+const row1 = [
+  { src: "/images/Smartphones.jpg", alt: "Smartphones" },
+  { src: "/images/Laptops & Informatique.jpg", alt: "Laptops & Informatique" },
+  { src: "/images/Casques & Audio.jpg", alt: "Casques & Audio" },
+  { src: "/images/gaming.jpg", alt: "Gaming" },
+  { src: "/images/télévisions.jfif", alt: "Télévisions" },
 ];
 
-const row2Images = [
-  "Collection_list.jpg",
-  "Contact.jpg",
-  "Compare.jpg",
-  "Filter Drawer.jpg",
-  "Filter Left Sidebar.jpg",
-  "Collection_list.jpg",
+const row2 = [
+  { src: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=520&q=85", alt: "Beauté & Soins" },
+  { src: "/images/Supermarché.jfif", alt: "Supermarché" },
+  { src: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=520&q=85", alt: "Mode & Vêtements" },
+  { src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=520&q=85", alt: "Parapharmacie" },
+  { src: "/images/Électroménager.jfif", alt: "Électroménager" },
+  { src: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=520&q=85", alt: "Couffin Tounsi" },
 ];
 
-function InnerPageRow({ images, reverse }: { images: string[]; reverse?: boolean }) {
-  const repeated = [...images, ...images, ...images, ...images];
+const fallbackImageByAlt: Record<string, string> = {
+  Smartphones: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=520&q=85",
+  "Laptops & Informatique": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=520&q=85",
+  "Casques & Audio": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=520&q=85",
+  Gaming: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=520&q=85",
+  Télévisions: "https://images.unsplash.com/photo-1593359677879-a4bb92f4834b?w=520&q=85",
+  "Beauté & Soins": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=520&q=85",
+  Supermarché: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=520&q=85",
+  "Mode & Vêtements": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=520&q=85",
+  Parapharmacie: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=520&q=85",
+  Électroménager: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=520&q=85",
+  "Couffin Tounsi": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=520&q=85",
+};
+
+const IMAGE_WIDTH = 240;
+const IMAGE_HEIGHT = 170;
+
+function InnerPageRow({ items, reverse }: { items: { src: string; alt: string }[]; reverse?: boolean }) {
+  const repeated = [...items, ...items, ...items, ...items];
   return (
     <div style={{ overflow: "hidden" }}>
       <div
@@ -29,9 +48,19 @@ function InnerPageRow({ images, reverse }: { images: string[]; reverse?: boolean
           animation: `innerpage-scroll-${reverse ? "reverse" : "forward"} 52s linear infinite`,
         }}
       >
-        {repeated.map((img, i) => (
-          <div key={i} className="brand-item" style={{ flex: "0 0 auto" }}>
-            <img loading="lazy" src={`/images/innerpage/${img}`} alt="Vineta's web development project screenshot" />
+        {repeated.map((item, i) => (
+          <div key={i} className="brand-item" style={{ flex: "0 0 auto", width: `${IMAGE_WIDTH}px`, height: `${IMAGE_HEIGHT}px` }}>
+            <img
+              loading="lazy"
+              src={item.src}
+              alt={item.alt}
+              onError={(e) => {
+                const fallback = fallbackImageByAlt[item.alt];
+                if (!fallback || e.currentTarget.src === fallback) return;
+                e.currentTarget.src = fallback;
+              }}
+              style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "12px", display: "block" }}
+            />
           </div>
         ))}
       </div>
@@ -57,7 +86,7 @@ export default function InnerPageSection() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section center">
-              <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="Vineta's web development project screenshot" />
+              <img loading="lazy" className="img-bg" src="/images/item/grid-2.png" alt="" />
               <div className="sub-title box-tag wow fadeInUp" data-wow-delay="0s">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.5001 11.1518L14.5786 11.6126C14.3018 11.7502 14.0778 11.9742 13.9402 12.251L13.4794 13.1726C13.4138 13.3054 13.225 13.3054 13.1594 13.1726L12.6986 12.251C12.561 11.9742 12.337 11.7502 12.0602 11.6126L11.1387 11.1518C11.0059 11.0862 11.0059 10.8974 11.1387 10.8318L12.0602 10.371C12.337 10.2335 12.561 10.0095 12.6986 9.73266L13.1594 8.81109C13.225 8.67829 13.4138 8.67829 13.4794 8.81109L13.9402 9.73266C14.0778 10.0095 14.3018 10.2335 14.5786 10.371L15.5001 10.8318C15.6329 10.8974 15.6329 11.0862 15.5001 11.1518Z" fill="url(#paint0_ip)" />
@@ -75,38 +104,39 @@ export default function InnerPageSection() {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className="text-gradient style-2">Inner Pages</span>
+                <span className="text-gradient style-2">Pages 1111.tn</span>
                 <span className="eff"></span>
               </div>
 
               <div className="heading fw-6 wow fadeInUp" data-wow-delay="0.1s">
                 <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                   <span className="cd-words-wrapper">
-                    <span className="item-text is-visible"><i className="in">F</i><i className="in">l</i><i className="in">a</i><i className="in">w</i><i className="in">l</i><i className="in">e</i><i className="in">s</i><i className="in">s</i></span>
-                    <span className="item-text is-hidden"><i className="in">F</i><i className="in">l</i><i className="in">a</i><i className="in">w</i><i className="in">l</i><i className="in">e</i><i className="in">s</i><i className="in">s</i></span>
-                    <span className="item-text is-hidden"><i className="out">F</i><i className="out">l</i><i className="out">a</i><i className="out">w</i><i className="out">l</i><i className="out">e</i><i className="out">s</i><i className="out">s</i></span>
+                    <span className="item-text is-visible"><i className="in">T</i><i className="in">o</i><i className="in">u</i><i className="in">t</i><i className="in">e</i><i className="in">s</i></span>
+                    <span className="item-text is-hidden"><i className="out">T</i><i className="out">o</i><i className="out">u</i><i className="out">t</i><i className="out">e</i><i className="out">s</i></span>
+                    <span className="item-text is-hidden"><i className="in">T</i><i className="in">o</i><i className="in">u</i><i className="in">t</i><i className="in">e</i><i className="in">s</i></span>
                   </span>
                 </span>
-                {" "}Designs For{" "}
+                {" "}les catégories pour{" "}
                 <span className="fw-4 fst-italic font-playfair-display animationtext letters rotate-3">
                   <span className="cd-words-wrapper">
-                    <span className="item-text is-visible"><i className="in">E</i><i className="in">v</i><i className="in">e</i><i className="in">r</i><i className="in">y</i></span>
-                    <span className="item-text is-hidden"><i className="in">E</i><i className="in">v</i><i className="in">e</i><i className="in">r</i><i className="in">y</i></span>
-                    <span className="item-text is-hidden"><i className="out">E</i><i className="out">v</i><i className="out">e</i><i className="out">r</i><i className="out">y</i></span>
+                    <span className="item-text is-visible"><i className="in">c</i><i className="in">o</i><i className="in">m</i><i className="in">p</i><i className="in">a</i><i className="in">r</i><i className="in">e</i><i className="in">r</i></span>
+                    <span className="item-text is-hidden"><i className="out">c</i><i className="out">o</i><i className="out">m</i><i className="out">p</i><i className="out">a</i><i className="out">r</i><i className="out">e</i><i className="out">r</i></span>
+                    <span className="item-text is-hidden"><i className="in">c</i><i className="in">o</i><i className="in">m</i><i className="in">p</i><i className="in">a</i><i className="in">r</i><i className="in">e</i><i className="in">r</i></span>
                   </span>
                 </span>
-                {" "}Detail
               </div>
 
-              <p className="wow fadeInUp" data-wow-delay="0.2s">Our layout and structure are designed for effortless navigation, ensuring customers quickly find <br /> the information they need.</p>
+              <p className="wow fadeInUp" data-wow-delay="0.2s">
+                Électronique, parapharmacie, supermarché, couffin tounsi — comparez tout, <br /> partout, en temps réel sur 1111.tn.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <div className="brand-wrap">
-        <InnerPageRow images={row1Images} />
-        <InnerPageRow images={row2Images} reverse />
+        <InnerPageRow items={row1} />
+        <InnerPageRow items={row2} reverse />
       </div>
     </section>
   );

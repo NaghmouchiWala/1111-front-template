@@ -172,12 +172,20 @@ export default function TrendingSection() {
   const [page,      setPage]      = useState(0);
   const [animKey,   setAnimKey]   = useState(0);
   const [direction, setDirection] = useState<"left"|"right">("right");
+  const [isMobile,  setIsMobile]  = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval>|null>(null);
 
   const cat      = CATS[catIdx];
-  const perPage  = 2;
+  const perPage  = isMobile ? 1 : 2;
   const total    = Math.ceil(cat.products.length / perPage);
   const visible  = cat.products.slice(page * perPage, page * perPage + perPage);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= 767);
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
 
   /* auto-advance every 4 s */
   const startTimer = () => {
@@ -192,7 +200,11 @@ export default function TrendingSection() {
     }, 4000);
   };
 
-  useEffect(() => { startTimer(); return () => { if(timerRef.current) clearInterval(timerRef.current); }; }, [catIdx]);
+  useEffect(() => {
+    setPage(0);
+    startTimer();
+    return () => { if(timerRef.current) clearInterval(timerRef.current); };
+  }, [catIdx, isMobile]);
 
   const go = (dir: "left"|"right") => {
     if(timerRef.current) clearInterval(timerRef.current);
@@ -229,10 +241,28 @@ export default function TrendingSection() {
         .trend-arrow:hover { background:${C.teal} !important; border-color:${C.teal} !important; }
         .trend-arrow:hover svg { stroke:#0a140f; }
         @media(min-width:1024px){ .trend-banner{ display:block !important; } }
+        @media(max-width:767px){
+          .trend-wrap { gap:14px !important; }
+          .trend-heading { margin-bottom:30px !important; }
+          .trend-actions { padding:0 !important; }
+          .trend-arrow {
+            position: static !important;
+            transform: none !important;
+            width: 34px !important;
+            height: 34px !important;
+          }
+          .trend-slide {
+            gap: 12px !important;
+          }
+          .trend-card {
+            flex: 1 1 100% !important;
+            max-width: 100% !important;
+          }
+        }
       `}</style>
 
       {/* Section heading */}
-      <div style={{ textAlign:"center", marginBottom:48 }}>
+      <div className="trend-heading" style={{ textAlign:"center", marginBottom:48 }}>
         <p style={{ fontSize:12, fontWeight:700, textTransform:"uppercase", letterSpacing:"0.18em", color:C.teal, marginBottom:14 }}>
           Comparez &amp; Économisez
         </p>
@@ -251,7 +281,7 @@ export default function TrendingSection() {
         </p>
       </div>
 
-      <div style={{ display:"flex", gap:28, alignItems:"stretch" }}>
+      <div className="trend-wrap" style={{ display:"flex", gap:28, alignItems:"stretch" }}>
 
         {/* ── Left banner (desktop) ── */}
         <div className="trend-banner" style={{ width:300, flexShrink:0, display:"none" }}>
@@ -293,26 +323,25 @@ export default function TrendingSection() {
 
           {/* Slider */}
           <div style={{ position:"relative", overflow:"hidden" }}>
+            <div className="trend-actions" style={{ display:"flex", justifyContent:"flex-end", gap:8, marginBottom:12, padding:"0 6px" }}>
+              {/* Arrow left */}
+              <button onClick={() => go("left")} aria-label="Précédent" className="trend-arrow" style={{
+                width:40, height:40, borderRadius:"50%", display:"flex", alignItems:"center", justifyContent:"center",
+                border:`1px solid ${C.border}`, background:"rgba(10,20,15,0.8)",
+                boxShadow:"0 4px 14px rgba(0,0,0,0.1)", cursor:"pointer", transition:"all 0.2s",
+              }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={C.subText} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
 
-            {/* Arrow left */}
-            <button onClick={() => go("left")} aria-label="Précédent" className="trend-arrow" style={{
-              position:"absolute", left:-18, top:"50%", transform:"translateY(-50%)", zIndex:20,
-              width:40, height:40, borderRadius:"50%", display:"flex", alignItems:"center", justifyContent:"center",
-              border:`1px solid ${C.border}`, background:"rgba(10,20,15,0.8)",
-              boxShadow:"0 4px 14px rgba(0,0,0,0.1)", cursor:"pointer", transition:"all 0.2s",
-            }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={C.subText} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            </button>
-
-            {/* Arrow right */}
-            <button onClick={() => go("right")} aria-label="Suivant" className="trend-arrow" style={{
-              position:"absolute", right:-18, top:"50%", transform:"translateY(-50%)", zIndex:20,
-              width:40, height:40, borderRadius:"50%", display:"flex", alignItems:"center", justifyContent:"center",
-              border:`1px solid ${C.border}`, background:"rgba(10,20,15,0.8)",
-              boxShadow:"0 4px 14px rgba(0,0,0,0.1)", cursor:"pointer", transition:"all 0.2s",
-            }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={C.subText} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </button>
+              {/* Arrow right */}
+              <button onClick={() => go("right")} aria-label="Suivant" className="trend-arrow" style={{
+                width:40, height:40, borderRadius:"50%", display:"flex", alignItems:"center", justifyContent:"center",
+                border:`1px solid ${C.border}`, background:"rgba(10,20,15,0.8)",
+                boxShadow:"0 4px 14px rgba(0,0,0,0.1)", cursor:"pointer", transition:"all 0.2s",
+              }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={C.subText} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
 
             {/* Animated cards */}
             <div key={`${catIdx}-${animKey}`} className="trend-slide"
