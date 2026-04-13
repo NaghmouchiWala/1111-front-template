@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 const StarIcon = () => (
   <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clipPath="url(#marquee-clip)">
@@ -43,16 +45,16 @@ export default function MarqueeSection() {
       <div style={{ overflow: "hidden" }}>
         <div className="marquee-track tf-brand style-1">
           {repeated.map((text, index) => (
-            <>
-              <div key={`text-${index}`} className="brand-item text-uppercase" style={{ flex: "0 0 auto" }}>
+            <Fragment key={index}>
+              <div className="brand-item text-uppercase" style={{ flex: "0 0 auto" }}>
                 <div className="h1 fw-7 text-gradient style-4 animation-none">{text}</div>
               </div>
-              <div key={`icon-${index}`} className="brand-item" style={{ flex: "0 0 auto" }}>
+              <div className="brand-item" style={{ flex: "0 0 auto" }}>
                 <div className="rotate1">
                   <StarIcon />
                 </div>
               </div>
-            </>
+            </Fragment>
           ))}
         </div>
       </div>
