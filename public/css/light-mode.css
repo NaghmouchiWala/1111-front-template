@@ -1,0 +1,424 @@
+/* ============================================================
+   1111.tn — Light Mode Overrides
+   Applied when <html data-theme="light">
+   ============================================================ */
+
+[data-theme="light"] {
+
+  /* ── Base ── */
+  background-color: #f4f6f3 !important;
+  color: #0a0f0d !important;
+}
+
+[data-theme="light"] body {
+  background-color: #f4f6f3 !important;
+  color: #0a0f0d !important;
+}
+
+/* ── Header ── */
+[data-theme="light"] .main-header,
+[data-theme="light"] .header-lower {
+  background: rgba(255,255,255,0.95) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+[data-theme="light"] .main-header.is-fixed {
+  background: rgba(255,255,255,0.98) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08) !important;
+}
+
+[data-theme="light"] .navigation li a,
+[data-theme="light"] .navigation > li > a {
+  color: #1a1a1a !important;
+}
+[data-theme="light"] .navigation li a:hover {
+  color: #3BDEB9 !important;
+}
+
+[data-theme="light"] .logo a span,
+[data-theme="light"] .logo-box span {
+  color: #0a0f0d !important;
+  -webkit-text-fill-color: #0a0f0d !important;
+}
+
+/* ── Mobile menu ── */
+[data-theme="light"] .menu-box {
+  background: #fff !important;
+}
+[data-theme="light"] .menu-box .navigation li a {
+  color: #1a1a1a !important;
+  border-bottom-color: rgba(0,0,0,0.07) !important;
+}
+
+/* ── Hero section ── */
+[data-theme="light"] .slider,
+[data-theme="light"] .slider-inner {
+  background: linear-gradient(135deg, #e8f5f0 0%, #f0f9f4 50%, #f4f6f3 100%) !important;
+}
+
+[data-theme="light"] .slider .title,
+[data-theme="light"] .slider .inner-content .title {
+  color: #0a0f0d !important;
+}
+
+[data-theme="light"] .slider .text,
+[data-theme="light"] .slider p {
+  color: rgba(0,0,0,0.55) !important;
+}
+
+/* Hide video in light mode */
+[data-theme="light"] .slider video,
+[data-theme="light"] .slider .video-bg {
+  display: none !important;
+}
+
+[data-theme="light"] .item-circle-2,
+[data-theme="light"] .item-circle-1,
+[data-theme="light"] .item-circle-3 {
+  opacity: 0.08 !important;
+}
+
+/* Hero search bar */
+[data-theme="light"] .hero-search-bar {
+  background: rgba(255,255,255,0.9) !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08) !important;
+}
+[data-theme="light"] .hero-search-bar input {
+  color: #0a0f0d !important;
+  background: transparent !important;
+}
+[data-theme="light"] .hero-search-bar input::placeholder {
+  color: rgba(0,0,0,0.35) !important;
+}
+
+/* Hero trust row */
+[data-theme="light"] .hero-trust-row {
+  color: rgba(0,0,0,0.5) !important;
+}
+[data-theme="light"] .hero-trust-row .check {
+  color: #3BDEB9 !important;
+}
+
+/* Hero stat pills */
+[data-theme="light"] .hero-stat-pill {
+  background: rgba(255,255,255,0.8) !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+}
+[data-theme="light"] .hero-stat-pill .stat-val {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .hero-stat-pill .stat-lbl {
+  color: rgba(0,0,0,0.45) !important;
+}
+
+/* Hero price card */
+[data-theme="light"] .hero-price-card {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
+}
+[data-theme="light"] .hero-price-card .card-title,
+[data-theme="light"] .hero-price-card .product-name {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .hero-store-name,
+[data-theme="light"] .hero-store-price {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .hero-store-row {
+  border-bottom-color: rgba(0,0,0,0.06) !important;
+}
+[data-theme="light"] .hero-savings-bar {
+  background: rgba(59,222,185,0.08) !important;
+  border-top: 1px solid rgba(59,222,185,0.2) !important;
+}
+[data-theme="light"] .savings-text {
+  color: rgba(0,0,0,0.55) !important;
+}
+
+/* Sub-title tag */
+[data-theme="light"] .box-tag {
+  background: rgba(255,255,255,0.9) !important;
+  border-color: rgba(59,222,185,0.3) !important;
+}
+
+/* ── Sections general ── */
+[data-theme="light"] section {
+  background-color: transparent !important;
+}
+
+[data-theme="light"] .heading,
+[data-theme="light"] h1, [data-theme="light"] h2,
+[data-theme="light"] h3, [data-theme="light"] h4 {
+  color: #0a0f0d !important;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .text,
+[data-theme="light"] .desc {
+  color: rgba(0,0,0,0.55) !important;
+}
+
+/* ── PackedSection / ticker ── */
+[data-theme="light"] .section-marquee,
+[data-theme="light"] .marquee-wrap,
+[data-theme="light"] .tf-marquee {
+  background: #e2efe8 !important;
+  border-top: 1px solid rgba(0,0,0,0.08) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+}
+[data-theme="light"] .tf-marquee .item span,
+[data-theme="light"] .marquee-item {
+  color: #0a0f0d !important;
+}
+
+/* ── DemoSection / Store cards ── */
+[data-theme="light"] .section-demo {
+  background: #f4f6f3 !important;
+}
+[data-theme="light"] .section-demo .innerbox {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+}
+[data-theme="light"] .section-demo .title-box {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .section-demo .coming-soon-wrap .text {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .section-demo .dot span {
+  background: rgba(0,0,0,0.15) !important;
+}
+[data-theme="light"] .posttype-filter li a,
+[data-theme="light"] .posttype-filter1 li a,
+[data-theme="light"] .posttype-filter2 li a,
+[data-theme="light"] .posttype-filter3 li a {
+  color: rgba(0,0,0,0.5) !important;
+  border-color: rgba(0,0,0,0.12) !important;
+  background: #fff !important;
+}
+[data-theme="light"] .posttype-filter li.active a,
+[data-theme="light"] .posttype-filter1 li.active a,
+[data-theme="light"] .posttype-filter2 li.active a,
+[data-theme="light"] .posttype-filter3 li.active a {
+  color: #0a0f0d !important;
+  background: linear-gradient(100deg,#3BDEB9,#CCFF9B) !important;
+  border-color: transparent !important;
+}
+
+/* ── DevelopedSection / Maximum wrap ── */
+[data-theme="light"] .section-developed,
+[data-theme="light"] .maximum-wrap {
+  background: #e8f5f0 !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+}
+[data-theme="light"] .maximum-wrap .number {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .maximum-wrap .box-performance {
+  background: rgba(255,255,255,0.9) !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+}
+[data-theme="light"] .maximum-wrap .box-performance .counter,
+[data-theme="light"] .maximum-wrap .box-performance .title {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .maximum-wrap .box-performance .line {
+  background: rgba(0,0,0,0.1) !important;
+}
+[data-theme="light"] .section-developed .innerbox-right {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+}
+
+/* ── Features section ── */
+[data-theme="light"] .section-features {
+  background: #f4f6f3 !important;
+}
+[data-theme="light"] .section-features .box-feature,
+[data-theme="light"] .section-features .feature-item {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important;
+}
+[data-theme="light"] .section-features .title,
+[data-theme="light"] .section-features h3 {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .section-features p,
+[data-theme="light"] .section-features .desc {
+  color: rgba(0,0,0,0.5) !important;
+}
+
+/* ── MobileSection ── */
+[data-theme="light"] .section-app,
+[data-theme="light"] .tf-box-wrap {
+  background: #e8f5f0 !important;
+}
+[data-theme="light"] .section-app .box-content {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .wrap-video {
+  border: 1.5px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1) !important;
+}
+[data-theme="light"] .box-bg {
+  background: rgba(59,222,185,0.08) !important;
+  border: 1.5px solid rgba(59,222,185,0.2) !important;
+}
+
+/* ── GetSection / CTA ── */
+[data-theme="light"] .section-get {
+  background: #e8f5f0 !important;
+}
+[data-theme="light"] .section-get .box-get {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08) !important;
+}
+[data-theme="light"] .section-get .title,
+[data-theme="light"] .section-get h2 {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .section-get p {
+  color: rgba(0,0,0,0.5) !important;
+}
+
+/* ── FaqsSection ── */
+[data-theme="light"] .section-faqs {
+  background: #f4f6f3 !important;
+}
+[data-theme="light"] .flat-accordion .flat-toggle,
+[data-theme="light"] .accordion-item {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04) !important;
+}
+[data-theme="light"] .flat-accordion .flat-toggle .toggle-title,
+[data-theme="light"] .accordion-button {
+  color: #0a0f0d !important;
+  background: transparent !important;
+}
+[data-theme="light"] .flat-accordion .flat-toggle .toggle-content p,
+[data-theme="light"] .accordion-body {
+  color: rgba(0,0,0,0.55) !important;
+}
+[data-theme="light"] .flat-accordion .flat-toggle.active {
+  border-color: rgba(59,222,185,0.3) !important;
+}
+
+/* ── TrendingSection ── */
+[data-theme="light"] .section-trending {
+  background: #f4f6f3 !important;
+}
+[data-theme="light"] .section-trending .product-card,
+[data-theme="light"] .trending-card {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07) !important;
+}
+
+/* ── PredictionSection ── */
+[data-theme="light"] .pred-alert {
+  background: rgba(239,68,68,0.05) !important;
+  border-color: rgba(239,68,68,0.2) !important;
+}
+[data-theme="light"] .pred-alert-title {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .pred-alert-copy {
+  color: rgba(0,0,0,0.5) !important;
+}
+[data-theme="light"] .pred-chart-card {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07) !important;
+}
+[data-theme="light"] .pred-chart-title {
+  color: #0a0f0d !important;
+}
+
+/* ── Footer ── */
+[data-theme="light"] footer,
+[data-theme="light"] .footer {
+  background: #1a1a1a !important;
+}
+
+/* ── Buttons ── */
+[data-theme="light"] .tf-btn-3 {
+  color: #0a0f0d !important;
+  border-color: rgba(0,0,0,0.15) !important;
+  background: rgba(0,0,0,0.04) !important;
+}
+[data-theme="light"] .tf-btn-3:hover {
+  background: rgba(0,0,0,0.08) !important;
+}
+
+/* ── Heading section decorative SVG text ── */
+[data-theme="light"] .heading-section .heading {
+  color: #0a0f0d !important;
+}
+[data-theme="light"] .heading-section p {
+  color: rgba(0,0,0,0.5) !important;
+}
+
+/* ── CouffinSection ── */
+[data-theme="light"] .section-couffin,
+[data-theme="light"] .tf-couffin {
+  background: #e8f5f0 !important;
+}
+[data-theme="light"] .tf-couffin .item {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+}
+
+/* ── ProductListingSection ── */
+[data-theme="light"] .section-product {
+  background: #f4f6f3 !important;
+}
+[data-theme="light"] .product-item,
+[data-theme="light"] .product-card {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important;
+}
+[data-theme="light"] .product-item .name,
+[data-theme="light"] .product-item .price {
+  color: #0a0f0d !important;
+}
+
+/* ── Generic cards / boxes ── */
+[data-theme="light"] .home-box .innerbox,
+[data-theme="light"] .tf-box {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.1) !important;
+}
+
+/* ── Scrollbar ── */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #f0f0f0 !important;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
+/* ── Selection ── */
+[data-theme="light"] ::selection {
+  background: #3BDEB9;
+  color: #0a0f0d;
+}
+
+/* ── Label / tag colors ── */
+[data-theme="light"] .label {
+  background: linear-gradient(90deg,#3BDEB9,#CCFF9B) !important;
+  color: #0a0f0d !important;
+}
+
+/* ── Sticky nav link ── */
+[data-theme="light"] a.sticky-nav {
+  color: #1a1a1a !important;
+}

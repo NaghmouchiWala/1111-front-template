@@ -32,28 +32,28 @@ export default function MobileSection() {
               <div className="mobile-view-item">
                 <div className="wrap-video">
                   <video preload="none" playsInline autoPlay loop muted controls>
-                    <source src="/images/video/mobile-menu.mp4" type="video/mp4" />
+                    <source src="/images/1.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
               <div className="mobile-view-item">
                 <div className="wrap-video">
                   <video preload="none" playsInline autoPlay loop muted controls>
-                    <source src="/images/video/mobile-search.mp4" type="video/mp4" />
+                    <source src="/images/2.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
               <div className="mobile-view-item">
                 <div className="wrap-video">
                   <video preload="none" playsInline autoPlay loop muted controls>
-                    <source src="/images/video/shopping-cart.mp4" type="video/mp4" />
+                    <source src="/images/3.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
               <div className="mobile-view-item">
                 <div className="wrap-video">
                   <video preload="none" playsInline autoPlay loop muted controls>
-                    <source src="/images/video/product-single.mp4" type="video/mp4" />
+                    <source src="/images/4.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>

@@ -214,7 +214,8 @@
             $container.isotope({
                 itemSelector: '.item',
                 layoutMode: 'masonry',
-                transitionDuration: '0.7s'
+                transitionDuration: '0.7s',
+                filter: '.ecommerce'
             });
         });
 

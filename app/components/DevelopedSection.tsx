@@ -70,8 +70,9 @@ export default function DevelopedSection() {
               <img
                 loading="lazy"
                 className="img-item ani-y"
-                src="/images/item/item-maximum.png"
+                src="/images/item-cart.png"
                 alt="1111.tn comparaison de prix en Tunisie"
+                style={{ width: "280px", height: "auto", left: "537px", top: "35px" }}
               />
               <div className="box-performance wow fadeInUp" data-wow-delay="0.2s">
                 <div className="text">+</div>

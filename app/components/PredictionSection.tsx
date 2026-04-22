@@ -1,3 +1,75 @@
+"use client";
+import { useState, useEffect } from "react";
+
+const products = [
+  {
+    img: "https://spacenet.tn/335959-large_default/imprimante-hp-laserjet-tank-2r3e3a-2502dw-printer-wi-fi-gris.jpg",
+    name: "Imprimante HP LaserJet Tank 2502DW WI-FI",
+    brand: "HP",
+    stock: true,
+    rating: 4.3,
+    reviews: "11.6k",
+    desc: "Imprimante laser monochrome wi-fi compacte avec réservoir intégré, idéale pour un usage intensif.",
+    price: "899.000",
+    oldPrice: "952.000",
+    prediction: "↑ +8.4% prévu",
+    chartTitle: "Historique des prix — HP LaserJet 2502DW",
+    href: "https://www.spacenet.tn",
+    chartPrices: [900, 870, 845, 840, 840, 845, 855, 865, 870, 875, 885, 920],
+    chartMin: 800, chartMax: 1000,
+    stats: [
+      { label: "Prix le plus bas", value: "840.000 TND", highlight: true },
+      { label: "Prix le plus haut", value: "920.000 TND", highlight: false },
+      { label: "Variation 12 mois", value: "+8.4%", highlight: false },
+      { label: "Meilleur mois", value: "Avril", highlight: true },
+    ],
+  },
+  {
+    img: "/images/samsung.png",
+    name: "Samsung Galaxy S24 256 Go",
+    brand: "Samsung",
+    stock: true,
+    rating: 4.7,
+    reviews: "28.3k",
+    desc: "Smartphone flagship avec puce Exynos 2400, écran Dynamic AMOLED 6.2\" et Galaxy AI intégré.",
+    price: "1 249.000",
+    oldPrice: "1 399.000",
+    prediction: "↑ +5.1% prévu",
+    chartTitle: "Historique des prix — Samsung Galaxy S24",
+    href: "https://www.mytek.tn",
+    chartPrices: [1399, 1380, 1350, 1320, 1290, 1270, 1260, 1255, 1249, 1249, 1260, 1310],
+    chartMin: 1200, chartMax: 1450,
+    stats: [
+      { label: "Prix le plus bas", value: "1 249.000 TND", highlight: true },
+      { label: "Prix le plus haut", value: "1 399.000 TND", highlight: false },
+      { label: "Variation 12 mois", value: "-10.7%", highlight: false },
+      { label: "Meilleur mois", value: "Octobre", highlight: true },
+    ],
+  },
+  {
+    img: "/images/OLED.avif",
+    name: "LG OLED C3 55\" 4K Smart TV",
+    brand: "LG",
+    stock: true,
+    rating: 4.8,
+    reviews: "9.2k",
+    desc: "Téléviseur OLED 4K 120Hz avec processeur α9 Gen6 IA, Dolby Vision et webOS 23.",
+    price: "2 899.000",
+    oldPrice: "3 299.000",
+    prediction: "↑ +11.2% prévu",
+    chartTitle: "Historique des prix — LG OLED C3 55\"",
+    href: "https://www.tunisianet.tn",
+    chartPrices: [3299, 3200, 3100, 3050, 2980, 2950, 2930, 2910, 2899, 2899, 2950, 3050],
+    chartMin: 2800, chartMax: 3400,
+    stats: [
+      { label: "Prix le plus bas", value: "2 899.000 TND", highlight: true },
+      { label: "Prix le plus haut", value: "3 299.000 TND", highlight: false },
+      { label: "Variation 12 mois", value: "+11.2%", highlight: false },
+      { label: "Meilleur mois", value: "Septembre", highlight: true },
+    ],
+  },
+];
+
 const StarIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
@@ -16,15 +88,11 @@ const AlertCircleIcon = () => (
   </svg>
 );
 
-// Static SVG price chart — Jan to Dec, area + trend line
-const PriceChart = () => {
+const PriceChart = ({ prices, minP, maxP }: { prices: number[]; minP: number; maxP: number }) => {
   const months = ["Jan", "Fév", "Mar", "Avr", "Mai", "Jun", "Jul", "Aoû", "Sep", "Oct", "Nov", "Déc"];
-  // price index values 0–1200, mapped to chart height 280px
-  const prices = [900, 870, 845, 840, 840, 845, 855, 865, 870, 875, 885, 920];
   const W = 520, H = 240, padL = 40, padR = 20, padT = 16, padB = 32;
   const chartW = W - padL - padR;
   const chartH = H - padT - padB;
-  const maxP = 1000, minP = 800;
 
   const px = (i: number) => padL + (i / (months.length - 1)) * chartW;
   const py = (v: number) => padT + chartH - ((v - minP) / (maxP - minP)) * chartH;
@@ -32,9 +100,8 @@ const PriceChart = () => {
   const linePath = prices.map((v, i) => `${i === 0 ? "M" : "L"}${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(" ");
   const areaPath = linePath + ` L${px(months.length - 1).toFixed(1)},${(padT + chartH).toFixed(1)} L${padL},${(padT + chartH).toFixed(1)} Z`;
 
-  // Trend line: last 3 points extrapolated upward
-  const trendStart = { x: px(9), y: py(875) };
-  const trendEnd = { x: px(11), y: py(940) };
+  const trendStart = { x: px(9), y: py(prices[9]) };
+  const trendEnd = { x: px(11), y: py(prices[11]) };
 
   return (
     <svg width="100%" height="100%" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" style={{ display: "block" }}>
@@ -69,7 +136,7 @@ const PriceChart = () => {
         <text key={i} x={px(i)} y={H - 4} textAnchor="middle" fontSize="9" fontWeight="700" fill="rgba(255,255,255,0.35)">{m}</text>
       ))}
       {/* Y labels */}
-      {[800, 900, 1000].map((v, i) => (
+      {[minP, Math.round((minP + maxP) / 2), maxP].map((v, i) => (
         <text key={i} x={padL - 6} y={py(v) + 4} textAnchor="end" fontSize="9" fontWeight="700" fill="rgba(255,255,255,0.35)">{v}</text>
       ))}
     </svg>
@@ -77,6 +144,24 @@ const PriceChart = () => {
 };
 
 export default function PredictionSection() {
+  const [current, setCurrent] = useState(0);
+  const [fading, setFading] = useState(false);
+
+  const goTo = (idx: number) => {
+    setFading(true);
+    setTimeout(() => {
+      setCurrent(idx);
+      setFading(false);
+    }, 300);
+  };
+
+  useEffect(() => {
+    const t = setInterval(() => goTo((current + 1) % products.length), 4000);
+    return () => clearInterval(t);
+  }, [current]);
+
+  const p = products[current];
+
   return (
     <section style={{ padding: "80px 0 80px", position: "relative", overflow: "hidden" }}>
       <style>{`
@@ -159,7 +244,7 @@ export default function PredictionSection() {
         {/* Two columns */}
         <div className="row g-4 align-items-stretch">
 
-          {/* LEFT — Product card */}
+          {/* LEFT — Product card slider */}
           <div className="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
             <div style={{
               background: "rgba(255,255,255,0.03)",
@@ -170,85 +255,83 @@ export default function PredictionSection() {
               flexDirection: "column",
               height: "100%",
             }}>
-              {/* Product image */}
-              <div style={{
-                background: "#fff",
-                borderRadius: "20px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "24px",
-                aspectRatio: "1/1",
-                marginBottom: "24px",
-                overflow: "hidden",
-              }}>
-                <img
-                  src="https://spacenet.tn/335959-large_default/imprimante-hp-laserjet-tank-2r3e3a-2502dw-printer-wi-fi-gris.jpg"
-                  alt="Imprimante HP LaserJet Tank 2502DW"
-                  style={{ maxHeight: "200px", maxWidth: "100%", objectFit: "contain" }}
-                  loading="lazy"
-                />
+              {/* Slider dots */}
+              <div style={{ display: "flex", gap: "6px", marginBottom: "20px" }}>
+                {products.map((_, i) => (
+                  <button key={i} onClick={() => goTo(i)} style={{
+                    width: i === current ? "24px" : "8px", height: "8px",
+                    borderRadius: "999px", border: "none", cursor: "pointer",
+                    background: i === current ? "linear-gradient(90deg,#3BDEB9,#CCFF9B)" : "rgba(255,255,255,0.15)",
+                    transition: "all 0.3s ease", padding: 0,
+                  }} />
+                ))}
               </div>
 
-              {/* Product info */}
-              <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "12px" }}>
-                <div>
-                  <div style={{ fontSize: "18px", fontWeight: 800, color: "#fff", lineHeight: 1.3 }}>
-                    Imprimante HP LaserJet Tank 2502DW WI-FI
-                  </div>
-                  <div style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.35)", textTransform: "uppercase", letterSpacing: "2px", marginTop: "4px" }}>HP</div>
-                </div>
+              {/* Animated product content */}
+              <div style={{ opacity: fading ? 0 : 1, transition: "opacity 0.3s ease", flex: 1, display: "flex", flexDirection: "column", gap: "0" }}>
 
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                  <span style={{
-                    display: "inline-flex", alignItems: "center", gap: "4px",
-                    background: "rgba(34,197,94,0.12)", color: "#22C55E",
-                    padding: "3px 10px", borderRadius: "999px", fontSize: "11px", fontWeight: 800,
-                  }}>
-                    ✓ En stock
-                  </span>
-                  <div style={{ display: "flex", alignItems: "center", gap: "2px", color: "#F59E0B" }}>
-                    {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
-                    <span style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.4)", marginLeft: "4px" }}>
-                      <span style={{ color: "#fff" }}>4.3</span> (11.6k)
-                    </span>
-                  </div>
-                </div>
-
-                <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.45)", lineHeight: 1.6, margin: 0, fontWeight: 500 }}>
-                  Imprimante laser monochrome wi-fi compacte avec réservoir intégré, idéale pour un usage intensif.
-                </p>
-              </div>
-
-              {/* Price + CTA */}
-              <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", marginTop: "24px", paddingTop: "20px" }}>
-                <div style={{ display: "flex", alignItems: "baseline", gap: "10px", justifyContent: "flex-end", marginBottom: "16px" }}>
-                  <span style={{ fontSize: "28px", fontWeight: 900, color: "#EF4444" }}>899.000</span>
-                  <span style={{ fontSize: "14px", fontWeight: 700, color: "rgba(255,255,255,0.3)", textDecoration: "line-through" }}>952.000</span>
-                  <span style={{ fontSize: "13px", fontWeight: 700, color: "rgba(255,255,255,0.4)" }}>TND</span>
-                </div>
-                <a href="https://www.spacenet.tn" target="_blank" className="tf-btn-3 light_skew_hover" style={{
-                  display: "flex", alignItems: "center", justifyContent: "space-between",
-                  width: "100%", padding: "14px 20px", borderRadius: "999px",
-                  background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
-                  color: "#fff", textDecoration: "none", fontWeight: 800, fontSize: "13px",
+                {/* Product image */}
+                <div style={{
+                  background: "#fff", borderRadius: "20px",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  padding: "24px", aspectRatio: "1/1", marginBottom: "24px", overflow: "hidden",
                 }}>
-                  <span>Voir l&apos;offre</span>
-                  <span style={{
-                    width: "32px", height: "32px", borderRadius: "50%",
-                    background: "linear-gradient(90deg,#3BDEB9,#CCFF9B)",
-                    display: "flex", alignItems: "center", justifyContent: "center", color: "#111",
-                    flexShrink: 0,
+                  <img src={p.img} alt={p.name}
+                    style={{ maxHeight: "200px", maxWidth: "100%", objectFit: "contain" }}
+                    loading="lazy" />
+                </div>
+
+                {/* Product info */}
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "12px" }}>
+                  <div>
+                    <div style={{ fontSize: "18px", fontWeight: 800, color: "#fff", lineHeight: 1.3 }}>{p.name}</div>
+                    <div style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.35)", textTransform: "uppercase", letterSpacing: "2px", marginTop: "4px" }}>{p.brand}</div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                    <span style={{
+                      display: "inline-flex", alignItems: "center", gap: "4px",
+                      background: "rgba(34,197,94,0.12)", color: "#22C55E",
+                      padding: "3px 10px", borderRadius: "999px", fontSize: "11px", fontWeight: 800,
+                    }}>✓ En stock</span>
+                    <div style={{ display: "flex", alignItems: "center", gap: "2px", color: "#F59E0B" }}>
+                      {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
+                      <span style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.4)", marginLeft: "4px" }}>
+                        <span style={{ color: "#fff" }}>{p.rating}</span> ({p.reviews})
+                      </span>
+                    </div>
+                  </div>
+                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.45)", lineHeight: 1.6, margin: 0, fontWeight: 500 }}>{p.desc}</p>
+                </div>
+
+                {/* Price + CTA */}
+                <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", marginTop: "24px", paddingTop: "20px" }}>
+                  <div style={{ display: "flex", alignItems: "baseline", gap: "10px", justifyContent: "flex-end", marginBottom: "16px" }}>
+                    <span style={{ fontSize: "28px", fontWeight: 900, color: "#EF4444" }}>{p.price}</span>
+                    <span style={{ fontSize: "14px", fontWeight: 700, color: "rgba(255,255,255,0.3)", textDecoration: "line-through" }}>{p.oldPrice}</span>
+                    <span style={{ fontSize: "13px", fontWeight: 700, color: "rgba(255,255,255,0.4)" }}>TND</span>
+                  </div>
+                  <a href={p.href} target="_blank" className="tf-btn-3 light_skew_hover" style={{
+                    display: "flex", alignItems: "center", justifyContent: "space-between",
+                    width: "100%", padding: "14px 20px", borderRadius: "999px",
+                    background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+                    color: "#fff", textDecoration: "none", fontWeight: 800, fontSize: "13px",
                   }}>
-                    <TrendingUpIcon />
-                  </span>
-                </a>
+                    <span>Voir l&apos;offre</span>
+                    <span style={{
+                      width: "32px", height: "32px", borderRadius: "50%",
+                      background: "linear-gradient(90deg,#3BDEB9,#CCFF9B)",
+                      display: "flex", alignItems: "center", justifyContent: "center", color: "#111", flexShrink: 0,
+                    }}>
+                      <TrendingUpIcon />
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
           {/* RIGHT — Alert card + Chart */}
-          <div className="pred-right-col col-lg-7 wow fadeInUp" data-wow-delay="0.2s" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <div className="pred-right-col col-lg-7 wow fadeInUp" data-wow-delay="0.2s" style={{ display: "flex", flexDirection: "column", gap: "16px", opacity: fading ? 0 : 1, transition: "opacity 0.3s ease" }}>
 
             {/* Alert banner */}
             <div className="pred-alert" style={{
@@ -280,7 +363,7 @@ export default function PredictionSection() {
                   fontSize: "11px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px",
                   whiteSpace: "nowrap",
                 }}>
-                  ↑ +8.4% prévu
+                  {p.prediction}
                 </span>
               </div>
             </div>
@@ -294,7 +377,7 @@ export default function PredictionSection() {
               flex: 1,
             }}>
               <div className="pred-chart-head" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "20px" }}>
-                <div className="pred-chart-title" style={{ fontSize: "14px", fontWeight: 800, color: "#fff" }}>Historique des prix — HP LaserJet 2502DW</div>
+                <div className="pred-chart-title" style={{ fontSize: "14px", fontWeight: 800, color: "#fff" }}>{p.chartTitle}</div>
                 <div className="pred-chart-legend" style={{ display: "flex", gap: "16px" }}>
                   {[
                     { color: "#3BDEB9", label: "Prix historique" },
@@ -309,11 +392,25 @@ export default function PredictionSection() {
               </div>
 
               <div className="pred-chart-wrap" style={{ width: "100%", height: "360px" }}>
-                <PriceChart />
+                <PriceChart prices={p.chartPrices} minP={p.chartMin} maxP={p.chartMax} />
               </div>
 
               <div style={{ textAlign: "center", marginTop: "8px" }}>
                 <span style={{ fontSize: "10px", fontWeight: 800, color: "rgba(255,255,255,0.25)", textTransform: "uppercase", letterSpacing: "2px" }}>Mois</span>
+              </div>
+
+              {/* Stats grid */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginTop: "20px" }}>
+                {p.stats.map((s, i) => (
+                  <div key={i} style={{
+                    background: s.highlight ? "rgba(59,222,185,0.06)" : "rgba(255,255,255,0.03)",
+                    border: `1px solid ${s.highlight ? "rgba(59,222,185,0.15)" : "rgba(255,255,255,0.06)"}`,
+                    borderRadius: "14px", padding: "12px 16px",
+                  }}>
+                    <div style={{ fontSize: "10px", fontWeight: 700, color: "rgba(255,255,255,0.35)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "4px" }}>{s.label}</div>
+                    <div style={{ fontSize: "15px", fontWeight: 800, color: s.highlight ? "#3BDEB9" : "#fff" }}>{s.value}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

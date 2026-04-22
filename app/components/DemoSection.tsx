@@ -49,7 +49,7 @@ const stores: StoreCard[] = [
     categories: "ecommerce new",
     href: "https://www.technopro.com.tn",
     logo: `${BASE}/_next/image?url=%2Fimages%2Ftechnopro-logo.jpg&w=256&q=75`,
-    name: "TechnoPro",
+    name: "Oxtek",
     tags: ["NEW"],
     delay: "0s",
     prix: "855.93",
@@ -67,12 +67,99 @@ const stores: StoreCard[] = [
   {
     categories: "ecommerce new",
     href: "https://www.darty.com.tn",
-    logo: `https://www.google.com/s2/favicons?domain=darty.com.tn&sz=128`,
+    logo: `/images/darty-logo.png`,
     name: "Darty",
     tags: ["NEW"],
     delay: "0.2s",
     prix: "867.54",
     diff: "+8.4%",
+  },
+  // Supermarché
+  {
+    categories: "super new",
+    href: "https://www.carrefour.com.tn",
+    logo: `/images/carrefour.png`,
+    name: "Carrefour",
+    tags: ["NEW"],
+    delay: "0s",
+    prix: "12.90",
+    cheapest: true,
+  },
+  {
+    categories: "super",
+    href: "https://www.monoprix.com.tn",
+    logo: `/images/monoprix.png`,
+    name: "Monoprix",
+    delay: "0.1s",
+    prix: "13.50",
+    diff: "+4.7%",
+  },
+  {
+    categories: "super",
+    href: "https://www.geant.com.tn",
+    logo: `/images/geant.png`,
+    name: "Géant",
+    delay: "0.2s",
+    prix: "13.80",
+    diff: "+7.0%",
+  },
+  {
+    categories: "super new",
+    href: "https://www.mgmarche.tn",
+    logo: `/images/mg.png`,
+    name: "MG",
+    tags: ["NEW"],
+    delay: "0s",
+    prix: "13.20",
+    diff: "+2.3%",
+  },
+  {
+    categories: "super",
+    href: "https://www.aziza.com.tn",
+    logo: `/images/aziza.png`,
+    name: "Aziza",
+    delay: "0.1s",
+    prix: "13.60",
+    diff: "+5.4%",
+  },
+  {
+    categories: "super",
+    href: "https://www.carrefourexpress.com.tn",
+    logo: `/images/carrefour.png`,
+    name: "Carrefour Express",
+    delay: "0.2s",
+    prix: "14.10",
+    diff: "+9.3%",
+  },
+  // Parapharmacie
+  {
+    categories: "para new",
+    href: "https://www.pharmashop.tn",
+    logo: `/images/parahouse.png`,
+    name: "Parahouse",
+    tags: ["NEW"],
+    delay: "0s",
+    prix: "28.50",
+    cheapest: true,
+  },
+  {
+    categories: "para",
+    href: "https://www.parapharmacie.tn",
+    logo: `/images/parafendri.jpg`,
+    name: "Parafendri",
+    delay: "0.1s",
+    prix: "31.00",
+    diff: "+8.8%",
+  },
+  {
+    categories: "para new",
+    href: "https://www.tunisie-para.tn",
+    logo: `/images/parashop.png`,
+    name: "Parashop",
+    tags: ["NEW"],
+    delay: "0.2s",
+    prix: "29.90",
+    diff: "+4.9%",
   },
   // Coming soon
   { categories: "coming-soon", href: "#", logo: "", name: "", comingSoon: true, delay: "0s" },
@@ -172,6 +259,7 @@ export default function DemoSection() {
   const allStores = stores;
   const ecommerce = stores.filter(s => s.categories.includes("ecommerce") || s.comingSoon);
   const para = stores.filter(s => s.categories.includes("para") || s.comingSoon);
+  const super_ = stores.filter(s => s.categories.includes("super") || s.comingSoon);
 
   return (
     <section id="demo" className="section-demo">
@@ -266,8 +354,8 @@ export default function DemoSection() {
           {/* All stores tab */}
           <div className="tab-pane active html-filter" id="html" role="tabpanel">
             <ul className="posttype-filter">
-              <li className="active"><a className="btn-all" data-filter="*" href="#">Tous</a></li>
-              <li><a data-filter=".ecommerce" href="#">E-commerce</a></li>
+              <li><a className="btn-all" data-filter="*" href="#">Tous</a></li>
+              <li className="active"><a data-filter=".ecommerce" href="#">E-commerce</a></li>
               <li><a data-filter=".para" href="#">Parapharmacie</a></li>
               <li><a data-filter=".super" href="#">Supermarché</a></li>
               <li><a data-filter=".new" href="#">Nouveaux</a></li>
@@ -296,6 +384,17 @@ export default function DemoSection() {
             </ul>
             <div className="container-filter2 row">
               {para.map((card, i) => <StoreBox key={i} card={card} />)}
+            </div>
+          </div>
+
+          {/* Supermarché tab */}
+          <div className="tab-pane vue-filter" id="vue" role="tabpanel">
+            <ul className="posttype-filter3">
+              <li className="active"><a className="btn-all" data-filter="*" href="#">Tous</a></li>
+              <li><a data-filter=".new" href="#">Nouveaux</a></li>
+            </ul>
+            <div className="container-filter3 row">
+              {super_.map((card, i) => <StoreBox key={i} card={card} />)}
             </div>
           </div>
         </div>

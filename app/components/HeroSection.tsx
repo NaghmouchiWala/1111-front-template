@@ -336,11 +336,23 @@ export default function HeroSection() {
             row-gap: 6px;
           }
         }
+        .hero-mascot-video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 160px;
+          pointer-events: none;
+          user-select: none;
+          z-index: 10;
+        }
       `}</style>
 
       <img loading="lazy" className="item-1 item-circle-2" src="/images/item/item-circle-blur.png" alt="" />
-      <img loading="lazy" className="item-2 item-circle-3" src="/images/item/item-circle.png" alt="" />
-      <img loading="lazy" className="item-3 item-circle-1" src="/images/item/item-circle.png" alt="" />
+
+      <video className="hero-mascot-video" autoPlay loop muted playsInline preload="auto">
+        <source src="/images/mascot_video.webm" type="video/webm" />
+      </video>
 
       <div className="slider-inner" style={{ alignItems: "center", gap: "48px" }}>
 

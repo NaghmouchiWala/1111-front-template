@@ -33,6 +33,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="stylesheet" href="/css/app.css" />
+        <link rel="stylesheet" href="/css/light-mode.css" />
         <link rel="stylesheet" href="/css/textanimation.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
       </head>
@@ -46,7 +47,7 @@ export default function RootLayout({
         <Script src="/js/lazysize.min.js" strategy="afterInteractive" />
         <Script src="/js/jquery.isotope.min.js" strategy="afterInteractive" />
         <Script src="/js/infinityslide.js" strategy="afterInteractive" />
-        <Script src="/js/matter.min.js" strategy="afterInteractive" />
+        <Script src="/js/matter.min.js" strategy="beforeInteractive" />
         <Script src="/js/matter.js" strategy="afterInteractive" />
         <Script src="/js/textanimation.js" strategy="afterInteractive" />
         <Script src="/js/main.js" strategy="afterInteractive" />
