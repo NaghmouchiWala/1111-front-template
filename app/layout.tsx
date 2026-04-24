@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US">
+    <html lang="en-US" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -39,18 +39,58 @@ export default function RootLayout({
       </head>
       <body className="body counter-scroll" suppressHydrationWarning>
         {children}
+        <Script id="strip-extension-attrs" strategy="beforeInteractive">{`
+          (() => {
+            const attrNames = ["bis_skin_checked", "bis_size", "bis_id"];
+            const selector = attrNames.map((name) => "[" + name + "]").join(",");
+
+            const cleanNode = (node) => {
+              if (!(node instanceof Element)) return;
+              attrNames.forEach((name) => node.removeAttribute(name));
+              if (node.querySelectorAll) {
+                node.querySelectorAll(selector).forEach((child) => {
+                  attrNames.forEach((name) => child.removeAttribute(name));
+                });
+              }
+            };
+
+            cleanNode(document.documentElement);
+
+            const observer = new MutationObserver((mutations) => {
+              mutations.forEach((mutation) => {
+                if (mutation.type === "attributes") {
+                  cleanNode(mutation.target);
+                }
+
+                mutation.addedNodes.forEach((node) => cleanNode(node));
+              });
+            });
+
+            observer.observe(document.documentElement, {
+              attributes: true,
+              subtree: true,
+              childList: true,
+              attributeFilter: attrNames,
+            });
+
+            window.addEventListener("load", () => {
+              cleanNode(document.documentElement);
+              window.setTimeout(() => observer.disconnect(), 2500);
+            });
+          })();
+        `}</Script>
         <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
         <Script src="/js/bootstrap.min.js" strategy="beforeInteractive" />
-        <Script src="/js/plugin.js" strategy="afterInteractive" />
-        <Script src="/js/swiper.js" strategy="afterInteractive" />
-        <Script src="/js/countto.js" strategy="afterInteractive" />
-        <Script src="/js/lazysize.min.js" strategy="afterInteractive" />
-        <Script src="/js/jquery.isotope.min.js" strategy="afterInteractive" />
-        <Script src="/js/infinityslide.js" strategy="afterInteractive" />
+        <Script src="/js/plugin.js" strategy="lazyOnload" />
+        <Script src="/js/swiper.js" strategy="lazyOnload" />
+        <Script src="/js/countto.js" strategy="lazyOnload" />
+        <Script src="/js/lazysize.min.js" strategy="lazyOnload" />
+        <Script src="/js/jquery.isotope.min.js" strategy="lazyOnload" />
+        <Script src="/js/infinityslide.js" strategy="lazyOnload" />
         <Script src="/js/matter.min.js" strategy="beforeInteractive" />
-        <Script src="/js/matter.js" strategy="afterInteractive" />
-        <Script src="/js/textanimation.js" strategy="afterInteractive" />
-        <Script src="/js/main.js" strategy="afterInteractive" />
+        <Script src="/js/matter.js" strategy="lazyOnload" />
+        <Script src="/js/textanimation.js" strategy="lazyOnload" />
+        <Script src="/js/main.js" strategy="lazyOnload" />
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import TrendingSection from "./components/TrendingSection";
+import OjjaEtTounsiSection from "./components/ojjaetounsi";
 import MarqueeSection from "./components/MarqueeSection";
 import DevelopedSection from "./components/DevelopedSection";
 import DemoSection from "./components/DemoSection";
@@ -48,6 +49,9 @@ export default function Home() {
 
             {/* section-trending */}
             <TrendingSection />
+
+            {/* section-ojja */}
+            <OjjaEtTounsiSection />
 
             {/* section-demo */}
             <DemoSection />
